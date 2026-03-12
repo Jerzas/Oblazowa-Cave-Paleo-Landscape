@@ -1,4 +1,4 @@
-# Obłazowa Cave Paleolandscape, 360° panoramas
+# Paleolandscape of the Obłazowa Cave Archaeological Site – 360° Panoramas
 360° interactive panoramas of palaeolandscapes in the central Western Carpathians near the Obłazowa Cave archaeological site, located at the southern foot of Obłazowa Rock in the Białka River gorge in the Podhale region, Poland.
 
 Beside the present-day drone made panorama, the repository shows virtual landscapes which were generated using Terragen 4.7 (Planetside Software). They are based on an analysis of empirical geomorphological, palaeoenvironmental and archaeological data and represent selected time slices from MIS 3 to the Late Glacial.
