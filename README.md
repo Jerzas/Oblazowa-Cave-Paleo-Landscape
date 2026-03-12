@@ -6,4 +6,4 @@ Besides the present-day drone panorama, the repository includes virtual landscap
 
 Key landscape components such as the snow line (ELA) and extent of Tatra Mountain glaciers, the evolution of the Białka River valley, and the development of regional vegetation cover are reconstructed using available empirical datasets and published palaeoenvironmental evidence. The resulting visualisations represent the most plausible landscape reconstruction for the Obłazowa region during the Late Pleistocene.
 These data constitute supplementary material for the book chapter:
-Zasadni, J. and Kłapyta, P., 2026. Photorealistic 3D reconstruction of the Late Pleistocene landscape surrounding Obłazowa Cave using integrated paleoenvironmental evidence.
+Zasadni, J. and Kłapyta, P., 2026. _Photorealistic 3D reconstruction of the Late Pleistocene landscape surrounding Obłazowa Cave using integrated paleoenvironmental evidence_.
