@@ -1,8 +1,8 @@
 var APP_DATA = {
   "scenes": [
     {
-      "id": "0-mis-3-41-ka-panorama",
-      "name": "MIS 3, 41 ka Panorama",
+      "id": "0-present-day",
+      "name": "Present-day",
       "levels": [
         {
           "tileSize": 256,
@@ -20,40 +20,50 @@ var APP_DATA = {
         {
           "tileSize": 512,
           "size": 2048
+        },
+        {
+          "tileSize": 512,
+          "size": 4096
         }
       ],
-      "faceSize": 2048,
+      "faceSize": 3000,
       "initialViewParameters": {
-        "yaw": -0.029111924506240783,
-        "pitch": 0.2377921466266013,
-        "fov": 1.0373118056201907
+        "yaw": -0.5326972030404491,
+        "pitch": 0.21012483447476704,
+        "fov": 1.2621466168554005
       },
       "linkHotspots": [
         {
-          "yaw": 0.1113441791692047,
-          "pitch": 0.1293894330272778,
-          "rotation": 9.42477796076938,
-          "target": "1-lgm-24-ka-panorama"
+          "yaw": -0.3759906644043802,
+          "pitch": 0.10545169282363887,
+          "rotation": 0,
+          "target": "2-mis-3-41-ka"
+        },
+        {
+          "yaw": -2.0728842701700927,
+          "pitch": 0.21934356020730306,
+          "rotation": 0,
+          "target": "1-lgm-24-ka"
         }
       ],
       "infoHotspots": [
         {
-          "yaw": -0.32343406649131623,
-          "pitch": 0.12592410368791818,
-          "title": "Obłazowa Rock",
+          "yaw": -1.2683120440416804,
+          "pitch": 0.03541093775247184,
+          "title": "Kramnica Rock",
           "text": "Text"
         },
         {
-          "yaw": 0.3849733551684835,
-          "pitch": 0.11035608820422205,
-          "title": "Kramnica Rock",
+          "yaw": 0.1362252237531152,
+          "pitch": 0.21611785204759926,
+          "title": "Obłazowa Rock",
           "text": "Text"
         }
       ]
     },
     {
-      "id": "1-lgm-24-ka-panorama",
-      "name": "LGM, 24 ka Panorama",
+      "id": "1-lgm-24-ka",
+      "name": "LGM, 24 ka",
       "levels": [
         {
           "tileSize": 256,
@@ -75,28 +85,91 @@ var APP_DATA = {
       ],
       "faceSize": 2048,
       "initialViewParameters": {
-        "yaw": 0.017710569090908734,
-        "pitch": 0.10093582187143113,
-        "fov": 0.9270998959650244
+        "yaw": 0.24793514087202695,
+        "pitch": 0.08978061109376334,
+        "fov": 1.5648569724248673
       },
       "linkHotspots": [
         {
-          "yaw": -0.0500838889448616,
-          "pitch": 0.06435594838312042,
-          "rotation": 3.141592653589793,
-          "target": "0-mis-3-41-ka-panorama"
+          "yaw": -0.12002294952163695,
+          "pitch": 0.0606820353429498,
+          "rotation": 0,
+          "target": "2-mis-3-41-ka"
+        },
+        {
+          "yaw": 1.2491659991662303,
+          "pitch": 0.2513425420601969,
+          "rotation": 0,
+          "target": "0-present-day"
         }
       ],
       "infoHotspots": [
         {
-          "yaw": 0.42019500201655546,
-          "pitch": 0.0408608421789296,
-          "title": "Obłazowa Rock",
-          "text": "In foot of this rock, on the southern side Obłazowa Cave is located."
+          "yaw": -1.0007705152072646,
+          "pitch": -0.016158707664494898,
+          "title": "Kramnica Rock",
+          "text": "Text"
         },
         {
-          "yaw": -0.9844061792470882,
-          "pitch": 0.0012422216137384368,
+          "yaw": 0.4161776340033043,
+          "pitch": 0.008299874091772352,
+          "title": "Obłazowa Rock",
+          "text": "Text"
+        }
+      ]
+    },
+    {
+      "id": "2-mis-3-41-ka",
+      "name": "MIS 3, 41 ka",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 2048,
+      "initialViewParameters": {
+        "yaw": -0.04220860217878375,
+        "pitch": 0.10804167071199089,
+        "fov": 1.1491170320620796
+      },
+      "linkHotspots": [
+        {
+          "yaw": 0.14382880575409196,
+          "pitch": 0.09113931336189296,
+          "rotation": 0,
+          "target": "1-lgm-24-ka"
+        },
+        {
+          "yaw": -0.35933175856993493,
+          "pitch": 0.06934533291325451,
+          "rotation": 0,
+          "target": "0-present-day"
+        }
+      ],
+      "infoHotspots": [
+        {
+          "yaw": -0.33352562548902753,
+          "pitch": 0.14460888239256775,
+          "title": "Obłazowa Rock",
+          "text": "Text"
+        },
+        {
+          "yaw": 0.31387384752875747,
+          "pitch": 0.11697891975707364,
           "title": "Kramnica Rock",
           "text": "Text"
         }
@@ -105,9 +178,9 @@ var APP_DATA = {
   ],
   "name": "Project Title",
   "settings": {
-    "mouseViewMode": "qtvr",
+    "mouseViewMode": "drag",
     "autorotateEnabled": true,
     "fullscreenButton": true,
-    "viewControlButtons": true
+    "viewControlButtons": false
   }
 };
