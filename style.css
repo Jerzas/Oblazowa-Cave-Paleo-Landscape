@@ -464,7 +464,7 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
 .mobile .info-hotspot .info-hotspot-header {
   width: 50px;
   height: 50px;
-  border-radius: 25px;
+  border-radius: 0px;
 }
 
 .desktop.no-touch .info-hotspot .info-hotspot-header:hover {
@@ -490,13 +490,11 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
 }
 
 .info-hotspot .info-hotspot-icon-wrapper {
-  width: 40px;
-  height: 40px;
+  background: none;
 }
 
 .mobile .info-hotspot .info-hotspot-icon-wrapper {
-  width: 50px;
-  height: 50px;
+ background: none;
 }
 
 .info-hotspot .info-hotspot-icon {
