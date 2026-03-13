@@ -781,27 +781,23 @@ body.view-control-buttons .viewControlButton {
 .viewControlButton-6 {
   margin-left: 105px;
 }
-/* ===== FIX DLA ETYKIET NA DESKTOP I MOBILE ===== */
+/* ===== ETYKIETY Z ZAFIKSOWANYM DOLNYM PUNKTEM LINII ===== */
 
 .info-hotspot {
   position: relative !important;
-  width: 1px !important;
-  height: 40px !important;
+  width: 0 !important;
+  height: 0 !important;
   line-height: 1.2em !important;
   opacity: 1 !important;
   overflow: visible !important;
-}
-
-.mobile .info-hotspot {
-  height: 50px !important;
 }
 
 .info-hotspot .info-hotspot-header {
   position: absolute !important;
   left: 0 !important;
   bottom: 0 !important;
-  width: 1px !important;
-  height: 40px !important;
+  width: 0 !important;
+  height: 0 !important;
   background: transparent !important;
   border-radius: 0 !important;
   overflow: visible !important;
@@ -809,11 +805,7 @@ body.view-control-buttons .viewControlButton {
   transition: none !important;
 }
 
-.mobile .info-hotspot .info-hotspot-header {
-  width: 1px !important;
-  height: 50px !important;
-}
-
+/* pionowa linia, której dolny koniec jest stały w punkcie hotspotu */
 .info-hotspot .info-hotspot-header::before {
   content: "" !important;
   position: absolute !important;
@@ -823,6 +815,7 @@ body.view-control-buttons .viewControlButton {
   height: 40px !important;
   background: rgba(255,255,255,0.95) !important;
   box-shadow: 0 0 2px rgba(0,0,0,0.8) !important;
+  transform: translateX(-50%) !important;
 }
 
 .mobile .info-hotspot .info-hotspot-header::before {
@@ -834,11 +827,12 @@ body.view-control-buttons .viewControlButton {
   display: none !important;
 }
 
+/* etykieta wyśrodkowana dokładnie nad linią */
 .info-hotspot .info-hotspot-title-wrapper {
   position: absolute !important;
   left: 0 !important;
   bottom: 40px !important;
-  transform: translateX(-50%) !important;
+  transform: translate(-50%, 0) !important;
   transform-origin: center bottom !important;
   height: 28px !important;
   min-width: 40px !important;
@@ -846,7 +840,7 @@ body.view-control-buttons .viewControlButton {
   padding: 0 8px !important;
   overflow: visible !important;
   white-space: nowrap !important;
-  background: rgba(0,0,0,0.55) !important;
+  background: rgba(0,0,0,0.25) !important;
   border-radius: 4px !important;
   opacity: 1 !important;
   visibility: visible !important;
@@ -858,8 +852,20 @@ body.view-control-buttons .viewControlButton {
   bottom: 50px !important;
   height: 32px !important;
   padding: 0 10px !important;
-  opacity: 1 !important;
-  visibility: visible !important;
+}
+
+/* mały trójkąt pod etykietą */
+.info-hotspot .info-hotspot-title-wrapper::after {
+  content: "" !important;
+  position: absolute !important;
+  left: 50% !important;
+  bottom: -6px !important;
+  transform: translateX(-50%) !important;
+  width: 0 !important;
+  height: 0 !important;
+  border-left: 6px solid transparent !important;
+  border-right: 6px solid transparent !important;
+  border-top: 6px solid rgba(0,0,0,0.25) !important;
 }
 
 .info-hotspot .info-hotspot-title-wrapper:before {
@@ -877,29 +883,6 @@ body.view-control-buttons .viewControlButton {
   color: #fff !important;
   text-shadow: 0 1px 2px rgba(0,0,0,0.8) !important;
   user-select: text !important;
-}
-
-.desktop.no-touch .info-hotspot:hover .info-hotspot-title-wrapper,
-.desktop .info-hotspot.visible .info-hotspot-title-wrapper,
-.mobile .info-hotspot.visible .info-hotspot-title-wrapper {
-  opacity: 1 !important;
-  visibility: visible !important;
-  width: auto !important;
-}
-
-.desktop.no-touch .info-hotspot .info-hotspot-header:hover,
-.desktop.no-touch .info-hotspot:hover .info-hotspot-header,
-.desktop .info-hotspot.visible .info-hotspot-header,
-.mobile .info-hotspot.visible .info-hotspot-header {
-  width: 1px !important;
-  height: 40px !important;
-  border-radius: 0 !important;
-  transition: none !important;
-}
-
-.mobile .info-hotspot.visible .info-hotspot-header,
-.mobile.no-touch .info-hotspot:hover .info-hotspot-header {
-  height: 50px !important;
 }
 
 .info-hotspot .info-hotspot-text {
