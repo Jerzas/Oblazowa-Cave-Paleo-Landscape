@@ -235,14 +235,24 @@ var APP_DATA = {
       },
       "linkHotspots": [
         {
+<<<<<<< HEAD
           "yaw": 0.0734929825657975,
           "pitch": 0.020655548609539665,
+=======
+          "yaw": -0.3759906644043802,
+          "pitch": 0.03,
+>>>>>>> e42fc7dec0db35155bba850d2592904feedb5b98
           "rotation": 0,
           "target": "5-starorobociaski-wierch"
         },
         {
+<<<<<<< HEAD
           "yaw": 0.03228832694327011,
           "pitch": 0.05799265258824349,
+=======
+          "yaw": -2.0728842701700927,
+          "pitch": 0.1,
+>>>>>>> e42fc7dec0db35155bba850d2592904feedb5b98
           "rotation": 0,
           "target": "2-rohe"
         },
@@ -428,14 +438,24 @@ var APP_DATA = {
       },
       "linkHotspots": [
         {
+<<<<<<< HEAD
           "yaw": -0.3785344955832688,
           "pitch": 0.10567841932104471,
+=======
+          "yaw": -0.12002294952163695,
+          "pitch": -0.00706820353429498,
+>>>>>>> e42fc7dec0db35155bba850d2592904feedb5b98
           "rotation": 0,
           "target": "3-woowiec"
         },
         {
+<<<<<<< HEAD
           "yaw": 0.05369745272926707,
           "pitch": 0.010793219209711324,
+=======
+          "yaw": 1.2491659991662303,
+          "pitch": 0.056,
+>>>>>>> e42fc7dec0db35155bba850d2592904feedb5b98
           "rotation": 0,
           "target": "5-starorobociaski-wierch"
         },
