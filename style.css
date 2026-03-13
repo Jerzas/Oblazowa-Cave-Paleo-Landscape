@@ -506,17 +506,17 @@ body.single-scene #sceneListToggle {
 
 .info-hotspot .info-hotspot-title-wrapper {
   position: absolute;
-  left: 0;
-  bottom: 40px;
-  transform: translateX(-50%);
-  transform-origin: center bottom;
+  left: 50% !important;
+  bottom: 40px !important;
+  transform: translateX(-50%) !important;
+  transform-origin: center bottom !important;
   height: 28px;
   min-width: 40px;
   max-width: 240px;
   padding: 0 8px;
   overflow: visible;
   white-space: nowrap;
-  background: rgba(0,0,0,0.55);
+  background: rgba(0,0,0,0.2);
   border-radius: 4px;
   opacity: 1;
   visibility: visible;
