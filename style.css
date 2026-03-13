@@ -781,13 +781,15 @@ body.view-control-buttons .viewControlButton {
 .viewControlButton-6 {
   margin-left: 105px;
 }
-/* ===== ETYKIETA NAD PUNKTEM, LINIA ZAKOTWICZONA W HOTSPOT ===== */
+/* ===== JEDYNY AKTYWNY FIX ETYKIET ===== */
 
 .info-hotspot {
   --line-h: 42px;
   position: relative !important;
   width: 0 !important;
   height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
   line-height: 1 !important;
   opacity: 1 !important;
   overflow: visible !important;
@@ -797,7 +799,15 @@ body.view-control-buttons .viewControlButton {
   --line-h: 52px;
 }
 
-/* pionowa linia rysowana z SAMEGO punktu hotspotu */
+/* to jest kluczowe: kasujemy stare przesunięcia kotwicy */
+.info-hotspot,
+.info-hotspot.visible,
+.no-touch .info-hotspot:hover {
+  margin-left: 0 !important;
+  margin-top: 0 !important;
+}
+
+/* linia wychodzi z samego punktu hotspotu */
 .info-hotspot::before {
   content: "" !important;
   position: absolute !important;
@@ -811,12 +821,17 @@ body.view-control-buttons .viewControlButton {
   pointer-events: none !important;
 }
 
-/* wyłączamy cały stary układ headera */
+/* cały dawny header zerujemy */
 .info-hotspot .info-hotspot-header {
-  position: static !important;
+  position: absolute !important;
+  left: 0 !important;
+  bottom: 0 !important;
   width: 0 !important;
   height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
   background: transparent !important;
+  border: 0 !important;
   overflow: visible !important;
   cursor: pointer !important;
 }
@@ -826,11 +841,16 @@ body.view-control-buttons .viewControlButton {
 }
 
 .info-hotspot .info-hotspot-icon-wrapper,
+.info-hotspot .info-hotspot-icon,
 .info-hotspot .info-hotspot-close-wrapper {
   display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
-/* etykieta idealnie na środku nad linią */
+/* etykieta nad linią, środek dokładnie na osi hotspotu */
 .info-hotspot .info-hotspot-title-wrapper {
   position: absolute !important;
   left: 0 !important;
@@ -838,13 +858,16 @@ body.view-control-buttons .viewControlButton {
   transform: translateX(-50%) !important;
   transform-origin: center bottom !important;
   height: 28px !important;
+  min-width: 0 !important;
+  max-width: none !important;
+  margin: 0 !important;
   padding: 0 8px !important;
   white-space: nowrap !important;
-  background: rgba(0,0,0,0.35) !important;
+  overflow: visible !important;
+  background: rgba(0,0,0,0.20) !important;
   border-radius: 4px !important;
   opacity: 1 !important;
   visibility: visible !important;
-  overflow: visible !important;
   pointer-events: none !important;
 }
 
@@ -853,6 +876,7 @@ body.view-control-buttons .viewControlButton {
   padding: 0 10px !important;
 }
 
+/* pionowe wyśrodkowanie tekstu */
 .info-hotspot .info-hotspot-title-wrapper:before {
   content: "" !important;
   display: inline-block !important;
@@ -863,6 +887,8 @@ body.view-control-buttons .viewControlButton {
 .info-hotspot .info-hotspot-title {
   display: inline-block !important;
   vertical-align: middle !important;
+  margin: 0 !important;
+  padding: 0 !important;
   font-size: 14px !important;
   line-height: 1 !important;
   color: #fff !important;
@@ -870,13 +896,14 @@ body.view-control-buttons .viewControlButton {
   user-select: text !important;
 }
 
-/* opis po kliknięciu */
+/* tekst po kliknięciu */
 .info-hotspot .info-hotspot-text {
   position: absolute !important;
   left: 0 !important;
-  top: 46px !important;
+  top: calc(var(--line-h) + 6px) !important;
   width: 300px !important;
   max-height: 200px !important;
+  margin: 0 !important;
   padding: 10px !important;
   background-color: rgba(58,68,84,0.95) !important;
   border-bottom-right-radius: 5px !important;
@@ -887,10 +914,6 @@ body.view-control-buttons .viewControlButton {
   transform: none !important;
   transition: opacity 0.2s ease, visibility 0s linear 0.2s !important;
   user-select: text !important;
-}
-
-.mobile .info-hotspot .info-hotspot-text {
-  top: 56px !important;
 }
 
 .desktop .info-hotspot.visible .info-hotspot-text,
