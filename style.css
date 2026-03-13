@@ -781,15 +781,19 @@ body.view-control-buttons .viewControlButton {
 .viewControlButton-6 {
   margin-left: 105px;
 }
-/* ===== ETYKIETY Z ZAFIKSOWANYM DOLNYM PUNKTEM LINII ===== */
+/* ===== ETYKIETA CENTRALNIE NAD PUNKTEM, LINIA ZAKOTWICZONA DOŁEM ===== */
 
 .info-hotspot {
+  --line-h: 42px;
   position: relative !important;
   width: 0 !important;
   height: 0 !important;
-  line-height: 1.2em !important;
   opacity: 1 !important;
   overflow: visible !important;
+}
+
+.mobile .info-hotspot {
+  --line-h: 52px;
 }
 
 .info-hotspot .info-hotspot-header {
@@ -799,75 +803,65 @@ body.view-control-buttons .viewControlButton {
   width: 0 !important;
   height: 0 !important;
   background: transparent !important;
-  border-radius: 0 !important;
   overflow: visible !important;
   cursor: pointer !important;
-  transition: none !important;
 }
 
-/* pionowa linia, której dolny koniec jest stały w punkcie hotspotu */
+/* pionowa linia: dół na stałe w punkcie hotspotu */
 .info-hotspot .info-hotspot-header::before {
   content: "" !important;
   position: absolute !important;
   left: 0 !important;
   bottom: 0 !important;
   width: 1px !important;
-  height: 40px !important;
+  height: var(--line-h) !important;
   background: rgba(255,255,255,0.95) !important;
   box-shadow: 0 0 2px rgba(0,0,0,0.8) !important;
   transform: translateX(-50%) !important;
 }
 
-.mobile .info-hotspot .info-hotspot-header::before {
-  height: 50px !important;
-}
-
+/* ukrywamy ikonę i zamykanie */
 .info-hotspot .info-hotspot-icon-wrapper,
 .info-hotspot .info-hotspot-close-wrapper {
   display: none !important;
 }
 
-/* etykieta wyśrodkowana dokładnie nad linią */
+/* etykieta dokładnie nad linią */
 .info-hotspot .info-hotspot-title-wrapper {
   position: absolute !important;
   left: 0 !important;
-  bottom: 40px !important;
-  transform: translate(-50%, 0) !important;
+  bottom: var(--line-h) !important;
+  transform: translateX(-50%) !important;
   transform-origin: center bottom !important;
   height: 28px !important;
-  min-width: 40px !important;
-  max-width: 260px !important;
   padding: 0 8px !important;
-  overflow: visible !important;
   white-space: nowrap !important;
-  background: rgba(0,0,0,0.25) !important;
+  background: rgba(0,0,0,0.35) !important;
   border-radius: 4px !important;
   opacity: 1 !important;
   visibility: visible !important;
   pointer-events: none !important;
-  transition: none !important;
+  overflow: visible !important;
 }
 
 .mobile .info-hotspot .info-hotspot-title-wrapper {
-  bottom: 50px !important;
   height: 32px !important;
   padding: 0 10px !important;
 }
 
-/* mały trójkąt pod etykietą */
+/* to usuwa szczelinę między etykietą a linią */
 .info-hotspot .info-hotspot-title-wrapper::after {
   content: "" !important;
   position: absolute !important;
   left: 50% !important;
-  bottom: -6px !important;
+  bottom: -1px !important;
+  width: 1px !important;
+  height: 8px !important;
+  background: rgba(255,255,255,0.95) !important;
   transform: translateX(-50%) !important;
-  width: 0 !important;
-  height: 0 !important;
-  border-left: 6px solid transparent !important;
-  border-right: 6px solid transparent !important;
-  border-top: 6px solid rgba(0,0,0,0.25) !important;
 }
 
+/* pionowe wyśrodkowanie tekstu */
 .info-hotspot .info-hotspot-title-wrapper:before {
   content: "" !important;
   display: inline-block !important;
@@ -885,12 +879,13 @@ body.view-control-buttons .viewControlButton {
   user-select: text !important;
 }
 
+/* opis po kliknięciu */
 .info-hotspot .info-hotspot-text {
   position: absolute !important;
-  width: 300px !important;
-  max-height: 200px !important;
   left: 0 !important;
   top: 46px !important;
+  width: 300px !important;
+  max-height: 200px !important;
   padding: 10px !important;
   background-color: rgba(58,68,84,0.95) !important;
   border-bottom-right-radius: 5px !important;
@@ -898,9 +893,7 @@ body.view-control-buttons .viewControlButton {
   overflow-y: auto !important;
   visibility: hidden !important;
   opacity: 0 !important;
-  transform: none !important;
   transition: opacity 0.2s ease, visibility 0s linear 0.2s !important;
-  user-select: text !important;
 }
 
 .mobile .info-hotspot .info-hotspot-text {
