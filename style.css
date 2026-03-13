@@ -781,13 +781,14 @@ body.view-control-buttons .viewControlButton {
 .viewControlButton-6 {
   margin-left: 105px;
 }
-/* ===== ETYKIETA CENTRALNIE NAD PUNKTEM, LINIA ZAKOTWICZONA DOŁEM ===== */
+/* ===== ETYKIETA NAD PUNKTEM, LINIA ZAKOTWICZONA W HOTSPOT ===== */
 
 .info-hotspot {
   --line-h: 42px;
   position: relative !important;
   width: 0 !important;
   height: 0 !important;
+  line-height: 1 !important;
   opacity: 1 !important;
   overflow: visible !important;
 }
@@ -796,19 +797,8 @@ body.view-control-buttons .viewControlButton {
   --line-h: 52px;
 }
 
-.info-hotspot .info-hotspot-header {
-  position: absolute !important;
-  left: 0 !important;
-  bottom: 0 !important;
-  width: 0 !important;
-  height: 0 !important;
-  background: transparent !important;
-  overflow: visible !important;
-  cursor: pointer !important;
-}
-
-/* pionowa linia: dół na stałe w punkcie hotspotu */
-.info-hotspot .info-hotspot-header::before {
+/* pionowa linia rysowana z SAMEGO punktu hotspotu */
+.info-hotspot::before {
   content: "" !important;
   position: absolute !important;
   left: 0 !important;
@@ -818,15 +808,29 @@ body.view-control-buttons .viewControlButton {
   background: rgba(255,255,255,0.95) !important;
   box-shadow: 0 0 2px rgba(0,0,0,0.8) !important;
   transform: translateX(-50%) !important;
+  pointer-events: none !important;
 }
 
-/* ukrywamy ikonę i zamykanie */
+/* wyłączamy cały stary układ headera */
+.info-hotspot .info-hotspot-header {
+  position: static !important;
+  width: 0 !important;
+  height: 0 !important;
+  background: transparent !important;
+  overflow: visible !important;
+  cursor: pointer !important;
+}
+
+.info-hotspot .info-hotspot-header::before {
+  display: none !important;
+}
+
 .info-hotspot .info-hotspot-icon-wrapper,
 .info-hotspot .info-hotspot-close-wrapper {
   display: none !important;
 }
 
-/* etykieta dokładnie nad linią */
+/* etykieta idealnie na środku nad linią */
 .info-hotspot .info-hotspot-title-wrapper {
   position: absolute !important;
   left: 0 !important;
@@ -840,8 +844,8 @@ body.view-control-buttons .viewControlButton {
   border-radius: 4px !important;
   opacity: 1 !important;
   visibility: visible !important;
-  pointer-events: none !important;
   overflow: visible !important;
+  pointer-events: none !important;
 }
 
 .mobile .info-hotspot .info-hotspot-title-wrapper {
@@ -849,19 +853,6 @@ body.view-control-buttons .viewControlButton {
   padding: 0 10px !important;
 }
 
-/* to usuwa szczelinę między etykietą a linią */
-.info-hotspot .info-hotspot-title-wrapper::after {
-  content: "" !important;
-  position: absolute !important;
-  left: 50% !important;
-  bottom: -1px !important;
-  width: 1px !important;
-  height: 8px !important;
-  background: rgba(255,255,255,0.95) !important;
-  transform: translateX(-50%) !important;
-}
-
-/* pionowe wyśrodkowanie tekstu */
 .info-hotspot .info-hotspot-title-wrapper:before {
   content: "" !important;
   display: inline-block !important;
@@ -893,7 +884,9 @@ body.view-control-buttons .viewControlButton {
   overflow-y: auto !important;
   visibility: hidden !important;
   opacity: 0 !important;
+  transform: none !important;
   transition: opacity 0.2s ease, visibility 0s linear 0.2s !important;
+  user-select: text !important;
 }
 
 .mobile .info-hotspot .info-hotspot-text {
