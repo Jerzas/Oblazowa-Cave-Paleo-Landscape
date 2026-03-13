@@ -55,7 +55,7 @@ var APP_DATA = {
         },
         {
           "yaw": 0.1362252237531152,
-          "pitch": 0.21611785204759926,
+          "pitch": 0.11611785204759926,
           "title": "Obłazowa Rock",
           "text": "Text"
         }
