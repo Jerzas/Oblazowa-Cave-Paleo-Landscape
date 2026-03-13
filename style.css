@@ -812,7 +812,7 @@ body.view-control-buttons .viewControlButton {
   content: "" !important;
   position: absolute !important;
   left: 0 !important;
-  bottom: 0 px !important;
+  bottom: 0 !important;
   width: 1px !important;
   height: var(--line-h) !important;
   background: rgba(255,255,255,0.95) !important;
@@ -825,7 +825,7 @@ body.view-control-buttons .viewControlButton {
 .info-hotspot .info-hotspot-header {
   position: absolute !important;
   left: 0 !important;
-  bottom: 0 px !important;
+  bottom: 0 !important;
   width: 0 !important;
   height: 0 !important;
   margin: 0 !important;
@@ -921,8 +921,4 @@ body.view-control-buttons .viewControlButton {
   visibility: visible !important;
   opacity: 1 !important;
   transition: opacity 0.2s ease, visibility 0s linear 0s !important;
-}
-/* korekta pionowego położenia całego hotspotu */
-.info-hotspot {
-  transform: translateY(20px) !important;
 }
