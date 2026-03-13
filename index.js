@@ -50,7 +50,7 @@
 
   // Detect whether we are on a touch device.
   document.body.classList.add('no-touch');
-  window.addEventListener('touchstart', function() 
+  window.addEventListener('touchstart', function() {
     document.body.classList.remove('no-touch');
     document.body.classList.add('touch');
   });
@@ -81,7 +81,7 @@
   coordsBox.style.zIndex = '99999';
   coordsBox.style.padding = '6px 10px';
   coordsBox.style.background = 'rgba(0,0,0,0.35)';
-  coordsBox.style.color = '#ffffff';
+  coordsBox.style.color = 'rgba(255,255,255,0.7)';
   coordsBox.style.fontFamily = 'monospace';
   coordsBox.style.fontSize = '11px';
   coordsBox.style.borderRadius = '4px';
