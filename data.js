@@ -48,8 +48,8 @@ var APP_DATA = {
       ],
       "infoHotspots": [
         {
-          "yaw": -1.350,
-          "pitch": -0.2000,
+          "yaw": -1.0,
+          "pitch": 0.3000,
           "title": "Kramnica Rock",
           "text": "Text"
         },
