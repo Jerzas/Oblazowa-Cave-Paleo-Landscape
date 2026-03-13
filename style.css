@@ -402,9 +402,9 @@ body.single-scene #sceneListToggle {
 /* Info hotspot */
 
 .info-hotspot {
-  position: relative;
   line-height: 1.2em;
   opacity: 0.9;
+  -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
 
@@ -416,21 +416,47 @@ body.single-scene #sceneListToggle {
   opacity: 1;
 }
 
-/* punkt hotspotu */
-
 .info-hotspot .info-hotspot-header {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 1px;
-  height: 1px;
-  background: transparent;
-  overflow: visible;
+  position: relative !important;
+  width: 1px !important;
+  height: 40px !important;
+  margin-left: 0 !important;
+  margin-top: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
   cursor: pointer;
+  overflow: visible !important;
+  -webkit-transition: none !important;
+  transition: none !important;
 }
 
-/* pionowa linia */
+.mobile .info-hotspot .info-hotspot-header {
+  height: 50px !important;
+}
 
+.desktop.no-touch .info-hotspot .info-hotspot-header:hover,
+.desktop .info-hotspot.visible .info-hotspot-header,
+.desktop.no-touch .info-hotspot.visible .info-hotspot-header:hover {
+  width: 1px !important;
+  height: 40px !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  -webkit-transition: none !important;
+  transition: none !important;
+}
+
+.mobile .info-hotspot.visible .info-hotspot-header,
+.mobile.no-touch .info-hotspot.visible .info-hotspot-header:hover,
+.mobile .info-hotspot .info-hotspot-header:hover {
+  width: 1px !important;
+  height: 50px !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  -webkit-transition: none !important;
+  transition: none !important;
+}
+
+/* pionowa linia, dół zakotwiczony w punkcie hotspotu */
 .info-hotspot .info-hotspot-header::before {
   content: "";
   position: absolute;
@@ -438,42 +464,57 @@ body.single-scene #sceneListToggle {
   bottom: 0;
   width: 1px;
   height: 40px;
-  background: rgba(255,255,255,0.9);
+  background: rgba(255,255,255,0.95);
+  box-shadow: 0 0 2px rgba(0,0,0,0.8);
   transform: translateX(-50%);
 }
 
-/* ukrywamy ikonę "i" */
+.mobile .info-hotspot .info-hotspot-header::before {
+  height: 50px;
+}
 
-.info-hotspot .info-hotspot-icon-wrapper,
+/* chowamy ikonę i */
+.info-hotspot .info-hotspot-icon-wrapper {
+  display: none !important;
+}
+
 .info-hotspot .info-hotspot-close-wrapper {
-  display: none;
+  display: none !important;
+}
+
+.desktop .info-hotspot.visible .info-hotspot-close-wrapper {
+  display: none !important;
 }
 
 /* etykieta */
-
 .info-hotspot .info-hotspot-title-wrapper {
-  position: absolute;
-  left: 0;
-  bottom: 40px;
-  transform: translateX(-50%);
-  height: 28px;
-  padding: 0 8px;
-  white-space: nowrap;
-  background: rgba(0,0,0,0.25);
-  border-radius: 4px;
-  opacity: 1;
-  visibility: visible;
-  pointer-events: none;
+  position: absolute !important;
+  left: 0 !important;
+  bottom: 40px !important;
+  transform: translateX(-50%) !important;
+  transform-origin: center bottom !important;
+  height: 28px !important;
+  min-width: 40px !important;
+  max-width: 260px !important;
+  padding: 0 8px !important;
+  overflow: visible !important;
+  white-space: nowrap !important;
+  background: rgba(0,0,0,0.25) !important;
+  border-radius: 4px !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: none !important;
+  -webkit-transition: none !important;
+  transition: none !important;
 }
 
 .mobile .info-hotspot .info-hotspot-title-wrapper {
-  bottom: 50px;
-  height: 32px;
-  padding: 0 10px;
+  bottom: 50px !important;
+  height: 32px !important;
+  padding: 0 10px !important;
 }
 
-/* tekst etykiety */
-
+/* pionowe wyśrodkowanie napisu */
 .info-hotspot .info-hotspot-title-wrapper:before {
   content: "";
   display: inline-block;
@@ -482,19 +523,23 @@ body.single-scene #sceneListToggle {
 }
 
 .info-hotspot .info-hotspot-title {
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 14px;
-  color: #fff;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.8);
+  display: inline-block !important;
+  vertical-align: middle !important;
+  font-size: 14px !important;
+  line-height: 1 !important;
+  color: #fff !important;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.8) !important;
+  -moz-user-select: text;
+  -webkit-user-select: text;
+  -ms-user-select: text;
   user-select: text;
 }
 
 /* opis po kliknięciu */
-
 .info-hotspot .info-hotspot-text {
   position: absolute;
   width: 300px;
+  height: auto;
   max-height: 200px;
   top: 40px;
   left: 0;
@@ -505,15 +550,28 @@ body.single-scene #sceneListToggle {
   overflow-y: auto;
   visibility: hidden;
   opacity: 0;
-  transition: opacity 0.2s ease, visibility 0s linear 0.2s;
+  -ms-transform: none !important;
+  -webkit-transform: none !important;
+  transform: none !important;
+  -webkit-transition: opacity 0.2s ease !important, visibility 0s linear 0.2s !important;
+  transition: opacity 0.2s ease !important, visibility 0s linear 0.2s !important;
+  -moz-user-select: text;
+  -webkit-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+.mobile .info-hotspot .info-hotspot-text {
+  top: 50px;
 }
 
 .desktop .info-hotspot.visible .info-hotspot-text,
 .mobile .info-hotspot.visible .info-hotspot-text {
   visibility: visible;
   opacity: 1;
+  -webkit-transition: opacity 0.2s ease !important, visibility 0s linear 0s !important;
+  transition: opacity 0.2s ease !important, visibility 0s linear 0s !important;
 }
-
 
 /* Info hotspot modal */
 
