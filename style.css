@@ -402,8 +402,12 @@ body.single-scene #sceneListToggle {
 /* Info hotspot */
 
 .info-hotspot {
+  position: relative !important;
+  width: 0 !important;
+  height: 0 !important;
   line-height: 1.2em;
   opacity: 0.9;
+  overflow: visible !important;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
@@ -417,11 +421,13 @@ body.single-scene #sceneListToggle {
 }
 
 .info-hotspot .info-hotspot-header {
-  position: relative !important;
-  width: 1px !important;
-  height: 40px !important;
-  margin-left: 0 !important;
-  margin-top: 0 !important;
+  position: absolute !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
   border-radius: 0 !important;
   background: transparent !important;
   cursor: pointer;
@@ -431,7 +437,8 @@ body.single-scene #sceneListToggle {
 }
 
 .mobile .info-hotspot .info-hotspot-header {
-  height: 50px !important;
+  width: 0 !important;
+  height: 0 !important;
 }
 
 .desktop.no-touch .info-hotspot .info-hotspot-header:hover,
