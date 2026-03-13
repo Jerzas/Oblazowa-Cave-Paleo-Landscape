@@ -420,6 +420,17 @@ body.single-scene #sceneListToggle {
   opacity: 1;
 }
 
+.info-hotspot {
+  position: relative !important;
+  width: 0 !important;
+  height: 0 !important;
+  line-height: 1.2em;
+  opacity: 0.9;
+  overflow: visible !important;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
 .info-hotspot .info-hotspot-header {
   position: absolute !important;
   left: 0 !important;
@@ -443,20 +454,17 @@ body.single-scene #sceneListToggle {
 
 .desktop.no-touch .info-hotspot .info-hotspot-header:hover,
 .desktop .info-hotspot.visible .info-hotspot-header,
-.desktop.no-touch .info-hotspot.visible .info-hotspot-header:hover {
-  width: 1px !important;
-  height: 40px !important;
-  border-radius: 0 !important;
-  background: transparent !important;
-  -webkit-transition: none !important;
-  transition: none !important;
-}
-
+.desktop.no-touch .info-hotspot.visible .info-hotspot-header:hover,
 .mobile .info-hotspot.visible .info-hotspot-header,
 .mobile.no-touch .info-hotspot.visible .info-hotspot-header:hover,
 .mobile .info-hotspot .info-hotspot-header:hover {
-  width: 1px !important;
-  height: 50px !important;
+  position: absolute !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
   border-radius: 0 !important;
   background: transparent !important;
   -webkit-transition: none !important;
