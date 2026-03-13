@@ -49,13 +49,13 @@ var APP_DATA = {
       "infoHotspots": [
         {
           "yaw": -1.3,
-          "pitch": 0.2000,
+          "pitch": 0.3600,
           "title": "Kramnica Rock",
           "text": "Text"
         },
         {
           "yaw": 0.1362252237531152,
-          "pitch": 0.31611785204759926,
+          "pitch": 0.26611785204759926,
           "title": "Obłazowa Rock",
           "text": "Text"
         }
