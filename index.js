@@ -85,18 +85,20 @@
   coordsBox.textContent = 'yaw: --- | pitch: ---';
   document.body.appendChild(coordsBox);
 
-  function getCoordsFromMouseEvent(e) {
-    if (!currentScene) {
-      return null;
-    }
-
-    var rect = panoElement.getBoundingClientRect();
-    var x = e.clientX - rect.left;
-    var y = e.clientY - rect.top;
-
-    return currentScene.view.screenToCoordinates({ x: x, y: y });
+ function getCoordsFromMouseEvent(e) {
+  if (!currentScene) {
+    return null;
   }
 
+  var rect = panoElement.getBoundingClientRect();
+  var x = e.clientX - rect.left;
+  var y = e.clientY - rect.top;
+
+  var view = currentScene.view;
+  var elementRect = { width: rect.width, height: rect.height };
+
+  return view.screenToCoordinates({ x: x, y: y }, elementRect);
+}
   panoElement.addEventListener('mousemove', function(e) {
     var coords = getCoordsFromMouseEvent(e);
     if (!coords) {
