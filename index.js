@@ -94,11 +94,13 @@
   var x = e.clientX - rect.left;
   var y = e.clientY - rect.top;
 
-  var view = currentScene.view;
-  var elementRect = { width: rect.width, height: rect.height };
+  try {
+    return currentScene.view.screenToCoordinates({ x: x, y: y }, rect);
+  } catch (err) {
+    console.log(err);
+    return null;
+  }
 
-  return view.screenToCoordinates({ x: x, y: y }, elementRect);
-}
   panoElement.addEventListener('mousemove', function(e) {
     var coords = getCoordsFromMouseEvent(e);
     if (!coords) {
