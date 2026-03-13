@@ -35,13 +35,13 @@ var APP_DATA = {
       "linkHotspots": [
         {
           "yaw": -0.3759906644043802,
-          "pitch": 0.10545169282363887,
+          "pitch": 0.03,
           "rotation": 0,
           "target": "2-mis-3-41-ka"
         },
         {
           "yaw": -2.0728842701700927,
-          "pitch": 0.21934356020730306,
+          "pitch": 0.1,
           "rotation": 0,
           "target": "1-lgm-24-ka"
         }
