@@ -168,6 +168,12 @@ var APP_DATA = {
           "text": "Text"
         },
         {
+          "yaw": -0.412,
+          "pitch": 0.250,
+          "title": "Obłazowa Cave",
+          "text": "Text"
+        },
+        {
           "yaw": 0.31387384752875747,
           "pitch": 0.135,
           "title": "Kramnica Rock",
