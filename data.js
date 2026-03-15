@@ -148,6 +148,12 @@
           "pitch": 0.005356,
           "title": "Gronków",
           "text": "Text"
+        },
+        {
+          "yaw": -0.496203,
+          "pitch": 0.46264,
+          "title": "Okrągła Rock",
+          "text": "Text"
         }
       ]
     },
