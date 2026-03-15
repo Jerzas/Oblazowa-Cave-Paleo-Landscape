@@ -259,6 +259,24 @@
           "pitch": 0.256731,
           "title": "Okrągła Rock",
           "text": "Text"
+        },
+        {
+          "yaw": 0.095052,
+          "pitch": -0.071329,
+          "title": "Świnica 2301",
+          "text": "Text"
+        },
+        {
+          "yaw": -0.2621,
+          "pitch": -0.069831,
+          "title": "Gerlachovský štít 2655",
+          "text": "Text"
+        },
+        {
+          "yaw": 0.349853,
+          "pitch": -0.055498,
+          "title": "Giewont 1894",
+          "text": "Text"
         }
       ]
     },
