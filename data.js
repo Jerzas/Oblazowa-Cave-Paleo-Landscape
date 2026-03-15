@@ -34,14 +34,14 @@ var APP_DATA = {
       },
       "linkHotspots": [
         {
-          "yaw": -0.3759906644043802,
-          "pitch": 0.10545169282363887,
+            "yaw": -0.384,
+            "pitch": 0.000563,
           "rotation": 0,
           "target": "2-mis-3-41-ka"
         },
         {
-          "yaw": -2.0728842701700927,
-          "pitch": 0.21934356020730306,
+            "yaw": -2.071344,
+            "pitch": 0.046085,
           "rotation": 0,
           "target": "1-lgm-24-ka"
         }
@@ -51,6 +51,18 @@ var APP_DATA = {
           "yaw": -1.3,
           "pitch": 0.08,
           "title": "Kramnica Rock",
+          "text": "Text"
+        },
+        {
+          "yaw": -2.61016,
+          "pitch": 0.06411,
+          "title": "Nowa Biala",
+          "text": "Text"
+        },
+        {
+          "yaw": 1.639006,
+          "pitch": 0.005002,
+          "title": "Cisowa Skała 685",
           "text": "Text"
         },
         {
@@ -91,14 +103,14 @@ var APP_DATA = {
       },
       "linkHotspots": [
         {
-          "yaw": -0.12002294952163695,
-          "pitch": 0.0606820353429498,
+          "yaw": -0.124555,
+          "pitch": -0.009259,
           "rotation": 0,
           "target": "2-mis-3-41-ka"
         },
         {
-          "yaw": 1.2491659991662303,
-          "pitch": 0.2513425420601969,
+          "yaw": 1.237484,
+          "pitch": 0.090396,
           "rotation": 0,
           "target": "0-present-day"
         }
@@ -165,6 +177,12 @@ var APP_DATA = {
           "yaw": -0.33352562548902753,
           "pitch": 0.16,
           "title": "Obłazowa Rock",
+          "text": "Text"
+        },
+        {
+          "yaw": -1.065354,
+          "pitch": 0.031969,
+          "title": "Cisowa Skała 685",
           "text": "Text"
         },
         {

@@ -39,6 +39,10 @@
   <img class="icon on" src="img/pause.png">
 </a>
 
+<a href="javascript:void(0)" id="hotspots-toggle">
+  <img class="icon" src="img/info.png">
+</a>
+
 <a href="javascript:void(0)" id="fullscreenToggle">
   <img class="icon off" src="img/fullscreen.png">
   <img class="icon on" src="img/windowed.png">
@@ -74,6 +78,63 @@
 
 <script src="data.js"></script>
 <script src="index.js"></script>
+<style>
+#hotspots-toggle {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.mobile #hotspots-toggle {
+  width: 50px;
+  height: 50px;
+  right: 50px;
+}
+
+body.fullscreen-enabled #hotspots-toggle {
+  right: 80px;
+}
+
+body.fullscreen-enabled.mobile #hotspots-toggle {
+  right: 100px;
+}
+
+#hotspots-toggle .icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 30px;
+  height: 30px;
+}
+
+#hotspots-toggle.hotspots-off {
+  opacity: 0.35;
+}
+
+body.hotspots-hidden .hotspot {
+  visibility: hidden !important;
+}
+
+body.hotspots-hidden .info-hotspot .info-hotspot-title-wrapper {
+  visibility: hidden !important;
+}
+</style>
+<script>
+(function() {
+  var visible = true;
+  var button = document.getElementById('hotspots-toggle');
+
+  button.addEventListener('click', function() {
+    visible = !visible;
+    document.body.classList.toggle('hotspots-hidden', !visible);
+    button.classList.toggle('hotspots-off', !visible);
+  });
+})();
+</script>
 
 </body>
 </html>
