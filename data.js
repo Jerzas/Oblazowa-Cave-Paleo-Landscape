@@ -1,4 +1,4 @@
-var APP_DATA = {
+﻿var APP_DATA = {
   "scenes": [
     {
       "id": "0-present-day",
@@ -44,13 +44,25 @@ var APP_DATA = {
             "pitch": 0.046085,
           "rotation": 0,
           "target": "1-lgm-24-ka"
+        },
+        {
+            "yaw": -2.581361,
+            "pitch": -0.031067,
+          "rotation": 0,
+          "target": "4-mis-3-41-ka-nowa-biaa"
+        },
+        {
+          "yaw": 2.086784,
+          "pitch": -0.024286,
+          "rotation": 0,
+          "target": "10-mis-3-41-ka-reindeer"
         }
       ],
       "infoHotspots": [
         {
           "yaw": -1.3,
           "pitch": 0.08,
-          "title": "Kramnica Rock",
+          "title": "Kramnica Rock 883",
           "text": "Text"
         },
         {
@@ -62,13 +74,61 @@ var APP_DATA = {
         {
           "yaw": 1.639006,
           "pitch": 0.005002,
-          "title": "Cisowa Skała 685",
+          "title": "Cisowa Rock 675",
           "text": "Text"
         },
         {
           "yaw": 0.1362252237531152,
           "pitch": 0.266,
-          "title": "Obłazowa Rock",
+          "title": "Obłazowa Rock 670",
+          "text": "Text"
+        },
+        {
+          "yaw": 2.779489,
+          "pitch": -0.080137,
+          "title": "Turbacz 1310",
+          "text": "Text"
+        },
+        {
+          "yaw": -2.263381,
+          "pitch": -0.048086,
+          "title": "Lubań 1211",
+          "text": "Text"
+        },
+        {
+          "yaw": -2.034165,
+          "pitch": 0.033555,
+          "title": "Krempachy",
+          "text": "Text"
+        },
+        {
+          "yaw": 2.880044,
+          "pitch": 0.000063,
+          "title": "Łopuszna",
+          "text": "Text"
+        },
+        {
+          "yaw": 0.118243,
+          "pitch": 0.016392,
+          "title": "Białka Tatrzańska",
+          "text": "Text"
+        },
+        {
+          "yaw": -1.651651,
+          "pitch": -0.026156,
+          "title": "Żar 883",
+          "text": "Text"
+        },
+        {
+          "yaw": -1.771309,
+          "pitch": -0.015808,
+          "title": "Trzy Korony 982",
+          "text": "Text"
+        },
+        {
+          "yaw": -0.441001,
+          "pitch": -0.053622,
+          "title": "Ľadový štít 2628",
           "text": "Text"
         }
       ]
@@ -113,19 +173,91 @@ var APP_DATA = {
           "pitch": 0.090396,
           "rotation": 0,
           "target": "0-present-day"
+        },
+        {
+          "yaw": 1.919342,
+          "pitch": -0.001901,
+          "rotation": 0,
+          "target": "10-mis-3-41-ka-reindeer"
+        },
+        {
+          "yaw": -2.78358,
+          "pitch": -0.006616,
+          "rotation": 0,
+          "target": "4-mis-3-41-ka-nowa-biaa"
         }
       ],
       "infoHotspots": [
         {
           "yaw": -1.0007705152072646,
           "pitch": 0.027,
-          "title": "Kramnica Rock",
+          "title": "Kramnica Rock 883",
           "text": "Text"
         },
         {
           "yaw": 0.4161776340033043,
           "pitch": 0.067299874091772352,
-          "title": "Obłazowa Rock",
+          "title": "Obłazowa Rock 670",
+          "text": "Text"
+        },
+        {
+          "yaw": -1.599599,
+          "pitch": -0.021742,
+          "title": "Żar 883",
+          "text": "Text"
+        },
+        {
+          "yaw": -1.725099,
+          "pitch": -0.003288,
+          "title": "Trzy Korony 982",
+          "text": "Text"
+        },
+        {
+          "yaw": -2.217668,
+          "pitch": -0.022225,
+          "title": "Lubań 1211",
+          "text": "Text"
+        },
+        {
+          "yaw": 2.792115,
+          "pitch": -0.045066,
+          "title": "Turbacz 1310",
+          "text": "Text"
+        },
+        {
+          "yaw": 2.943232,
+          "pitch": 0.038112,
+          "title": "Łopuszna",
+          "text": "Text"
+        },
+        {
+          "yaw": 1.631584,
+          "pitch": -0.001037,
+          "title": "Cisowa Rock 675",
+          "text": "Text"
+        },
+        {
+          "yaw": 1.677806,
+          "pitch": -0.024157,
+          "title": "Babia Góra 1725",
+          "text": "Text"
+        },
+        {
+          "yaw": -2.010762,
+          "pitch": 0.114268,
+          "title": "Krempachy",
+          "text": "Text"
+        },
+        {
+          "yaw": -2.787467,
+          "pitch": 0.110521,
+          "title": "Nowa Biala",
+          "text": "Text"
+        },
+        {
+          "yaw": 0.021353,
+          "pitch": 0.256731,
+          "title": "Okrągła Rock",
           "text": "Text"
         }
       ]
@@ -170,19 +302,31 @@ var APP_DATA = {
           "pitch": 0.06934533291325451,
           "rotation": 0,
           "target": "0-present-day"
+        },
+        {
+          "yaw": 0.085225,
+          "pitch": 0.043904,
+          "rotation": 0,
+          "target": "4-mis-3-41-ka-nowa-biaa"
+        },
+        {
+          "yaw": -0.426441,
+          "pitch": 0.043246,
+          "rotation": 0,
+          "target": "10-mis-3-41-ka-reindeer"
         }
       ],
       "infoHotspots": [
         {
-          "yaw": -0.33352562548902753,
-          "pitch": 0.16,
-          "title": "Obłazowa Rock",
+          "yaw": -0.324737,
+          "pitch": 0.170578,
+          "title": "Obłazowa Rock 670",
           "text": "Text"
         },
         {
           "yaw": -1.065354,
           "pitch": 0.031969,
-          "title": "Cisowa Skała 685",
+          "title": "Cisowa Rock 675",
           "text": "Text"
         },
         {
@@ -192,9 +336,349 @@ var APP_DATA = {
           "text": "Text"
         },
         {
-          "yaw": 0.31387384752875747,
-          "pitch": 0.135,
-          "title": "Kramnica Rock",
+          "yaw": 0.343959,
+          "pitch": 0.147403,
+          "title": "Kramnica Rock 883",
+          "text": "Text"
+        },
+        {
+          "yaw": -1.372146,
+          "pitch": -0.025206,
+          "title": "Babia Góra 1725",
+          "text": "Text"
+        },
+        {
+          "yaw": -1.539331,
+          "pitch": -0.014877,
+          "title": "Pilsko 1557",
+          "text": "Text"
+        },
+        {
+          "yaw": 2.94974,
+          "pitch": -0.064082,
+          "title": "Gerlachovský štít 2655",
+          "text": "Text"
+        },
+        {
+          "yaw": -2.302433,
+          "pitch": -0.031738,
+          "title": "Osobitá 1687",
+          "text": "Text"
+        },
+        {
+          "yaw": -2.804829,
+          "pitch": 0.02245,
+          "title": "Białka Tatrzańska",
+          "text": "Text"
+        },
+        {
+          "yaw": 0.626883,
+          "pitch": 0.093281,
+          "title": "Krempachy",
+          "text": "Text"
+        },
+        {
+          "yaw": 0.07129,
+          "pitch": 0.10658,
+          "title": "Nowa Biala",
+          "text": "Text"
+        },
+        {
+          "yaw": 0.951658,
+          "pitch": -0.017458,
+          "title": "Lubań 1211",
+          "text": "Text"
+        },
+        {
+          "yaw": -0.260636,
+          "pitch": -0.038726,
+          "title": "Turbacz 1310",
+          "text": "Text"
+        },
+        {
+          "yaw": -0.140091,
+          "pitch": 0.039687,
+          "title": "Łopuszna",
+          "text": "Text"
+        },
+        {
+          "yaw": 1.493501,
+          "pitch": -0.011169,
+          "title": "Żar 883",
+          "text": "Text"
+        },
+        {
+          "yaw": 0.352669,
+          "pitch": -0.022224,
+          "title": "Gorc 1228",
+          "text": "Text"
+        }
+      ]
+    },
+    {
+      "id": "4-mis-3-41-ka-nowa-biaa",
+      "name": "MIS 3, 41 ka - Nowa Biała",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 2048,
+      "initialViewParameters": {
+        "yaw": -0.04220860217878375,
+        "pitch": 0.10804167071199089,
+        "fov": 1.1491170320620796
+      },
+      "linkHotspots": [
+        {
+          "yaw": -0.044755,
+          "pitch": -0.045579,
+          "rotation": 0,
+          "target": "2-mis-3-41-ka"
+        },
+        {
+          "yaw": 0.037314,
+          "pitch": -0.002924,
+          "rotation": 0,
+          "target": "1-lgm-24-ka"
+        },
+        {
+          "yaw": 0.281069,
+          "pitch": -0.040032,
+          "rotation": 0,
+          "target": "0-present-day"
+        },
+        {
+          "yaw": 0.861118,
+          "pitch": -0.065002,
+          "rotation": 0,
+          "target": "10-mis-3-41-ka-reindeer"
+        }
+      ],
+      "infoHotspots": [
+        {
+          "yaw": 2.710828,
+          "pitch": -0.048613,
+          "title": "Turbacz 1310",
+          "text": "Text"
+        },
+        {
+          "yaw": -2.254063,
+          "pitch": -0.023824,
+          "title": "Lubań 1211",
+          "text": "Text"
+        },
+        {
+          "yaw": 1.281959,
+          "pitch": 0.000429,
+          "title": "Cisowa Rock 675",
+          "text": "Text"
+        },
+        {
+          "yaw": -0.410341,
+          "pitch": 0.019891,
+          "title": "Kramnica Rock 883",
+          "text": "Text"
+        },
+        {
+          "yaw": 0.176129,
+          "pitch": 0.029547,
+          "title": "Obłazowa Rock 670",
+          "text": "Text"
+        },
+        {
+          "yaw": 0.886499,
+          "pitch": 0.892794,
+          "title": "Nowa Biala",
+          "text": "Text"
+        },
+        {
+          "yaw": -1.626445,
+          "pitch": 0.120885,
+          "title": "Krempachy",
+          "text": "Text"
+        },
+        {
+          "yaw": 2.985546,
+          "pitch": 0.040541,
+          "title": "Łopuszna",
+          "text": "Text"
+        },
+        {
+          "yaw": -1.572704,
+          "pitch": -0.021093,
+          "title": "Żar 883",
+          "text": "Text"
+        },
+        {
+          "yaw": -1.75952,
+          "pitch": -0.002588,
+          "title": "Trzy Korony 982",
+          "text": "Text"
+        },
+        {
+          "yaw": -0.445477,
+          "pitch": -0.067803,
+          "title": "Ľadový štít 2628",
+          "text": "Text"
+        },
+        {
+          "yaw": 0.036609,
+          "pitch": -0.06321,
+          "title": "Świnica 2301",
+          "text": "Text"
+        },
+        {
+          "yaw": 1.608052,
+          "pitch": -0.023048,
+          "title": "Babia Góra 1725",
+          "text": "Text"
+        }
+      ]
+    },
+    {
+      "id": "10-mis-3-41-ka-reindeer",
+      "name": "MIS 3, 41 ka - Reindeer",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        },
+        {
+          "tileSize": 512,
+          "size": 4096
+        }
+      ],
+      "faceSize": 3000,
+      "initialViewParameters": {
+        "yaw": -0.04220860217878375,
+        "pitch": 0.10804167071199089,
+        "fov": 1.1491170320620796
+      },
+      "linkHotspots": [
+        {
+          "yaw": -0.044755,
+          "pitch": -0.045579,
+          "rotation": 0,
+          "target": "2-mis-3-41-ka"
+        },
+        {
+          "yaw": -0.986997,
+          "pitch": -0.00821,
+          "rotation": 0,
+          "target": "1-lgm-24-ka"
+        },
+        {
+          "yaw": -0.289798,
+          "pitch": 0.013925,
+          "rotation": 0,
+          "target": "0-present-day"
+        },
+        {
+          "yaw": -1.64046,
+          "pitch": -0.045094,
+          "rotation": 0,
+          "target": "4-mis-3-41-ka-nowa-biaa"
+        }
+      ],
+      "infoHotspots": [
+        {
+          "yaw": -0.579564,
+          "pitch": 0.006297,
+          "title": "Kramnica Rock 883",
+          "text": "Text"
+        },
+        {
+          "yaw": -0.121585,
+          "pitch": 0.031124,
+          "title": "Obłazowa Rock 670",
+          "text": "Text"
+        },
+        {
+          "yaw": 2.219953,
+          "pitch": -0.005403,
+          "title": "Cisowa Rock 675",
+          "text": "Text"
+        },
+        {
+          "yaw": 2.317184,
+          "pitch": -0.023066,
+          "title": "Babia Góra 1725",
+          "text": "Text"
+        },
+        {
+          "yaw": -2.816152,
+          "pitch": -0.050031,
+          "title": "Turbacz 1310",
+          "text": "Text"
+        },
+        {
+          "yaw": -1.560195,
+          "pitch": -0.022603,
+          "title": "Lubań 1211",
+          "text": "Text"
+        },
+        {
+          "yaw": 0.71186,
+          "pitch": -0.062623,
+          "title": "Świnica 2301",
+          "text": "Text"
+        },
+        {
+          "yaw": 0.361158,
+          "pitch": -0.062377,
+          "title": "Gerlachovský štít 2655",
+          "text": "Text"
+        },
+        {
+          "yaw": 1.37358,
+          "pitch": -0.031407,
+          "title": "Osobitá 1687",
+          "text": "Text"
+        },
+        {
+          "yaw": -2.565402,
+          "pitch": 0.029035,
+          "title": "Łopuszna",
+          "text": "Text"
+        },
+        {
+          "yaw": -1.595513,
+          "pitch": 0.107766,
+          "title": "Nowa Biala",
+          "text": "Text"
+        },
+        {
+          "yaw": -1.17393,
+          "pitch": 0.047816,
+          "title": "Krempachy",
           "text": "Text"
         }
       ]
