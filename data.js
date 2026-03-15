@@ -130,6 +130,24 @@
           "pitch": -0.053622,
           "title": "Ľadový štít 2628",
           "text": "Text"
+        },
+        {
+          "yaw": -2.410876,
+          "pitch": 0.004414,
+          "title": "Dębno",
+          "text": "Text"
+        },
+        {
+          "yaw": -2.888285,
+          "pitch": -0.058466,
+          "title": "Gorc 1228",
+          "text": "Text"
+        },
+        {
+          "yaw": 0.976026,
+          "pitch": 0.005356,
+          "title": "Gronków",
+          "text": "Text"
         }
       ]
     },
@@ -531,8 +549,8 @@
           "text": "Text"
         },
         {
-          "yaw": 2.985546,
-          "pitch": 0.040541,
+          "yaw": 2.719616,
+          "pitch": 0.040604,
           "title": "Łopuszna",
           "text": "Text"
         },
@@ -564,6 +582,12 @@
           "yaw": 1.608052,
           "pitch": -0.023048,
           "title": "Babia Góra 1725",
+          "text": "Text"
+        },
+        {
+          "yaw": -2.628574,
+          "pitch": 0.037276,
+          "title": "Dębno",
           "text": "Text"
         }
       ]
@@ -697,6 +721,24 @@
           "yaw": -1.17393,
           "pitch": 0.047816,
           "title": "Krempachy",
+          "text": "Text"
+        },
+        {
+          "yaw": 1.473517,
+          "pitch": 0.010453,
+          "title": "Gronków",
+          "text": "Text"
+        },
+        {
+          "yaw": 0.640283,
+          "pitch": -0.000177,
+          "title": "Białka Tatrzańska",
+          "text": "Text"
+        },
+        {
+          "yaw": -1.879981,
+          "pitch": 0.027062,
+          "title": "Dębno",
           "text": "Text"
         }
       ]
