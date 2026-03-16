@@ -87,6 +87,7 @@
   coordsBox.style.borderRadius = '4px';
   coordsBox.style.pointerEvents = 'none';
   coordsBox.style.whiteSpace = 'nowrap';
+  coordsBox.style.display = 'none';
   coordsBox.textContent = 'yaw: --- | pitch: ---';
   document.body.appendChild(coordsBox);
 

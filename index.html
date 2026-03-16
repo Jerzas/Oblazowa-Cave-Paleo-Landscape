@@ -48,7 +48,8 @@
 </a>
 
 <a href="javascript:void(0)" id="hotspots-toggle">
-  <img class="icon" src="img/info.png">
+  <img class="icon on" src="img/eye-open.svg">
+  <img class="icon off" src="img/eye-closed.svg">
 </a>
 
 <a href="javascript:void(0)" id="fullscreenToggle">
@@ -119,8 +120,16 @@ body.fullscreen-enabled.mobile #hotspots-toggle {
   height: 30px;
 }
 
-#hotspots-toggle.hotspots-off {
-  opacity: 0.35;
+#hotspots-toggle .icon.off {
+  display: none;
+}
+
+#hotspots-toggle.hotspots-off .icon.on {
+  display: none;
+}
+
+#hotspots-toggle.hotspots-off .icon.off {
+  display: block;
 }
 
 body.hotspots-hidden .hotspot {
