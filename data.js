@@ -56,6 +56,12 @@
           "pitch": -0.024286,
           "rotation": 0,
           "target": "10-mis-3-41-ka-reindeer"
+        },
+        {
+          "yaw": 0.448589,
+          "pitch": 0.131735,
+          "rotation": 0,
+          "target": "0-mis-3-41-ka-cave-hyenas"
         }
       ],
       "infoHotspots": [
@@ -340,8 +346,8 @@
           "target": "1-lgm-24-ka"
         },
         {
-          "yaw": -0.35933175856993493,
-          "pitch": 0.06934533291325451,
+          "yaw": -0.735374,
+          "pitch": -0.113841,
           "rotation": 0,
           "target": "0-present-day"
         },
@@ -356,6 +362,12 @@
           "pitch": 0.043246,
           "rotation": 0,
           "target": "10-mis-3-41-ka-reindeer"
+        },
+        {
+          "yaw": 0.776473,
+          "pitch": 0.03666,
+          "rotation": 0,
+          "target": "2-mis-3-41-ka-skeleton"
         }
       ],
       "infoHotspots": [
@@ -453,6 +465,271 @@
           "yaw": 0.352669,
           "pitch": -0.022224,
           "title": "Gorc 1228",
+          "text": "Text"
+        }
+      ]
+    },
+    {
+      "id": "0-mis-3-41-ka-cave-hyenas",
+      "name": "MIS 3, 41 ka - Cave hyenas",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        },
+        {
+          "tileSize": 512,
+          "size": 4096
+        }
+      ],
+      "faceSize": 3500,
+      "initialViewParameters": {
+        "yaw": 0.6074817461245807,
+        "pitch": 0.31849268465902547,
+        "fov": 0.8424546516191632
+      },
+      "linkHotspots": [
+        {
+          "yaw": 0.6845280910286373,
+          "pitch": 0.06941695142440629,
+          "rotation": 0,
+          "target": "1-mis-3-41-ka-wild-horeses"
+        },
+        {
+          "yaw": 0.5811947102067734,
+          "pitch": 0.038321012265665644,
+          "rotation": 0,
+          "target": "2-mis-3-41-ka-skeleton"
+        }
+      ],
+      "infoHotspots": [
+        {
+          "yaw": 0.07147885419185229,
+          "pitch": -0.06323572997329485,
+          "title": "Obłazowa Rock 670",
+          "text": "Text"
+        },
+        {
+          "yaw": 0.20529568139849275,
+          "pitch": -0.0483728686428897,
+          "title": "Kramnica Rock 883",
+          "text": "Text"
+        },
+        {
+          "yaw": 0.8396571211323423,
+          "pitch": 0.5053007799644895,
+          "title": "Cave hyena<br><i><b>Crocuta crocuta spelaea</b></i>",
+          "text": "Text"
+        }
+      ]
+    },
+    {
+      "id": "1-mis-3-41-ka-wild-horeses",
+      "name": "MIS 3, 41 ka - Wild horses",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        },
+        {
+          "tileSize": 512,
+          "size": 4096
+        },
+        {
+          "tileSize": 512,
+          "size": 8192
+        }
+      ],
+      "faceSize": 5250,
+      "initialViewParameters": {
+        "yaw": 2.0809625178685405,
+        "pitch": 0.14551692409046169,
+        "fov": 0.631823975762364
+      },
+      "linkHotspots": [
+        {
+          "yaw": -2.712278783041583,
+          "pitch": -0.02351561082064535,
+          "rotation": 0,
+          "target": "0-mis-3-41-ka-cave-hyenas"
+        }
+      ],
+      "infoHotspots": [
+        {
+          "yaw": -0.11583222600846987,
+          "pitch": -0.1080810173526956,
+          "title": "Obłazowa Rock 670",
+          "text": "Text"
+        },
+        {
+          "yaw": 0.19780398075632455,
+          "pitch": -0.05367625197421333,
+          "title": "Kramnica Rock 883",
+          "text": "Text"
+        },
+        {
+          "yaw": 0.029452739181337506,
+          "pitch": 0.07854593349924954,
+          "title": "Obłazowa Rock",
+          "text": "Text"
+        },
+        {
+          "yaw": -1.4018224659571885,
+          "pitch": -0.05798515580871211,
+          "title": "Turbacz 1310",
+          "text": "Text"
+        },
+        {
+          "yaw": -2.330709080194584,
+          "pitch": -0.03757905627677971,
+          "title": "Cisowa Rock 675",
+          "text": "Text"
+        },
+        {
+          "yaw": 1.6334598861551157,
+          "pitch": -0.07690857787420313,
+          "title": "Ľadový štít 2628",
+          "text": "Text"
+        },
+        {
+          "yaw": 1.7763234771316512,
+          "pitch": -0.07112429206742199,
+          "title": "Gerlachovský štít 2655",
+          "text": "Text"
+        },
+        {
+          "yaw": 2.1320211086714105,
+          "pitch": -0.0727793597389983,
+          "title": "Świnica 2301",
+          "text": "Text"
+        },
+        {
+          "yaw": 2.147420921056277,
+          "pitch": 0.21007794398336443,
+          "title": "Wild horse<br><i><b>Equus ferus</b></i>",
+          "text": "Text"
+        },
+        {
+          "yaw": 2.6897490664320234,
+          "pitch": -0.022062529126149144,
+          "title": "Woolly mammoth<br><i><b>Mammuthus primigenius</b></i>",
+          "text": "Text"
+        },
+        {
+          "yaw": 0.6222834890455147,
+          "pitch": 0.03936517867718514,
+          "title": "Białka River",
+          "text": "Text"
+        }
+      ]
+    },
+    {
+      "id": "2-mis-3-41-ka-skeleton",
+      "name": "MIS 3, 41 ka - Skeleton",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        },
+        {
+          "tileSize": 512,
+          "size": 4096
+        }
+      ],
+      "faceSize": 3500,
+      "initialViewParameters": {
+        "yaw": 0.12552510759053348,
+        "pitch": 0.022399219022569028,
+        "fov": 0.6904029014045062
+      },
+      "linkHotspots": [
+        {
+          "yaw": -0.7314753559361407,
+          "pitch": -0.061299248996553146,
+          "rotation": 0,
+          "target": "1-mis-3-41-ka-wild-horeses"
+        }
+      ],
+      "infoHotspots": [
+        {
+          "yaw": 0.16253811999524004,
+          "pitch": -0.1719935414588214,
+          "title": "Obłazowa Rock 670",
+          "text": "Text"
+        },
+        {
+          "yaw": -0.015113592297428369,
+          "pitch": -0.005439914845917215,
+          "title": "Obłazowa Cave",
+          "text": "Text"
+        },
+        {
+          "yaw": 0.5940457490788624,
+          "pitch": -0.015388645531892564,
+          "title": "Okrągła Rock",
+          "text": "Text"
+        },
+        {
+          "yaw": 1.1151072611909623,
+          "pitch": -0.11714444942955282,
+          "title": "Kramnica Rock 883",
+          "text": "Text"
+        },
+        {
+          "yaw": 2.9989101070086885,
+          "pitch": -0.07844763104407448,
+          "title": "Ľadový štít 2628",
+          "text": "Text"
+        },
+        {
+          "yaw": -2.7810452193773223,
+          "pitch": -0.07479840089240852,
+          "title": "Świnica 2301",
+          "text": "Text"
+        },
+        {
+          "yaw": 3.1387508982366805,
+          "pitch": -0.07361012058607486,
+          "title": "Gerlachovský štít 2655",
           "text": "Text"
         }
       ]
@@ -654,6 +931,12 @@
           "pitch": -0.045094,
           "rotation": 0,
           "target": "4-mis-3-41-ka-nowa-biaa"
+        },
+        {
+          "yaw": 0.424432,
+          "pitch": 0.073357,
+          "rotation": 0,
+          "target": "0-mis-3-41-ka-cave-hyenas"
         }
       ],
       "infoHotspots": [
