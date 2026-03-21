@@ -596,7 +596,7 @@
         {
           "yaw": 0.029452739181337506,
           "pitch": 0.07854593349924954,
-          "title": "Obłazowa Rock",
+          "title": "Obłazowa Cave",
           "text": "Text"
         },
         {
