@@ -368,6 +368,12 @@
           "pitch": 0.03666,
           "rotation": 0,
           "target": "2-mis-3-41-ka-skeleton"
+        },
+        {
+          "yaw": -2.823700,
+          "pitch": 0.021985,
+          "rotation": 0,
+          "target": "0-mis-3-41-ka-cave-lions"
         }
       ],
       "infoHotspots": [
@@ -513,6 +519,18 @@
           "pitch": 0.038321012265665644,
           "rotation": 0,
           "target": "2-mis-3-41-ka-skeleton"
+        },
+        {
+          "yaw": 2.028789,
+          "pitch": -0.019259,
+          "rotation": 0,
+          "target": "0-mis-3-41-ka-cave-lions"
+        },
+        {
+          "yaw": 1.004699,
+          "pitch": -0.214272,
+          "rotation": 0,
+          "target": "2-mis-3-41-ka"
         }
       ],
       "infoHotspots": [
@@ -1028,6 +1046,119 @@
           "yaw": -1.879981,
           "pitch": 0.027062,
           "title": "Dębno",
+          "text": "Text"
+        }
+      ]
+    },
+    {
+      "id": "0-mis-3-41-ka-cave-lions",
+      "name": "MIS 3, 41 ka - Cave lions",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        },
+        {
+          "tileSize": 512,
+          "size": 4096
+        },
+        {
+          "tileSize": 512,
+          "size": 8192
+        }
+      ],
+      "faceSize": 5250,
+      "initialViewParameters": {
+        "yaw": 0.6074817461245807,
+        "pitch": 0.31849268465902547,
+        "fov": 0.8424546516191632
+      },
+      "linkHotspots": [
+        {
+          "yaw": -3.058670,
+          "pitch": -0.017062,
+          "rotation": 0,
+          "target": "0-mis-3-41-ka-cave-hyenas"
+        },
+        {
+          "yaw": -2.839740,
+          "pitch": -0.165090,
+          "rotation": 0,
+          "target": "2-mis-3-41-ka"
+        }
+      ],
+      "infoHotspots": [
+        {
+          "yaw": -1.357972,
+          "pitch": 0.009424,
+          "title": "Cave lion<br><i><b>Panthera spelaea</b></i>",
+          "text": "Text"
+        },
+        {
+          "yaw": -2.969756,
+          "pitch": 0.001931,
+          "title": "Obłazowa Rock 670",
+          "text": "Text"
+        },
+        {
+          "yaw": -2.862511,
+          "pitch": -0.003591,
+          "title": "Kramnica Rock 683",
+          "text": "Text"
+        },
+        {
+          "yaw": 2.940457,
+          "pitch": -0.044105,
+          "title": "Turbacz 1310",
+          "text": "Text"
+        },
+        {
+          "yaw": 0.615522,
+          "pitch": -0.091326,
+          "title": "Kotelnica 917",
+          "text": "Text"
+        },
+        {
+          "yaw": 0.124095,
+          "pitch": -0.082246,
+          "title": "Świnica 2301",
+          "text": "Text"
+        },
+        {
+          "yaw": 0.418353,
+          "pitch": -0.074615,
+          "title": "Jankulakowski Wierch 938",
+          "text": "Text"
+        },
+        {
+          "yaw": -0.273787,
+          "pitch": -0.077526,
+          "title": "Gerlachovský štít 2654",
+          "text": "Text"
+        },
+        {
+          "yaw": -0.433349,
+          "pitch": -0.088001,
+          "title": "Ľadový štít 2628",
+          "text": "Text"
+        },
+        {
+          "yaw": -0.603362,
+          "pitch": -0.089853,
+          "title": "Litwinka 902",
           "text": "Text"
         }
       ]
