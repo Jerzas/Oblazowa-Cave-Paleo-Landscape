@@ -249,6 +249,13 @@
   // Dynamic parameters for controls.
   var velocity = 0.7;
   var friction = 3;
+  var keyboardMaxSpeed = 0.06;
+  var keyboardResponse = 7.5;
+  var keyboardInertia = 1.25;
+  var keyboardFovMaxSpeed = 0.038;
+  var keyboardFovResponse = 6.2;
+  var keyboardFovInertia = 1.15;
+  var keyboardResumeDelay = 1200;
 
   // Associate view controls with elements.
   var controls = viewer.controls();
@@ -258,6 +265,185 @@
   controls.registerMethod('rightElement', new Marzipano.ElementPressControlMethod(viewRightElement, 'x', velocity, friction), true);
   controls.registerMethod('inElement', new Marzipano.ElementPressControlMethod(viewInElement, 'zoom', -velocity, friction), true);
   controls.registerMethod('outElement', new Marzipano.ElementPressControlMethod(viewOutElement, 'zoom', velocity, friction), true);
+
+  var keyboardState = {
+    left: false,
+    right: false,
+    up: false,
+    down: false,
+    zoomIn: false,
+    zoomOut: false,
+    yawVelocity: 0,
+    pitchVelocity: 0,
+    fovVelocity: 0,
+    lastFrameTime: null,
+    resumeTimeoutId: null
+  };
+
+  function queueAutorotateResume() {
+    if (keyboardState.resumeTimeoutId) {
+      clearTimeout(keyboardState.resumeTimeoutId);
+    }
+    keyboardState.resumeTimeoutId = window.setTimeout(function() {
+      keyboardState.resumeTimeoutId = null;
+      if (!keyboardState.left && !keyboardState.right && !keyboardState.up && !keyboardState.down && !keyboardState.zoomIn && !keyboardState.zoomOut) {
+        startAutorotate();
+      }
+    }, keyboardResumeDelay);
+  }
+
+  function cancelAutorotateResume() {
+    if (!keyboardState.resumeTimeoutId) {
+      return;
+    }
+    clearTimeout(keyboardState.resumeTimeoutId);
+    keyboardState.resumeTimeoutId = null;
+  }
+
+  function updateKeyboardView(frameTime) {
+    if (keyboardState.lastFrameTime == null) {
+      keyboardState.lastFrameTime = frameTime;
+    }
+
+    var deltaSeconds = (frameTime - keyboardState.lastFrameTime) / 1000;
+    keyboardState.lastFrameTime = frameTime;
+
+    if (deltaSeconds > 0.05) {
+      deltaSeconds = 0.05;
+    }
+
+    var yawDirection = 0;
+    var pitchDirection = 0;
+    var fovDirection = 0;
+
+    if (keyboardState.left) {
+      yawDirection -= 1;
+    }
+    if (keyboardState.right) {
+      yawDirection += 1;
+    }
+    if (keyboardState.up) {
+      pitchDirection -= 1;
+    }
+    if (keyboardState.down) {
+      pitchDirection += 1;
+    }
+    if (keyboardState.zoomIn) {
+      fovDirection -= 1;
+    }
+    if (keyboardState.zoomOut) {
+      fovDirection += 1;
+    }
+
+    var yawTargetVelocity = yawDirection * keyboardMaxSpeed;
+    var pitchTargetVelocity = pitchDirection * keyboardMaxSpeed;
+    var fovTargetVelocity = fovDirection * keyboardFovMaxSpeed;
+
+    var viewBlend = 1 - Math.exp(-(yawDirection !== 0 || pitchDirection !== 0 ? keyboardResponse : keyboardInertia) * deltaSeconds);
+    var fovBlend = 1 - Math.exp(-(fovDirection !== 0 ? keyboardFovResponse : keyboardFovInertia) * deltaSeconds);
+
+    keyboardState.yawVelocity += (yawTargetVelocity - keyboardState.yawVelocity) * viewBlend;
+    keyboardState.pitchVelocity += (pitchTargetVelocity - keyboardState.pitchVelocity) * viewBlend;
+    keyboardState.fovVelocity += (fovTargetVelocity - keyboardState.fovVelocity) * fovBlend;
+
+    if (currentScene && (Math.abs(keyboardState.yawVelocity) > 0.0001 || Math.abs(keyboardState.pitchVelocity) > 0.0001 || Math.abs(keyboardState.fovVelocity) > 0.0001)) {
+      var viewParameters = currentScene.view.parameters();
+      currentScene.view.setParameters({
+        yaw: viewParameters.yaw + keyboardState.yawVelocity * deltaSeconds,
+        pitch: viewParameters.pitch + keyboardState.pitchVelocity * deltaSeconds,
+        fov: viewParameters.fov + keyboardState.fovVelocity * deltaSeconds
+      });
+    }
+
+    window.requestAnimationFrame(updateKeyboardView);
+  }
+
+  function setKeyboardDirection(keyCode, isPressed) {
+    var handled = true;
+    var changed = false;
+
+    switch (keyCode) {
+      case 37:
+        changed = keyboardState.left !== isPressed;
+        keyboardState.left = isPressed;
+        break;
+      case 38:
+        changed = keyboardState.up !== isPressed;
+        keyboardState.up = isPressed;
+        break;
+      case 39:
+        changed = keyboardState.right !== isPressed;
+        keyboardState.right = isPressed;
+        break;
+      case 40:
+        changed = keyboardState.down !== isPressed;
+        keyboardState.down = isPressed;
+        break;
+      case 107:
+      case 187:
+        changed = keyboardState.zoomIn !== isPressed;
+        keyboardState.zoomIn = isPressed;
+        break;
+      case 109:
+      case 173:
+      case 189:
+        changed = keyboardState.zoomOut !== isPressed;
+        keyboardState.zoomOut = isPressed;
+        break;
+      default:
+        handled = false;
+        break;
+    }
+
+    if (!handled) {
+      return false;
+    }
+
+    if (!changed) {
+      return true;
+    }
+
+    if (isPressed) {
+      cancelAutorotateResume();
+      stopAutorotate();
+    } else {
+      queueAutorotateResume();
+    }
+
+    return true;
+  }
+
+  window.addEventListener('keydown', function(event) {
+    if (event.repeat) {
+      if (event.keyCode >= 37 && event.keyCode <= 40 || event.keyCode === 107 || event.keyCode === 109 || event.keyCode === 173 || event.keyCode === 187 || event.keyCode === 189) {
+        event.preventDefault();
+      }
+      return;
+    }
+    if (!setKeyboardDirection(event.keyCode, true)) {
+      return;
+    }
+    event.preventDefault();
+  });
+
+  window.addEventListener('keyup', function(event) {
+    if (!setKeyboardDirection(event.keyCode, false)) {
+      return;
+    }
+    event.preventDefault();
+  });
+
+  window.addEventListener('blur', function() {
+    keyboardState.left = false;
+    keyboardState.right = false;
+    keyboardState.up = false;
+    keyboardState.down = false;
+    keyboardState.zoomIn = false;
+    keyboardState.zoomOut = false;
+    queueAutorotateResume();
+  });
+
+  window.requestAnimationFrame(updateKeyboardView);
 
   function sanitize(s) {
     return s.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;');

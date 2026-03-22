@@ -1082,9 +1082,9 @@
       ],
       "faceSize": 5250,
       "initialViewParameters": {
-        "yaw": 0.6074817461245807,
-        "pitch": 0.31849268465902547,
-        "fov": 0.8424546516191632
+        "yaw": -1.363568,
+        "pitch": 0.047241,
+        "fov": 0.55
       },
       "linkHotspots": [
         {
