@@ -535,15 +535,63 @@
       ],
       "infoHotspots": [
         {
-          "yaw": 0.07147885419185229,
-          "pitch": -0.06323572997329485,
-          "title": "Obłazowa Rock 670",
+          "yaw": -1.396849,
+          "pitch": -0.060497,
+          "title": "Turbacz 1310",
           "text": "Text"
         },
         {
-          "yaw": 0.20529568139849275,
-          "pitch": -0.0483728686428897,
-          "title": "Kramnica Rock 883",
+          "yaw": -2.317085,
+          "pitch": -0.032484,
+          "title": "Cisowa Skała 675",
+          "text": "Text"
+        },
+        {
+          "yaw": -2.542745,
+          "pitch": -0.031847,
+          "title": "Babia Góra 1725",
+          "text": "Text"
+        },
+        {
+          "yaw": 1.630718,
+          "pitch": -0.079454,
+          "title": "Ľadový štít 2628",
+          "text": "Text"
+        },
+        {
+          "yaw": 2.125810,
+          "pitch": -0.077421,
+          "title": "Świnica 2301",
+          "text": "Text"
+        },
+        {
+          "yaw": 2.388240,
+          "pitch": -0.063271,
+          "title": "Czerwone Wierchy 2122",
+          "text": "Text"
+        },
+        {
+          "yaw": 2.059933,
+          "pitch": -0.023567,
+          "title": "Białka Tatrzańska",
+          "text": "Text"
+        },
+        {
+          "yaw": -0.446188,
+          "pitch": 0.029384,
+          "title": "Nowa Biała",
+          "text": "Text"
+        },
+        {
+          "yaw": 0.216072,
+          "pitch": 0.081055,
+          "title": "Obłazowa Cave",
+          "text": "Text"
+        },
+        {
+          "yaw": 0.391344,
+          "pitch": -0.028335,
+          "title": "Żar 883",
           "text": "Text"
         },
         {
