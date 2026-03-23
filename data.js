@@ -370,12 +370,6 @@
           "target": "10-mis-3-41-ka-reindeer"
         },
         {
-          "yaw": 0.776473,
-          "pitch": 0.03666,
-          "rotation": 0,
-          "target": "2-mis-3-41-ka-skeleton"
-        },
-        {
           "yaw": -2.823700,
           "pitch": 0.021985,
           "rotation": 0,
@@ -453,6 +447,18 @@
           "yaw": -2.804829,
           "pitch": 0.02245,
           "title": "Białka Tatrzańska",
+          "text": "Text"
+        },
+        {
+          "yaw": -1.177396,
+          "pitch": 0.015370,
+          "title": "Nowy Targ",
+          "text": "Text"
+        },
+        {
+          "yaw": 0.750760,
+          "pitch": 0.038093,
+          "title": "Dębno",
           "text": "Text"
         },
         {
@@ -851,6 +857,12 @@
           "pitch": -0.07361012058607486,
           "title": "Gerlachovský štít 2654",
           "text": "Text"
+        },
+        {
+          "yaw": 1.883681,
+          "pitch": 0.009089,
+          "title": "Nowy Targ",
+          "text": "Text"
         }
       ]
     },
@@ -991,6 +1003,12 @@
           "yaw": -2.628574,
           "pitch": 0.037276,
           "title": "Dębno",
+          "text": "Text"
+        },
+        {
+          "yaw": 1.874865,
+          "pitch": 0.010968,
+          "title": "Nowy Targ",
           "text": "Text"
         }
       ]
@@ -1154,6 +1172,12 @@
           "yaw": -1.879981,
           "pitch": 0.027062,
           "title": "Dębno",
+          "text": "Text"
+        },
+        {
+          "yaw": 2.573769,
+          "pitch": 0.005990,
+          "title": "Nowy Targ",
           "text": "Text"
         }
       ]
