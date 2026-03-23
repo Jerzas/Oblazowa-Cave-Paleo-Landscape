@@ -32,6 +32,7 @@
   var aboutToggleElement = document.querySelector('#aboutToggle');
   var aboutPanelElement = document.querySelector('#aboutPanel');
   var aboutCloseElement = document.querySelector('#aboutClose');
+  var aboutPanelContentElement = document.querySelector('#aboutPanelContent');
 
   // Detect desktop or mobile mode.
   if (window.matchMedia) {
@@ -514,10 +515,115 @@
     sceneListToggleElement.classList.toggle('enabled');
   }
 
+  function escapeHtml(text) {
+    return text
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
+  function formatInlineMarkdown(text) {
+    var escaped = escapeHtml(text);
+    escaped = escaped.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+    escaped = escaped.replace(/\*(.+?)\*/g, '<em>$1</em>');
+    escaped = escaped.replace(/`([^`]+)`/g, '<code>$1</code>');
+    escaped = escaped.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
+    return escaped;
+  }
+
+  function renderSimpleMarkdown(markdownText) {
+    var lines = markdownText.replace(/\r/g, '').split('\n');
+    var htmlParts = [];
+    var paragraphLines = [];
+    var inList = false;
+
+    function closeParagraph() {
+      if (!paragraphLines.length) {
+        return;
+      }
+      htmlParts.push('<p>' + formatInlineMarkdown(paragraphLines.join(' ')) + '</p>');
+      paragraphLines = [];
+    }
+
+    function closeList() {
+      if (!inList) {
+        return;
+      }
+      htmlParts.push('</ul>');
+      inList = false;
+    }
+
+    lines.forEach(function(line) {
+      var trimmed = line.trim();
+
+      if (!trimmed) {
+        closeParagraph();
+        closeList();
+        return;
+      }
+
+      var headingMatch = /^(#{1,4})\s+(.*)$/.exec(trimmed);
+      if (headingMatch) {
+        closeParagraph();
+        closeList();
+        var level = headingMatch[1].length;
+        htmlParts.push('<h' + level + '>' + formatInlineMarkdown(headingMatch[2]) + '</h' + level + '>');
+        return;
+      }
+
+      var listMatch = /^[-*]\s+(.*)$/.exec(trimmed);
+      if (listMatch) {
+        closeParagraph();
+        if (!inList) {
+          htmlParts.push('<ul>');
+          inList = true;
+        }
+        htmlParts.push('<li>' + formatInlineMarkdown(listMatch[1]) + '</li>');
+        return;
+      }
+
+      closeList();
+      paragraphLines.push(trimmed);
+    });
+
+    closeParagraph();
+    closeList();
+    return htmlParts.join('');
+  }
+
+  function loadAboutFromReadme() {
+    if (!aboutPanelContentElement || !window.fetch) {
+      return;
+    }
+
+    aboutPanelContentElement.innerHTML = '<p>Loading README...</p>';
+
+    fetch('README.md?ts=' + Date.now(), { cache: 'no-store' })
+      .then(function(response) {
+        if (!response.ok) {
+          throw new Error('README request failed');
+        }
+        return response.text();
+      })
+      .then(function(readmeText) {
+        var contentHtml = renderSimpleMarkdown(readmeText);
+        contentHtml += '<p><a href="README.md" target="_blank" rel="noopener">Open README.md</a></p>';
+        aboutPanelContentElement.innerHTML = contentHtml;
+      })
+      .catch(function() {
+        aboutPanelContentElement.innerHTML =
+          '<p>Could not load README automatically.</p>' +
+          '<p><a href="README.md" target="_blank" rel="noopener">Open README.md</a></p>';
+      });
+  }
+
   function showAboutPanel() {
     if (!aboutPanelElement) {
       return;
     }
+    loadAboutFromReadme();
     stopAutorotate();
     aboutPanelElement.classList.add('enabled');
     aboutPanelElement.setAttribute('aria-hidden', 'false');

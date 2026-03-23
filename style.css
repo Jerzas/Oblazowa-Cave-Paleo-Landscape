@@ -348,8 +348,44 @@ body.fullscreen-enabled.mobile #aboutToggle {
   color: #fff;
 }
 
+#aboutPanelContent h1,
+#aboutPanelContent h2,
+#aboutPanelContent h4 {
+  margin: 16px 0 10px;
+  line-height: 1.3;
+  color: #fff;
+}
+
+#aboutPanelContent h1 {
+  font-size: 24px;
+}
+
+#aboutPanelContent h2 {
+  font-size: 21px;
+}
+
+#aboutPanelContent h4 {
+  font-size: 18px;
+}
+
 #aboutPanelContent p {
   margin: 0 0 12px;
+}
+
+#aboutPanelContent ul {
+  margin: 0 0 14px 20px;
+  list-style: disc;
+}
+
+#aboutPanelContent li {
+  margin: 0 0 6px;
+}
+
+#aboutPanelContent code {
+  font-family: Consolas, Menlo, Monaco, monospace;
+  background: rgba(255,255,255,0.12);
+  padding: 1px 4px;
+  border-radius: 3px;
 }
 
 #aboutPanelContent a {
