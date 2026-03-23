@@ -531,6 +531,18 @@
           "pitch": -0.214272,
           "rotation": 0,
           "target": "2-mis-3-41-ka"
+        },
+        {
+          "yaw": -1.204995,
+          "pitch": -0.121298,
+          "rotation": 0,
+          "target": "10-mis-3-41-ka-reindeer"
+        },
+        {
+          "yaw": -0.553176,
+          "pitch": -0.070988,
+          "rotation": 0,
+          "target": "4-mis-3-41-ka-nowa-biaa"
         }
       ],
       "infoHotspots": [
@@ -574,12 +586,6 @@
           "yaw": 2.059933,
           "pitch": -0.023567,
           "title": "Białka Tatrzańska",
-          "text": "Text"
-        },
-        {
-          "yaw": -0.446188,
-          "pitch": 0.029384,
-          "title": "Nowa Biała",
           "text": "Text"
         },
         {
@@ -640,10 +646,28 @@
       },
       "linkHotspots": [
         {
-          "yaw": -2.712278783041583,
-          "pitch": -0.02351561082064535,
+          "yaw": -2.717879,
+          "pitch": -0.124510,
           "rotation": 0,
           "target": "0-mis-3-41-ka-cave-hyenas"
+        },
+        {
+          "yaw": 0.889638,
+          "pitch": 0.030044,
+          "rotation": 0,
+          "target": "2-mis-3-41-ka-skeleton"
+        },
+        {
+          "yaw": 1.440143,
+          "pitch": -0.261115,
+          "rotation": 0,
+          "target": "2-mis-3-41-ka"
+        },
+        {
+          "yaw": -0.862735,
+          "pitch": -0.228630,
+          "rotation": 0,
+          "target": "0-present-day"
         }
       ],
       "infoHotspots": [
