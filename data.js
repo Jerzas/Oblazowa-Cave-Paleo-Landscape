@@ -62,6 +62,12 @@
           "pitch": 0.131735,
           "rotation": 0,
           "target": "0-mis-3-41-ka-cave-hyenas"
+        },
+        {
+          "yaw": 0.367415,
+          "pitch": -0.006000,
+          "rotation": 0,
+          "target": "1-mis-3-41-ka-kotelnica"
         }
       ],
       "infoHotspots": [
@@ -299,7 +305,7 @@
         {
           "yaw": -0.2621,
           "pitch": -0.069831,
-          "title": "Gerlachovský štít 2655",
+          "title": "Gerlachovský štít 2654",
           "text": "Text"
         },
         {
@@ -374,6 +380,24 @@
           "pitch": 0.021985,
           "rotation": 0,
           "target": "0-mis-3-41-ka-cave-lions"
+        },
+        {
+          "yaw": -2.558434,
+          "pitch": -0.016373,
+          "rotation": 0,
+          "target": "1-mis-3-41-ka-kotelnica"
+        },
+        {
+          "yaw": -0.449802,
+          "pitch": 0.527356,
+          "rotation": 0,
+          "target": "2-mis-3-41-ka-skeleton"
+        },
+        {
+          "yaw": -0.773578,
+          "pitch": 0.230935,
+          "rotation": 0,
+          "target": "1-mis-3-41-ka-wild-horeses"
         }
       ],
       "infoHotspots": [
@@ -416,7 +440,7 @@
         {
           "yaw": 2.94974,
           "pitch": -0.064082,
-          "title": "Gerlachovský štít 2655",
+          "title": "Gerlachovský štít 2654",
           "text": "Text"
         },
         {
@@ -668,6 +692,12 @@
           "pitch": -0.228630,
           "rotation": 0,
           "target": "0-present-day"
+        },
+        {
+          "yaw": 2.426209,
+          "pitch": -0.038847,
+          "rotation": 0,
+          "target": "1-mis-3-41-ka-kotelnica"
         }
       ],
       "infoHotspots": [
@@ -710,7 +740,7 @@
         {
           "yaw": 1.7763234771316512,
           "pitch": -0.07112429206742199,
-          "title": "Gerlachovský štít 2655",
+          "title": "Gerlachovský štít 2654",
           "text": "Text"
         },
         {
@@ -819,7 +849,7 @@
         {
           "yaw": 3.1387508982366805,
           "pitch": -0.07361012058607486,
-          "title": "Gerlachovský štít 2655",
+          "title": "Gerlachovský štít 2654",
           "text": "Text"
         }
       ]
@@ -1027,6 +1057,12 @@
           "pitch": 0.073357,
           "rotation": 0,
           "target": "0-mis-3-41-ka-cave-hyenas"
+        },
+        {
+          "yaw": 0.915312,
+          "pitch": -0.030897,
+          "rotation": 0,
+          "target": "1-mis-3-41-ka-kotelnica"
         }
       ],
       "infoHotspots": [
@@ -1075,7 +1111,7 @@
         {
           "yaw": 0.361158,
           "pitch": -0.062377,
-          "title": "Gerlachovský štít 2655",
+          "title": "Gerlachovský štít 2654",
           "text": "Text"
         },
         {
@@ -1118,6 +1154,139 @@
           "yaw": -1.879981,
           "pitch": 0.027062,
           "title": "Dębno",
+          "text": "Text"
+        }
+      ]
+    },
+    {
+      "id": "1-mis-3-41-ka-kotelnica",
+      "name": "MIS 3, 41 ka - Kotelnica",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        },
+        {
+          "tileSize": 512,
+          "size": 4096
+        }
+      ],
+      "faceSize": 3500,
+      "initialViewParameters": {
+        "yaw": 0,
+        "pitch": 0,
+        "fov": 1.2
+      },
+      "linkHotspots": [
+        {
+          "yaw": 0.459405,
+          "pitch": 0.092292,
+          "rotation": 0,
+          "target": "0-mis-3-41-ka-cave-lions"
+        },
+        {
+          "yaw": -0.219142,
+          "pitch": 0.015139,
+          "rotation": 0,
+          "target": "2-mis-3-41-ka"
+        },
+        {
+          "yaw": -0.466256,
+          "pitch": 0.007381,
+          "rotation": 0,
+          "target": "10-mis-3-41-ka-reindeer"
+        }
+      ],
+      "infoHotspots": [
+        {
+          "yaw": -0.867744,
+          "pitch": -0.033750,
+          "title": "Turbacz 1310",
+          "text": "Text"
+        },
+        {
+          "yaw": 0.052716,
+          "pitch": -0.019414,
+          "title": "Lubań 1211",
+          "text": "Text"
+        },
+        {
+          "yaw": -0.352434,
+          "pitch": 0.027144,
+          "title": "Obłazowa Rock 670",
+          "text": "Text"
+        },
+        {
+          "yaw": 0.290980,
+          "pitch": -0.004642,
+          "title": "Żar 883",
+          "text": "Text"
+        },
+        {
+          "yaw": 0.938332,
+          "pitch": -0.023793,
+          "title": "Litwinka 902",
+          "text": "Text"
+        },
+        {
+          "yaw": 1.682862,
+          "pitch": -0.074778,
+          "title": "Havran 2152",
+          "text": "Text"
+        },
+        {
+          "yaw": 1.835415,
+          "pitch": -0.081945,
+          "title": "Ľadový štít 2628",
+          "text": "Text"
+        },
+        {
+          "yaw": 2.013186,
+          "pitch": -0.074609,
+          "title": "Gerlachovský štít 2654",
+          "text": "Text"
+        },
+        {
+          "yaw": 2.472570,
+          "pitch": -0.147110,
+          "title": "Kotelnica 917",
+          "text": "Text"
+        },
+        {
+          "yaw": -0.708130,
+          "pitch": 0.023569,
+          "title": "Cisowa Rock 675",
+          "text": "Text"
+        },
+        {
+          "yaw": -0.422432,
+          "pitch": -0.018695,
+          "title": "Gorc 1228",
+          "text": "Text"
+        },
+        {
+          "yaw": 0.849171,
+          "pitch": 0.080225,
+          "title": "Białka Tatrzańska",
+          "text": "Text"
+        },
+        {
+          "yaw": -1.160694,
+          "pitch": 0.019830,
+          "title": "Nowy Targ",
           "text": "Text"
         }
       ]
@@ -1170,6 +1339,12 @@
           "pitch": -0.165090,
           "rotation": 0,
           "target": "2-mis-3-41-ka"
+        },
+        {
+          "yaw": 0.798275,
+          "pitch": -0.072962,
+          "rotation": 0,
+          "target": "1-mis-3-41-ka-kotelnica"
         }
       ],
       "infoHotspots": [
