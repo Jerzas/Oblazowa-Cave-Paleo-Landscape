@@ -29,6 +29,9 @@
   var sceneListToggleElement = document.querySelector('#sceneListToggle');
   var autorotateToggleElement = document.querySelector('#autorotateToggle');
   var fullscreenToggleElement = document.querySelector('#fullscreenToggle');
+  var aboutToggleElement = document.querySelector('#aboutToggle');
+  var aboutPanelElement = document.querySelector('#aboutPanel');
+  var aboutCloseElement = document.querySelector('#aboutClose');
 
   // Detect desktop or mobile mode.
   if (window.matchMedia) {
@@ -221,6 +224,28 @@
 
   // Set handler for scene list toggle.
   sceneListToggleElement.addEventListener('click', toggleSceneList);
+
+  if (aboutToggleElement && aboutPanelElement && aboutCloseElement) {
+    aboutToggleElement.addEventListener('click', function() {
+      showAboutPanel();
+    });
+
+    aboutCloseElement.addEventListener('click', function() {
+      hideAboutPanel();
+    });
+
+    aboutPanelElement.addEventListener('click', function(event) {
+      if (event.target === aboutPanelElement) {
+        hideAboutPanel();
+      }
+    });
+
+    window.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape' && aboutPanelElement.classList.contains('enabled')) {
+        hideAboutPanel();
+      }
+    });
+  }
 
   // Start with the scene list open on desktop.
   if (!document.body.classList.contains('mobile')) {
@@ -487,6 +512,24 @@
   function toggleSceneList() {
     sceneListElement.classList.toggle('enabled');
     sceneListToggleElement.classList.toggle('enabled');
+  }
+
+  function showAboutPanel() {
+    if (!aboutPanelElement) {
+      return;
+    }
+    stopAutorotate();
+    aboutPanelElement.classList.add('enabled');
+    aboutPanelElement.setAttribute('aria-hidden', 'false');
+  }
+
+  function hideAboutPanel() {
+    if (!aboutPanelElement) {
+      return;
+    }
+    aboutPanelElement.classList.remove('enabled');
+    aboutPanelElement.setAttribute('aria-hidden', 'true');
+    startAutorotate();
   }
 
   function startAutorotate() {
