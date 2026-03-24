@@ -573,6 +573,12 @@
           "pitch": -0.070988,
           "rotation": 0,
           "target": "4-mis-3-41-ka-nowa-biaa"
+        },
+        {
+          "yaw": 2.410089,
+          "pitch": -0.041517,
+          "rotation": 0,
+          "target": "1-mis-3-41-ka-kotelnica"
         }
       ],
       "infoHotspots": [
@@ -856,12 +862,6 @@
           "yaw": 3.1387508982366805,
           "pitch": -0.07361012058607486,
           "title": "Gerlachovský štít 2654",
-          "text": "Text"
-        },
-        {
-          "yaw": 1.883681,
-          "pitch": 0.009089,
-          "title": "Nowy Targ",
           "text": "Text"
         }
       ]
