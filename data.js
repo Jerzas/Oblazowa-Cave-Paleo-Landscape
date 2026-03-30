@@ -221,6 +221,12 @@
           "pitch": -0.006616,
           "rotation": 0,
           "target": "4-mis-3-41-ka-nowa-biaa"
+        },
+        {
+          "yaw": 0.734387,
+          "pitch": -0.016908,
+          "rotation": 0,
+          "target": "0-lgm-24-ka-woolly-mammoths"
         }
       ],
       "infoHotspots": [
@@ -579,6 +585,12 @@
           "pitch": -0.041517,
           "rotation": 0,
           "target": "1-mis-3-41-ka-kotelnica"
+        },
+        {
+          "yaw": 2.915588,
+          "pitch": -0.067833,
+          "rotation": 0,
+          "target": "0-lgm-24-ka-woolly-mammoths"
         }
       ],
       "infoHotspots": [
@@ -710,6 +722,12 @@
           "pitch": -0.038847,
           "rotation": 0,
           "target": "1-mis-3-41-ka-kotelnica"
+        },
+        {
+          "yaw": 2.916140,
+          "pitch": -0.094278,
+          "rotation": 0,
+          "target": "0-lgm-24-ka-woolly-mammoths"
         }
       ],
       "infoHotspots": [
@@ -1081,6 +1099,12 @@
           "pitch": -0.030897,
           "rotation": 0,
           "target": "1-mis-3-41-ka-kotelnica"
+        },
+        {
+          "yaw": 1.088140,
+          "pitch": -0.010588,
+          "rotation": 0,
+          "target": "0-lgm-24-ka-woolly-mammoths"
         }
       ],
       "infoHotspots": [
@@ -1369,6 +1393,12 @@
           "pitch": -0.072962,
           "rotation": 0,
           "target": "1-mis-3-41-ka-kotelnica"
+        },
+        {
+          "yaw": 2.267772,
+          "pitch": -0.070369,
+          "rotation": 0,
+          "target": "0-lgm-24-ka-woolly-mammoths"
         }
       ],
       "infoHotspots": [
@@ -1430,6 +1460,151 @@
           "yaw": -0.603362,
           "pitch": -0.089853,
           "title": "Litwinka 902",
+          "text": "Text"
+        }
+      ]
+    },
+    {
+      "id": "0-lgm-24-ka-woolly-mammoths",
+      "name": "LGM, 24 ka - Woolly mammoths",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        },
+        {
+          "tileSize": 512,
+          "size": 4096
+        }
+      ],
+      "faceSize": 4096,
+      "initialViewParameters": {
+        "yaw": 0,
+        "pitch": 0,
+        "fov": 1.5707963267948966
+      },
+      "linkHotspots": [
+        {
+          "yaw": -0.110848,
+          "pitch": 0.029935,
+          "rotation": 0,
+          "target": "1-mis-3-41-ka-wild-horeses"
+        },
+        {
+          "yaw": -1.123019,
+          "pitch": -0.114140,
+          "rotation": 0,
+          "target": "10-mis-3-41-ka-reindeer"
+        },
+        {
+          "yaw": 1.794708,
+          "pitch": -0.002535,
+          "rotation": 0,
+          "target": "0-mis-3-41-ka-cave-lions"
+        },
+        {
+          "yaw": -0.149500,
+          "pitch": -0.051735,
+          "rotation": 0,
+          "target": "1-lgm-24-ka"
+        },
+        {
+          "yaw": 2.452014,
+          "pitch": -0.046167,
+          "rotation": 0,
+          "target": "1-mis-3-41-ka-kotelnica"
+        },
+        {
+          "yaw": -0.364211,
+          "pitch": -0.062300,
+          "rotation": 0,
+          "target": "0-present-day"
+        },
+        {
+          "yaw": 0.890397,
+          "pitch": -0.236620,
+          "rotation": 0,
+          "target": "2-mis-3-41-ka"
+        }
+      ],
+      "infoHotspots": [
+        {
+          "yaw": 0.007984102025384132,
+          "pitch": -0.05733596377095829,
+          "title": "Obłazowa Rock 670",
+          "text": "Text"
+        },
+        {
+          "yaw": 0.18678414620483963,
+          "pitch": -0.056893715606891604,
+          "title": "Kramnica Rock 683",
+          "text": "Text"
+        },
+        {
+          "yaw": -1.3475809670973096,
+          "pitch": -0.05608609219138572,
+          "title": "Turbacz 1310",
+          "text": "Text"
+        },
+        {
+          "yaw": -2.501716732723354,
+          "pitch": -0.031020756334841693,
+          "title": "Babia Góra 1725",
+          "text": "Text"
+        },
+        {
+          "yaw": 2.164239070386679,
+          "pitch": -0.07307116059296526,
+          "title": "Świnica 2301",
+          "text": "Text"
+        },
+        {
+          "yaw": 1.8085908476530843,
+          "pitch": -0.07288105122592903,
+          "title": "Gerlachovský štít 2654",
+          "text": "Text"
+        },
+        {
+          "yaw": 1.6656206233053208,
+          "pitch": -0.07812754194599592,
+          "title": "Ľadový štít 2628",
+          "text": "Text"
+        },
+        {
+          "yaw": -2.2191917990227203,
+          "pitch": -0.03390918722790026,
+          "title": "Cisowa Rock 685",
+          "text": "Text"
+        },
+        {
+          "yaw": 0.07578317498973774,
+          "pitch": 0.04049387111474445,
+          "title": "Obłazowa Cave",
+          "text": "Text"
+        },
+        {
+          "yaw": 1.475409850155529,
+          "pitch": 0.023410997415822976,
+          "title": "Białka River",
+          "text": "Text"
+        },
+        {
+          "yaw": 1.9448747515040603,
+          "pitch": -0.0066724942514042596,
+          "title": "Białka Tatrzańska",
           "text": "Text"
         }
       ]
