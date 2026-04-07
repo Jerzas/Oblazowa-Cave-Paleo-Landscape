@@ -43,7 +43,7 @@
             "yaw": -2.071344,
             "pitch": 0.046085,
           "rotation": 0,
-          "target": "1-lgm-24-ka"
+          "target": "1-lgm-24-ka-n-of-biaka-gorge"
         },
         {
             "yaw": -2.581361,
@@ -170,8 +170,8 @@
       ]
     },
     {
-      "id": "1-lgm-24-ka",
-      "name": "LGM, 24 ka",
+      "id": "1-lgm-24-ka-n-of-biaka-gorge",
+      "name": "LGM, 24 ka - N of Białka Gorge",
       "levels": [
         {
           "tileSize": 256,
@@ -202,31 +202,50 @@
           "yaw": -0.124555,
           "pitch": -0.009259,
           "rotation": 0,
-          "target": "2-mis-3-41-ka"
+          "target": "2-mis-3-41-ka",
+          "distanceM": null
         },
         {
-          "yaw": 1.237484,
-          "pitch": 0.090396,
+          "yaw": -0.295024,
+          "pitch": 0.168513,
           "rotation": 0,
-          "target": "0-present-day"
+          "target": "0-present-day",
+          "distanceM": 206.31
         },
         {
           "yaw": 1.919342,
           "pitch": -0.001901,
           "rotation": 0,
-          "target": "10-mis-3-41-ka-reindeer"
+          "target": "10-mis-3-41-ka-reindeer",
+          "distanceM": null
         },
         {
           "yaw": -2.78358,
           "pitch": -0.006616,
           "rotation": 0,
-          "target": "4-mis-3-41-ka-nowa-biaa"
+          "target": "4-mis-3-41-ka-nowa-biaa",
+          "distanceM": null
         },
         {
-          "yaw": 0.734387,
-          "pitch": -0.016908,
+          "yaw": 0.909480013,
+          "pitch": 0.063832158,
           "rotation": 0,
-          "target": "0-lgm-24-ka-woolly-mammoths"
+          "target": "0-lgm-24-ka-woolly-mammoths",
+          "distanceM": 666
+        },
+        {
+          "yaw": -0.203968898,
+          "pitch": -0.078079517,
+          "rotation": 0,
+          "target": "1-lgm-24-ka-litwinka",
+          "distanceM": 5800
+        },
+        {
+          "yaw": -0.100177311,
+          "pitch": -0.033358281,
+          "rotation": 0,
+          "target": "0-lgm-24-ka-s-of-biaka-gorge",
+          "distanceM": 1150
         }
       ],
       "infoHotspots": [
@@ -323,6 +342,241 @@
       ]
     },
     {
+      "id": "1-lgm-24-ka-litwinka",
+      "name": "LGM, 24 ka - Litwinka",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        },
+        {
+          "tileSize": 512,
+          "size": 4096
+        }
+      ],
+      "faceSize": 4096,
+      "initialViewParameters": {
+        "yaw": 0,
+        "pitch": 0,
+        "fov": 1.5707963267948966
+      },
+      "linkHotspots": [
+        {
+          "yaw": 2.996615884,
+          "pitch": 0.078079517,
+          "rotation": 0,
+          "target": "1-lgm-24-ka-n-of-biaka-gorge",
+          "distanceM": 5787.151312
+        },
+        {
+          "yaw": 2.88809693,
+          "pitch": 0.089425327,
+          "rotation": 0,
+          "target": "0-lgm-24-ka-woolly-mammoths",
+          "distanceM": 5530.4119
+        },
+        {
+          "yaw": 2.97071617,
+          "pitch": 0.089085695,
+          "rotation": 0,
+          "target": "0-lgm-24-ka-s-of-biaka-gorge",
+          "distanceM": 4640.392405
+        }
+      ],
+      "infoHotspots": [
+        {
+          "yaw": -0.613628,
+          "pitch": 0.644988,
+          "title": "Litwinka 903",
+          "text": "Text"
+        },
+        {
+          "yaw": -0.336511,
+          "pitch": 0.129654,
+          "title": "Jurgów",
+          "text": "Text"
+        },
+        {
+          "yaw": -0.526396,
+          "pitch": -0.065137,
+          "title": "Havran 2152",
+          "text": "Text"
+        },
+        {
+          "yaw": -0.386846,
+          "pitch": -0.076614,
+          "title": "Ľadový štít 2628",
+          "text": "Text"
+        },
+        {
+          "yaw": -0.211774,
+          "pitch": -0.065591,
+          "title": "Gerlachovský štít 2654",
+          "text": "Text"
+        },
+        {
+          "yaw": -0.070870,
+          "pitch": -0.063125,
+          "title": "Rysy 2503",
+          "text": "Text"
+        },
+        {
+          "yaw": 0.240938,
+          "pitch": -0.064500,
+          "title": "Świnica 2301",
+          "text": "Text"
+        },
+        {
+          "yaw": 0.362964,
+          "pitch": -0.050735,
+          "title": "Kasprowy Wierch 1985",
+          "text": "Text"
+        },
+        {
+          "yaw": 0.560042,
+          "pitch": -0.052142,
+          "title": "Czerwone Wierchy 2122",
+          "text": "Text"
+        },
+        {
+          "yaw": -1.938337,
+          "pitch": 0.010167,
+          "title": "Trzy Korony 982",
+          "text": "Text"
+        },
+        {
+          "yaw": -2.423883,
+          "pitch": -0.001307,
+          "title": "Lubań 1211",
+          "text": "Text"
+        },
+        {
+          "yaw": -2.907529,
+          "pitch": -0.003545,
+          "title": "Gorc 1228",
+          "text": "Text"
+        },
+        {
+          "yaw": 2.898534,
+          "pitch": -0.014015,
+          "title": "Turbacz 1310",
+          "text": "Text"
+        },
+        {
+          "yaw": 2.960978,
+          "pitch": 0.081845,
+          "title": "Obłazowa Rock 870",
+          "text": "Text"
+        },
+        {
+          "yaw": -2.773076,
+          "pitch": 0.059537,
+          "title": "Dębno",
+          "text": "Text"
+        },
+        {
+          "yaw": 3.099931,
+          "pitch": 0.079505,
+          "title": "Nowa Biała",
+          "text": "Text"
+        },
+        {
+          "yaw": 1.154312,
+          "pitch": 0.450956,
+          "title": "Białka Tatrzańska",
+          "text": "Text"
+        },
+        {
+          "yaw": 2.345905,
+          "pitch": 0.042576,
+          "title": "Nowy Targ",
+          "text": "Text"
+        },
+        {
+          "yaw": 1.856823,
+          "pitch": -0.019590,
+          "title": "Babia Góra 1725",
+          "text": "Text"
+        },
+        {
+          "yaw": 0.957496,
+          "pitch": -0.025192,
+          "title": "Osobitá 1687",
+          "text": "Text"
+        }
+      ]
+    },
+    {
+      "id": "0-lgm-24-ka-s-of-biaka-gorge",
+      "name": "LGM, 24 ka - S of Białka Gorge",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        },
+        {
+          "tileSize": 512,
+          "size": 4096
+        }
+      ],
+      "faceSize": 4096,
+      "initialViewParameters": {
+        "yaw": 0,
+        "pitch": 0,
+        "fov": 1.5707963267948966
+      },
+        "linkHotspots": [
+          {
+            "yaw": -0.140159313,
+            "pitch": 0.033358281,
+            "rotation": 0,
+            "target": "1-lgm-24-ka-n-of-biaka-gorge",
+            "distanceM": 1155.9394
+          },
+          {
+            "yaw": -0.752502034,
+            "pitch": 0.082569429,
+            "rotation": 0,
+            "target": "0-lgm-24-ka-woolly-mammoths",
+            "distanceM": 982.7629251
+          },
+          {
+            "yaw": 2.871742038,
+            "pitch": -0.089085695,
+            "rotation": 0,
+            "target": "1-lgm-24-ka-litwinka",
+            "distanceM": 4640.392405
+          }
+        ],
+      "infoHotspots": []
+    },
+    {
       "id": "2-mis-3-41-ka",
       "name": "MIS 3, 41 ka",
       "levels": [
@@ -355,7 +609,7 @@
           "yaw": 0.14382880575409196,
           "pitch": 0.09113931336189296,
           "rotation": 0,
-          "target": "1-lgm-24-ka"
+          "target": "1-lgm-24-ka-n-of-biaka-gorge"
         },
         {
           "yaw": -0.735374,
@@ -923,7 +1177,7 @@
           "yaw": 0.037314,
           "pitch": -0.002924,
           "rotation": 0,
-          "target": "1-lgm-24-ka"
+          "target": "1-lgm-24-ka-n-of-biaka-gorge"
         },
         {
           "yaw": 0.281069,
@@ -1074,7 +1328,7 @@
           "yaw": -0.986997,
           "pitch": -0.00821,
           "rotation": 0,
-          "target": "1-lgm-24-ka"
+          "target": "1-lgm-24-ka-n-of-biaka-gorge"
         },
         {
           "yaw": -0.289798,
@@ -1516,10 +1770,11 @@
           "target": "0-mis-3-41-ka-cave-lions"
         },
         {
-          "yaw": -0.149500,
-          "pitch": -0.051735,
+          "yaw": -0.399639099,
+          "pitch": -0.063832158,
           "rotation": 0,
-          "target": "1-lgm-24-ka"
+          "target": "1-lgm-24-ka-n-of-biaka-gorge",
+          "distanceM": 666.2766374
         },
         {
           "yaw": 2.452014,
@@ -1528,16 +1783,31 @@
           "target": "1-mis-3-41-ka-kotelnica"
         },
         {
-          "yaw": -0.364211,
-          "pitch": -0.062300,
+          "yaw": -0.044683665,
+          "pitch": -0.030975678,
           "rotation": 0,
-          "target": "0-present-day"
+          "target": "0-present-day",
+          "distanceM": 670
         },
         {
           "yaw": 0.890397,
           "pitch": -0.236620,
           "rotation": 0,
           "target": "2-mis-3-41-ka"
+        },
+        {
+          "yaw": 1.780163,
+          "pitch": -0.086818,
+          "rotation": 0,
+          "target": "1-lgm-24-ka-litwinka",
+          "distanceM": 5500
+        },
+        {
+          "yaw": 1.11995351,
+          "pitch": -0.082569429,
+          "rotation": 0,
+          "target": "0-lgm-24-ka-s-of-biaka-gorge",
+          "distanceM": 982.7629251
         }
       ],
       "infoHotspots": [
@@ -1615,6 +1885,16 @@
     "mouseViewMode": "drag",
     "autorotateEnabled": true,
     "fullscreenButton": true,
-    "viewControlButtons": false
+    "viewControlButtons": false,
+    "linkScale": {
+      "enabled": true,
+      "mode": "log",
+      "minDistanceM": 200,
+      "maxDistanceM": 7000,
+      "minSizePx": 20,
+      "maxSizePx": 78,
+      "mobileMultiplier": 1.15
+    }
   }
 };
+

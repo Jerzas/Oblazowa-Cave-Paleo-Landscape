@@ -475,6 +475,62 @@
     return s.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;');
   }
 
+  function clamp(value, min, max) {
+    return Math.min(Math.max(value, min), max);
+  }
+
+  function getLinkScaleSettings() {
+    var defaults = {
+      enabled: true,
+      mode: 'log',
+      minDistanceM: 200,
+      maxDistanceM: 7000,
+      minSizePx: 20,
+      maxSizePx: 78,
+      mobileMultiplier: 1.15
+    };
+    var configured = (data.settings && data.settings.linkScale) || {};
+
+    return {
+      enabled: configured.enabled !== undefined ? configured.enabled : defaults.enabled,
+      mode: configured.mode || defaults.mode,
+      minDistanceM: configured.minDistanceM || defaults.minDistanceM,
+      maxDistanceM: configured.maxDistanceM || defaults.maxDistanceM,
+      minSizePx: configured.minSizePx || defaults.minSizePx,
+      maxSizePx: configured.maxSizePx || defaults.maxSizePx,
+      mobileMultiplier: configured.mobileMultiplier || defaults.mobileMultiplier
+    };
+  }
+
+  function computeLinkHotspotSizePx(distanceM) {
+    var settings = getLinkScaleSettings();
+
+    if (!settings.enabled || typeof distanceM !== 'number' || !isFinite(distanceM) || distanceM <= 0) {
+      return null;
+    }
+
+    var minD = Math.min(settings.minDistanceM, settings.maxDistanceM);
+    var maxD = Math.max(settings.minDistanceM, settings.maxDistanceM);
+    var minSize = Math.min(settings.minSizePx, settings.maxSizePx);
+    var maxSize = Math.max(settings.minSizePx, settings.maxSizePx);
+    var d = clamp(distanceM, minD, maxD);
+
+    var t;
+    if (settings.mode === 'linear') {
+      t = (d - minD) / (maxD - minD);
+    } else {
+      t = Math.log(d / minD) / Math.log(maxD / minD);
+    }
+
+    var size = maxSize - t * (maxSize - minSize);
+
+    if (document.body.classList.contains('mobile')) {
+      size = size * settings.mobileMultiplier;
+    }
+
+    return Math.round(size * 100) / 100;
+  }
+
   function switchScene(scene) {
     currentScene = scene;
     stopAutorotate();
@@ -666,6 +722,14 @@
     var wrapper = document.createElement('div');
     wrapper.classList.add('hotspot');
     wrapper.classList.add('link-hotspot');
+
+    var scaledSizePx = computeLinkHotspotSizePx(hotspot.distanceM);
+    if (scaledSizePx !== null) {
+      wrapper.style.width = scaledSizePx + 'px';
+      wrapper.style.height = scaledSizePx + 'px';
+      wrapper.style.marginLeft = (-scaledSizePx / 2) + 'px';
+      wrapper.style.marginTop = (-scaledSizePx / 2) + 'px';
+    }
 
     // Create image element.
     var icon = document.createElement('img');
