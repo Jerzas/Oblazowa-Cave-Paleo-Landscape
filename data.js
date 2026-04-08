@@ -553,25 +553,53 @@
       },
         "linkHotspots": [
           {
-            "yaw": -0.140159313,
-            "pitch": 0.033358281,
+            "yaw": -0.140159,
+            "pitch": 0.033358,
             "rotation": 0,
             "target": "1-lgm-24-ka-n-of-biaka-gorge",
-            "distanceM": 1155.9394
+            "distanceM": 1155.94
           },
           {
-            "yaw": -0.752502034,
-            "pitch": 0.082569429,
+            "yaw": -0.752502,
+            "pitch": 0.082569,
             "rotation": 0,
             "target": "0-lgm-24-ka-woolly-mammoths",
-            "distanceM": 982.7629251
+            "distanceM": 982.76
           },
           {
-            "yaw": 2.871742038,
-            "pitch": -0.089085695,
+            "yaw": 2.871742,
+            "pitch": -0.089086,
             "rotation": 0,
             "target": "1-lgm-24-ka-litwinka",
-            "distanceM": 4640.392405
+            "distanceM": 4640.39
+          },
+          {
+            "yaw": -2.893714,
+            "pitch": 0.018883,
+            "rotation": 0,
+            "target": "0-mis-3-41-ka-cave-lions",
+            "distanceM": 2338.38
+          },
+          {
+            "yaw": -0.389514,
+            "pitch": 0.150965,
+            "rotation": 0,
+            "target": "2-mis-3-41-ka-skeleton",
+            "distanceM": 669.40
+          },
+          {
+            "yaw": -0.063987,
+            "pitch": 0.019498,
+            "rotation": 0,
+            "target": "4-mis-3-41-ka-nowa-biaa",
+            "distanceM": 1732.14
+          },
+          {
+            "yaw": -0.495621,
+            "pitch": 0.031479,
+            "rotation": 0,
+            "target": "10-mis-3-41-ka-reindeer",
+            "distanceM": 1392.93
           }
         ],
       "infoHotspots": []
@@ -1087,10 +1115,67 @@
       },
       "linkHotspots": [
         {
-          "yaw": -0.7314753559361407,
-          "pitch": -0.061299248996553146,
+          "yaw": 0.469491,
+          "pitch": -0.114681,
           "rotation": 0,
-          "target": "1-mis-3-41-ka-wild-horeses"
+          "target": "1-lgm-24-ka-n-of-biaka-gorge",
+          "distanceM": 542.86
+        },
+        {
+          "yaw": -1.027848,
+          "pitch": -0.045538,
+          "rotation": 0,
+          "target": "0-lgm-24-ka-woolly-mammoths",
+          "distanceM": 430.98
+        },
+        {
+          "yaw": 3.054069,
+          "pitch": -0.150965,
+          "rotation": 0,
+          "target": "0-lgm-24-ka-s-of-biaka-gorge",
+          "distanceM": 669.40
+        },
+        {
+          "yaw": -3.124417,
+          "pitch": -0.096959,
+          "rotation": 0,
+          "target": "1-lgm-24-ka-litwinka",
+          "distanceM": 5304.55
+        },
+        {
+          "yaw": 0.734414,
+          "pitch": -0.671853,
+          "rotation": 0,
+          "target": "0-present-day",
+          "distanceM": 477.99
+        },
+        {
+          "yaw": -2.728104,
+          "pitch": -0.019509,
+          "rotation": 0,
+          "target": "0-mis-3-41-ka-cave-lions",
+          "distanceM": 2897.26
+        },
+        {
+          "yaw": -0.881902,
+          "pitch": -0.063882,
+          "rotation": 0,
+          "target": "1-mis-3-41-ka-wild-horeses",
+          "distanceM": 250.09
+        },
+        {
+          "yaw": 0.427282,
+          "pitch": -0.059405,
+          "rotation": 0,
+          "target": "4-mis-3-41-ka-nowa-biaa",
+          "distanceM": 1126.86
+        },
+        {
+          "yaw": -0.288808,
+          "pitch": -0.076907,
+          "rotation": 0,
+          "target": "10-mis-3-41-ka-reindeer",
+          "distanceM": 739.70
         }
       ],
       "infoHotspots": [
@@ -1168,28 +1253,53 @@
       },
       "linkHotspots": [
         {
-          "yaw": -0.044755,
-          "pitch": -0.045579,
+          "yaw": 0.116864,
+          "pitch": 0.012076,
           "rotation": 0,
-          "target": "2-mis-3-41-ka"
+          "target": "1-lgm-24-ka-n-of-biaka-gorge",
+          "distanceM": 586.54
         },
         {
-          "yaw": 0.037314,
-          "pitch": -0.002924,
+          "yaw": 0.534238,
+          "pitch": 0.046599,
           "rotation": 0,
-          "target": "1-lgm-24-ka-n-of-biaka-gorge"
+          "target": "0-lgm-24-ka-woolly-mammoths",
+          "distanceM": 1158.37
         },
         {
-          "yaw": 0.281069,
-          "pitch": -0.040032,
+          "yaw": -0.033605,
+          "pitch": -0.016536,
           "rotation": 0,
-          "target": "0-present-day"
+          "target": "0-lgm-24-ka-s-of-biaka-gorge",
+          "distanceM": 1732.05
         },
         {
-          "yaw": 0.861118,
-          "pitch": -0.065002,
+          "yaw": -0.183489,
+          "pitch": -0.068812,
           "rotation": 0,
-          "target": "10-mis-3-41-ka-reindeer"
+          "target": "1-lgm-24-ka-litwinka",
+          "distanceM": 6342.16
+        },
+        {
+          "yaw": 0.009506,
+          "pitch": -0.107250,
+          "rotation": 0,
+          "target": "0-present-day",
+          "distanceM": 781.04
+        },
+        {
+            "yaw": 0.034307,
+            "pitch": 0.008480,
+          "rotation": 0,
+          "target": "0-mis-3-41-ka-cave-lions",
+          "distanceM": 4021.59
+        },
+        {
+          "yaw": 0.861090,
+          "pitch": 0.020075,
+          "rotation": 0,
+          "target": "10-mis-3-41-ka-reindeer",
+          "distanceM": 746.87
         }
       ],
       "infoHotspots": [
@@ -1319,16 +1429,46 @@
       },
       "linkHotspots": [
         {
-          "yaw": -0.044755,
-          "pitch": -0.045579,
+          "yaw": 0.655752,
+          "pitch": 0.076284,
           "rotation": 0,
-          "target": "2-mis-3-41-ka"
+          "target": "0-lgm-24-ka-woolly-mammoths",
+          "distanceM": 511.30
         },
         {
-          "yaw": -0.986997,
-          "pitch": -0.00821,
+          "yaw": 0.145854,
+          "pitch": -0.031329,
           "rotation": 0,
-          "target": "1-lgm-24-ka-n-of-biaka-gorge"
+          "target": "0-lgm-24-ka-s-of-biaka-gorge",
+          "distanceM": 1392.93
+        },
+        {
+          "yaw": 0.319544,
+          "pitch": -0.075198,
+          "rotation": 0,
+          "target": "1-lgm-24-ka-litwinka",
+          "distanceM": 6003.99
+        },
+        {
+          "yaw": 0.616130,
+          "pitch": 0.003068,
+          "rotation": 0,
+          "target": "0-mis-3-41-ka-cave-lions",
+          "distanceM": 3492.36
+        },
+        {
+          "yaw": 0.307778,
+          "pitch": 0.075635,
+          "rotation": 0,
+          "target": "1-mis-3-41-ka-wild-horeses",
+          "distanceM": 550.17
+        },
+        {
+          "yaw": -1.669411,
+          "pitch": -0.020075,
+          "rotation": 0,
+          "target": "4-mis-3-41-ka-nowa-biaa",
+          "distanceM": 746.87
         },
         {
           "yaw": -0.289798,
@@ -1337,28 +1477,10 @@
           "target": "0-present-day"
         },
         {
-          "yaw": -1.64046,
-          "pitch": -0.045094,
+          "yaw": -0.044755,
+          "pitch": -0.045579,
           "rotation": 0,
-          "target": "4-mis-3-41-ka-nowa-biaa"
-        },
-        {
-          "yaw": 0.424432,
-          "pitch": 0.073357,
-          "rotation": 0,
-          "target": "0-mis-3-41-ka-cave-hyenas"
-        },
-        {
-          "yaw": 0.915312,
-          "pitch": -0.030897,
-          "rotation": 0,
-          "target": "1-mis-3-41-ka-kotelnica"
-        },
-        {
-          "yaw": 1.088140,
-          "pitch": -0.010588,
-          "rotation": 0,
-          "target": "0-lgm-24-ka-woolly-mammoths"
+          "target": "2-mis-3-41-ka"
         }
       ],
       "infoHotspots": [
@@ -1631,28 +1753,46 @@
       },
       "linkHotspots": [
         {
-          "yaw": -3.058670,
-          "pitch": -0.017062,
+          "yaw": -3.096986,
+          "pitch": 0.009470,
           "rotation": 0,
-          "target": "0-mis-3-41-ka-cave-hyenas"
+          "target": "0-lgm-24-ka-woolly-mammoths",
+          "distanceM": 2983.13
         },
         {
-          "yaw": -2.839740,
-          "pitch": -0.165090,
+          "yaw": -2.816993,
+          "pitch": -0.023242,
           "rotation": 0,
-          "target": "2-mis-3-41-ka"
+          "target": "0-lgm-24-ka-s-of-biaka-gorge",
+          "distanceM": 2338.60
         },
         {
-          "yaw": 0.798275,
-          "pitch": -0.072962,
+          "yaw": -0.613215,
+          "pitch": -0.161349,
           "rotation": 0,
-          "target": "1-mis-3-41-ka-kotelnica"
+          "target": "1-lgm-24-ka-litwinka",
+          "distanceM": 2874.44
         },
         {
-          "yaw": 2.267772,
-          "pitch": -0.070369,
+          "yaw": -3.034210,
+          "pitch": 0.010374,
           "rotation": 0,
-          "target": "0-lgm-24-ka-woolly-mammoths"
+          "target": "1-mis-3-41-ka-wild-horeses",
+          "distanceM": 2974.45
+        },
+        {
+          "yaw": -2.953373,
+          "pitch": 0.015808,
+          "rotation": 0,
+          "target": "2-mis-3-41-ka-skeleton",
+          "distanceM": 2897.07
+        },
+        {
+          "yaw": -2.949515,
+          "pitch": -0.006393,
+          "rotation": 0,
+          "target": "4-mis-3-41-ka-nowa-biaa",
+          "distanceM": 4021.59
         }
       ],
       "infoHotspots": [
@@ -1752,62 +1892,53 @@
       },
       "linkHotspots": [
         {
-          "yaw": -0.110848,
-          "pitch": 0.029935,
-          "rotation": 0,
-          "target": "1-mis-3-41-ka-wild-horeses"
-        },
-        {
-          "yaw": -1.123019,
-          "pitch": -0.114140,
-          "rotation": 0,
-          "target": "10-mis-3-41-ka-reindeer"
-        },
-        {
-          "yaw": 1.794708,
-          "pitch": -0.002535,
-          "rotation": 0,
-          "target": "0-mis-3-41-ka-cave-lions"
-        },
-        {
-          "yaw": -0.399639099,
-          "pitch": -0.063832158,
+          "yaw": -0.399639,
+          "pitch": -0.070383,
           "rotation": 0,
           "target": "1-lgm-24-ka-n-of-biaka-gorge",
-          "distanceM": 666.2766374
+          "distanceM": 666.57
         },
         {
-          "yaw": 2.452014,
-          "pitch": -0.046167,
-          "rotation": 0,
-          "target": "1-mis-3-41-ka-kotelnica"
-        },
-        {
-          "yaw": -0.044683665,
-          "pitch": -0.030975678,
-          "rotation": 0,
-          "target": "0-present-day",
-          "distanceM": 670
-        },
-        {
-          "yaw": 0.890397,
-          "pitch": -0.236620,
-          "rotation": 0,
-          "target": "2-mis-3-41-ka"
-        },
-        {
-          "yaw": 1.780163,
-          "pitch": -0.086818,
-          "rotation": 0,
-          "target": "1-lgm-24-ka-litwinka",
-          "distanceM": 5500
-        },
-        {
-          "yaw": 1.11995351,
-          "pitch": -0.082569429,
+          "yaw": 1.119954,
+          "pitch": -0.084136,
           "rotation": 0,
           "target": "0-lgm-24-ka-s-of-biaka-gorge",
-          "distanceM": 982.7629251
+          "distanceM": 982.89
+        },
+        {
+          "yaw": 1.519986,
+          "pitch": -0.088728,
+          "rotation": 0,
+          "target": "1-lgm-24-ka-litwinka",
+          "distanceM": 5530.07
+        },
+        {
+          "yaw": 1.840341,
+          "pitch": -0.009470,
+          "rotation": 0,
+          "target": "0-mis-3-41-ka-cave-lions",
+          "distanceM": 2983.13
+        },
+        {
+          "yaw": 0.542617,
+          "pitch": 0.040727,
+          "rotation": 0,
+          "target": "2-mis-3-41-ka-skeleton",
+          "distanceM": 430.89
+        },
+        {
+          "yaw": -0.765282,
+          "pitch": -0.046599,
+          "rotation": 0,
+          "target": "4-mis-3-41-ka-nowa-biaa",
+          "distanceM": 1158.37
+        },
+        {
+          "yaw": -1.254860,
+          "pitch": -0.076284,
+          "rotation": 0,
+          "target": "10-mis-3-41-ka-reindeer",
+          "distanceM": 511.30
         }
       ],
       "infoHotspots": [
