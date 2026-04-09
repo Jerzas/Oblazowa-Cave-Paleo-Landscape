@@ -1608,9 +1608,9 @@
           "text": "Text"
         },
         {
-          "yaw": 0.886499,
-          "pitch": 0.892794,
-          "title": "Nowa Biala",
+          "yaw": -2.395385,
+          "pitch": 0.379479,
+          "title": "Nowa Biała",
           "text": "Text"
         },
         {
