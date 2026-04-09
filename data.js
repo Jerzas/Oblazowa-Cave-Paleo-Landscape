@@ -394,6 +394,13 @@
           "rotation": 0,
           "target": "0-lgm-24-ka-s-of-biaka-gorge",
           "distanceM": 4640.392405
+        },
+        {
+          "yaw": 1.689987,
+          "pitch": 0.005722,
+          "rotation": 0,
+          "target": "0-lgm-24-ka-sunset",
+          "distanceM": 3402.26
         }
       ],
       "infoHotspots": [
@@ -600,9 +607,276 @@
             "rotation": 0,
             "target": "10-mis-3-41-ka-reindeer",
             "distanceM": 1392.93
+          },
+          {
+            "yaw": -2.682264,
+            "pitch": -0.079122,
+            "rotation": 0,
+            "target": "0-lgm-24-ka-sunset",
+            "distanceM": 4908.48
           }
         ],
       "infoHotspots": []
+    },
+    {
+      "id": "0-lgm-24-ka-sunset",
+      "name": "LGM, 24 ka - Sunset",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        },
+        {
+          "tileSize": 512,
+          "size": 4096
+        }
+      ],
+      "faceSize": 4096,
+      "initialViewParameters": {
+        "yaw": 0,
+        "pitch": 0,
+        "fov": 1.5707963267948966
+      },
+      "linkHotspots": [
+        {
+          "yaw": -2.746678,
+          "pitch": 0.105163,
+          "rotation": 0,
+          "target": "0-lgm-24-ka-woolly-mammoths",
+          "distanceM": 5337.65
+        },
+        {
+          "yaw": -2.580033,
+          "pitch": 0.077516,
+          "rotation": 0,
+          "target": "0-lgm-24-ka-s-of-biaka-gorge",
+          "distanceM": 4908.48
+        },
+        {
+          "yaw": -1.399246,
+          "pitch": -0.005722,
+          "rotation": 0,
+          "target": "1-lgm-24-ka-litwinka",
+          "distanceM": 3402.26
+        },
+        {
+          "yaw": -2.349385,
+          "pitch": 0.180488,
+          "rotation": 0,
+          "target": "0-mis-3-41-ka-cave-lions",
+          "distanceM": 2689.62
+        },
+        {
+          "yaw": -2.714464,
+          "pitch": 0.096160,
+          "rotation": 0,
+          "target": "1-mis-3-41-ka-wild-horeses",
+          "distanceM": 5385.30
+        },
+        {
+          "yaw": -2.665488,
+          "pitch": 0.064485,
+          "rotation": 0,
+          "target": "4-mis-3-41-ka-nowa-biaa",
+          "distanceM": 6464.91
+        },
+        {
+          "yaw": -2.775611,
+          "pitch": 0.070481,
+          "rotation": 0,
+          "target": "10-mis-3-41-ka-reindeer",
+          "distanceM": 5825.60
+        }
+      ],
+      "infoHotspots": [
+        {
+          "yaw": 3.097710,
+          "pitch": -0.016874,
+          "title": "Turbacz 1310",
+          "text": "Text"
+        },
+        {
+          "yaw": 2.522606,
+          "pitch": 0.055178,
+          "title": "Nowy Targ",
+          "text": "Text"
+        },
+        {
+          "yaw": 1.880976,
+          "pitch": -0.026316,
+          "title": "Babia G\u00f3ra 1725",
+          "text": "Text"
+        },
+        {
+          "yaw": 1.675426,
+          "pitch": -0.017631,
+          "title": "Pilsko 1557",
+          "text": "Text"
+        },
+        {
+          "yaw": 2.069838,
+          "pitch": -0.012259,
+          "title": "Polica 1369",
+          "text": "Text"
+        },
+        {
+          "yaw": -2.747381,
+          "pitch": -0.005661,
+          "title": "Gorc 1228",
+          "text": "Text"
+        },
+        {
+          "yaw": -2.279854,
+          "pitch": -0.005985,
+          "title": "Luba\u0144 1211",
+          "text": "Text"
+        },
+        {
+          "yaw": -1.917104,
+          "pitch": 0.001675,
+          "title": "Prehyba 1173",
+          "text": "Text"
+        },
+        {
+          "yaw": -1.860028,
+          "pitch": 0.009300,
+          "title": "Trzy Korony 982",
+          "text": "Text"
+        },
+        {
+          "yaw": -1.468570,
+          "pitch": 0.072377,
+          "title": "Litwinka 903",
+          "text": "Text"
+        },
+        {
+          "yaw": -0.657465,
+          "pitch": -0.057131,
+          "title": "Havran 2152",
+          "text": "Text"
+        },
+        {
+          "yaw": -0.580241,
+          "pitch": -0.064345,
+          "title": "Lomnick\u00fd \u0161t\u00edt 2634",
+          "text": "Text"
+        },
+        {
+          "yaw": -0.500818,
+          "pitch": -0.066253,
+          "title": "\u013dadov\u00fd \u0161t\u00edt 2628",
+          "text": "Text"
+        },
+        {
+          "yaw": -0.491557,
+          "pitch": -0.011412,
+          "title": "Javorovy glacier",
+          "text": "Text"
+        },
+        {
+          "yaw": -0.321902,
+          "pitch": -0.061166,
+          "title": "Gerlachovsk\u00fd \u0161t\u00edt 2654",
+          "text": "Text"
+        },
+        {
+          "yaw": -0.194734,
+          "pitch": -0.060133,
+          "title": "Rysy 2503",
+          "text": "Text"
+        },
+        {
+          "yaw": 0.086402,
+          "pitch": -0.064111,
+          "title": "\u015awinica 2301",
+          "text": "Text"
+        },
+        {
+          "yaw": -0.263178,
+          "pitch": -0.010875,
+          "title": "Bia\u0142ka glacier",
+          "text": "Text"
+        },
+        {
+          "yaw": 0.058199,
+          "pitch": -0.011186,
+          "title": "Sucha Woda glacier",
+          "text": "Text"
+        },
+        {
+          "yaw": 0.205792,
+          "pitch": -0.052797,
+          "title": "Kasprowy Wierch 1985",
+          "text": "Text"
+        },
+        {
+          "yaw": 0.417157,
+          "pitch": -0.045949,
+          "title": "Giewont 1894",
+          "text": "Text"
+        },
+        {
+          "yaw": 0.553329,
+          "pitch": -0.044596,
+          "title": "Starorobocia\u0144ski Wierch 2176",
+          "text": "Text"
+        },
+        {
+          "yaw": 0.896721,
+          "pitch": -0.027023,
+          "title": "Osobit\u00e1 1687",
+          "text": "Text"
+        },
+        {
+          "yaw": 0.515463,
+          "pitch": 0.019054,
+          "title": "Zakopane",
+          "text": "Text"
+        },
+        {
+          "yaw": -1.229536,
+          "pitch": 0.157497,
+          "title": "Bia\u0142ka Tatrza\u0144ska",
+          "text": "Text"
+        },
+        {
+          "yaw": -2.899728,
+          "pitch": 0.061633,
+          "title": "\u0141opuszna",
+          "text": "Text"
+        },
+        {
+          "yaw": -2.421706,
+          "pitch": 0.052778,
+          "title": "D\u0119bno",
+          "text": "Text"
+        },
+        {
+          "yaw": -2.610686,
+          "pitch": 0.069820,
+          "title": "Nowa Bia\u0142a",
+          "text": "Text"
+        },
+        {
+          "yaw": -0.813078,
+          "pitch": 0.056142,
+          "title": "Jurg\u00f3w",
+          "text": "Text"
+        }
+      ]
     },
     {
       "id": "2-mis-3-41-ka",
@@ -640,8 +914,8 @@
           "target": "1-lgm-24-ka-n-of-biaka-gorge"
         },
         {
-          "yaw": -0.735374,
-          "pitch": -0.113841,
+          "yaw": -0.080845,
+          "pitch": 0.056582,
           "rotation": 0,
           "target": "0-present-day"
         },
@@ -1632,6 +1906,13 @@
           "pitch": 0.007381,
           "rotation": 0,
           "target": "10-mis-3-41-ka-reindeer"
+        },
+        {
+          "yaw": 0.903915,
+          "pitch": -0.074154,
+          "rotation": 0,
+          "target": "0-lgm-24-ka-sunset",
+          "distanceM": 5825.60
         }
       ],
       "infoHotspots": [
@@ -1758,6 +2039,13 @@
           "rotation": 0,
           "target": "0-lgm-24-ka-woolly-mammoths",
           "distanceM": 2983.13
+        },
+        {
+          "yaw": 0.722077,
+          "pitch": -0.165202,
+          "rotation": 0,
+          "target": "0-lgm-24-ka-sunset",
+          "distanceM": 2689.62
         },
         {
           "yaw": -2.816993,
@@ -1911,6 +2199,13 @@
           "rotation": 0,
           "target": "1-lgm-24-ka-litwinka",
           "distanceM": 5530.07
+        },
+        {
+          "yaw": 2.158450,
+          "pitch": -0.088273,
+          "rotation": 0,
+          "target": "0-lgm-24-ka-sunset",
+          "distanceM": 5337.65
         },
         {
           "yaw": 1.840341,
