@@ -7,6 +7,7 @@
 <style> @-ms-viewport { width: device-width; } </style>
 <link rel="stylesheet" href="vendor/reset.min.css">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
 </head>
 <body class="multiple-scenes ">
 
@@ -70,6 +71,10 @@
       <a href="javascript:void(0)" class="scene" data-id="1-mis-3-41-ka-kotelnica">
         <li class="text">MIS 3, 41 ka - Kotelnica</li>
       </a>
+
+      <a href="javascript:void(0)" id="mapToggle" class="scene map-toggle-btn">
+        <li class="text">&#128506; Map</li>
+      </a>
     
   </ul>
 </div>
@@ -101,6 +106,16 @@
 <a href="javascript:void(0)" id="aboutToggle" aria-label="Open about panel" title="About">
   <img class="icon" src="img/info.png" alt="Info">
 </a>
+
+<div id="mapPanel" aria-hidden="true">
+  <div id="mapPanelInner">
+    <div id="mapPanelHeader">
+      <h2>Map</h2>
+      <a href="javascript:void(0)" id="mapClose" aria-label="Close map">&#215;</a>
+    </div>
+    <div id="mapPanelMap"></div>
+  </div>
+</div>
 
 <div id="aboutPanel" aria-hidden="true">
   <div id="aboutPanelInner">
@@ -136,6 +151,7 @@
 <script src="vendor/screenfull.min.js" ></script>
 <script src="vendor/bowser.min.js" ></script>
 <script src="vendor/marzipano.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
 
 <script src="data.js"></script>
 <script src="index.js"></script>
@@ -193,6 +209,71 @@ body.hotspots-hidden .info-hotspot .info-hotspot-title-wrapper {
   visibility: hidden !important;
 }
 </style>
+<script>
+(function() {
+  var mapPanel = document.getElementById('mapPanel');
+  var mapClose = document.getElementById('mapClose');
+  var mapToggle = document.getElementById('mapToggle');
+  var leafletMap = null;
+
+  var SCENES = [
+    { id: '0-present-day',                    name: 'Present-day',                        lat: 49.43079, lon: 20.12786, color: '#2ca02c' },
+    { id: '1-lgm-24-ka-n-of-biaka-gorge',     name: 'LGM, 24 ka \u2013 N from Bia\u0142ka Gorge', lat: 49.43262, lon: 20.12812, color: '#9467bd' },
+    { id: '0-lgm-24-ka-woolly-mammoths',      name: 'LGM, 24 ka \u2013 Woolly mammoths',  lat: 49.42732, lon: 20.12073, color: '#9467bd' },
+    { id: '0-lgm-24-ka-s-of-biaka-gorge',     name: 'LGM, 24 ka \u2013 S from Bia\u0142ka Gorge', lat: 49.42038, lon: 20.12701, color: '#9467bd' },
+    { id: '1-lgm-24-ka-litwinka',             name: 'LGM, 24 ka \u2013 Litwinka',         lat: 49.38082, lon: 20.12577, color: '#9467bd' },
+    { id: '0-lgm-24-ka-sunset',               name: 'LGM, 24 ka \u2013 Sunset',           lat: 49.38966, lon: 20.08088, color: '#9467bd' },
+    { id: '2-mis-3-41-ka-s-of-biaka-gorge',   name: 'MIS 3, 41 ka \u2013 S from Bia\u0142ka Gorge', lat: 49.42397, lon: 20.12757, color: '#d95f02' },
+    { id: '0-mis-3-41-ka-cave-hyenas',        name: 'MIS 3, 41 ka \u2013 Cave hyenas',    lat: 49.42781, lon: 20.12194, color: '#d95f02' },
+    { id: '0-mis-3-41-ka-cave-lions',         name: 'MIS 3, 41 ka \u2013 Cave lions',     lat: 49.40412, lon: 20.10995, color: '#d95f02' },
+    { id: '1-mis-3-41-ka-wild-horeses',       name: 'MIS 3, 41 ka \u2013 Wild horses',    lat: 49.42755, lon: 20.12310, color: '#d95f02' },
+    { id: '1-mis-3-41-ka-kotelnica',          name: 'MIS 3, 41 ka \u2013 Kotelnica',      lat: 49.39083, lon: 20.08409, color: '#d95f02' },
+    { id: '2-mis-3-41-ka-skeleton',           name: 'MIS 3, 41 ka \u2013 Skeleton',       lat: 49.42623, lon: 20.12602, color: '#d95f02' },
+    { id: '4-mis-3-41-ka-nowa-biaa',          name: 'MIS 3, 41 ka \u2013 Nowa Bia\u0142a', lat: 49.43755, lon: 20.13097, color: '#d95f02' },
+    { id: '10-mis-3-41-ka-reindeer',          name: 'MIS 3, 41 ka \u2013 Reindeer',       lat: 49.43453, lon: 20.12178, color: '#d95f02' }
+  ];
+
+  function initMap() {
+    if (leafletMap) return;
+    leafletMap = L.map('mapPanelMap', { center: [49.4182, 20.1183], zoom: 13 });
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '\u00a9 <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(leafletMap);
+    SCENES.forEach(function(s) {
+      var m = L.circleMarker([s.lat, s.lon], {
+        radius: 9, color: s.color, fillColor: s.color, fillOpacity: 0.7, weight: 2
+      }).addTo(leafletMap);
+      m.bindTooltip(s.name, { sticky: true });
+      m.bindPopup('<b>' + s.name + '</b><br><small>Kliknij, aby otworzy&#263; panoram&#281;</small>');
+      m.on('click', function() {
+        if (window.switchToSceneById) { window.switchToSceneById(s.id); }
+        closeMapPanel();
+      });
+    });
+    leafletMap.fitBounds([[49.38082, 20.08088], [49.43755, 20.13097]], { padding: [24, 24] });
+  }
+
+  function openMapPanel() {
+    mapPanel.classList.add('enabled');
+    mapPanel.setAttribute('aria-hidden', 'false');
+    setTimeout(function() { initMap(); if (leafletMap) leafletMap.invalidateSize(); }, 60);
+  }
+
+  function closeMapPanel() {
+    mapPanel.classList.remove('enabled');
+    mapPanel.setAttribute('aria-hidden', 'true');
+  }
+
+  mapToggle.addEventListener('click', openMapPanel);
+  mapClose.addEventListener('click', closeMapPanel);
+  mapPanel.addEventListener('click', function(e) { if (e.target === mapPanel) closeMapPanel(); });
+  window.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && mapPanel.classList.contains('enabled')) closeMapPanel();
+  });
+})();
+</script>
+
 <script>
 (function() {
   var visible = true;

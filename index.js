@@ -541,6 +541,15 @@
     updateSceneList(scene);
   }
 
+  window.switchToSceneById = function(id) {
+    for (var i = 0; i < scenes.length; i++) {
+      if (scenes[i].data.id === id) {
+        switchScene(scenes[i]);
+        return;
+      }
+    }
+  };
+
   function updateSceneName(scene) {
     sceneNameElement.innerHTML = sanitize(scene.data.name);
   }

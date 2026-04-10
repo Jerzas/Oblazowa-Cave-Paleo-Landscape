@@ -1047,6 +1047,12 @@
           "pitch": 0.056142,
           "title": "Jurg\u00f3w",
           "text": "Text"
+        },
+        {
+          "yaw": 0.050487,
+          "pitch": 0.389454,
+          "title": "Kotelnica 917",
+          "text": "Text"
         }
       ]
     },
