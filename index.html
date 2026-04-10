@@ -257,7 +257,8 @@ body.hotspots-hidden .info-hotspot .info-hotspot-title-wrapper {
   function openMapPanel() {
     mapPanel.classList.add('enabled');
     mapPanel.setAttribute('aria-hidden', 'false');
-    setTimeout(function() { initMap(); if (leafletMap) leafletMap.invalidateSize(); }, 60);
+    initMap();
+    setTimeout(function() { if (leafletMap) leafletMap.invalidateSize(); }, 380);
   }
 
   function closeMapPanel() {
