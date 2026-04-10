@@ -812,8 +812,8 @@
           "distanceM": 5825.60
         },
         {
-          "yaw": -2.200432,
-          "pitch": 0.797835,
+          "yaw": -2.741556,
+          "pitch": 0.792336,
           "rotation": 0,
           "target": "1-mis-3-41-ka-kotelnica",
           "distanceM": 381.64
