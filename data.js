@@ -123,6 +123,13 @@
           "rotation": 0,
           "target": "10-mis-3-41-ka-reindeer",
           "distanceM": 637.43
+        },
+        {
+          "yaw": -3.131050,
+          "pitch": 0.812467,
+          "rotation": 0,
+          "target": "0-ba-13-ka-bialka-gorge",
+          "distanceM": 222.22
         }
       ],
       "infoHotspots": [
@@ -223,6 +230,102 @@
           "text": "Text"
         }
       ]
+    },
+    {
+      "id": "0-ba-13-ka-bialka-gorge",
+      "name": "B-A, 13 ka - Białka Gorge",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        },
+        {
+          "tileSize": 512,
+          "size": 4096
+        },
+        {
+          "tileSize": 512,
+          "size": 8192
+        }
+      ],
+      "faceSize": 5250,
+      "initialViewParameters": {
+        "yaw": 0,
+        "pitch": 0,
+        "fov": 1.5707963267948966
+      },
+      "linkHotspots": [
+        {
+          "yaw": -0.465706,
+          "pitch": -0.812467,
+          "rotation": 0,
+          "target": "0-present-day",
+          "distanceM": 222.22
+        },
+        {
+          "yaw": 1.617536,
+          "pitch": -0.731057,
+          "rotation": 0,
+          "target": "1-lgm-24-ka-n-of-biaka-gorge",
+          "distanceM": 105.81
+        },
+        {
+          "yaw": 0.061910,
+          "pitch": -0.035038,
+          "rotation": 0,
+          "target": "0-mis-3-41-ka-cave-hyenas",
+          "distanceM": 695.24
+        },
+        {
+          "yaw": -0.058731,
+          "pitch": -0.032138,
+          "rotation": 0,
+          "target": "1-mis-3-41-ka-wild-horeses",
+          "distanceM": 659.62
+        },
+        {
+          "yaw": -0.441679,
+          "pitch": -0.009267,
+          "rotation": 0,
+          "target": "2-mis-3-41-ka-skeleton",
+          "distanceM": 687.49
+        },
+        {
+          "yaw": 2.638311,
+          "pitch": -0.123960,
+          "rotation": 0,
+          "target": "4-mis-3-41-ka-nowa-biaa",
+          "distanceM": 628.63
+        },
+        {
+          "yaw": 1.303647,
+          "pitch": -0.107461,
+          "rotation": 0,
+          "target": "10-mis-3-41-ka-reindeer",
+          "distanceM": 584.91
+        },
+        {
+          "yaw": 0.088360,
+          "pitch": -0.035249,
+          "rotation": 0,
+          "target": "0-lgm-24-ka-woolly-mammoths",
+          "distanceM": 797.40
+        }
+      ],
+      "infoHotspots": []
     },
     {
       "id": "1-lgm-24-ka-n-of-biaka-gorge",
@@ -329,6 +432,13 @@
           "rotation": 0,
           "target": "10-mis-3-41-ka-reindeer",
           "distanceM": 507.26
+        },
+        {
+          "yaw": -1.009062,
+          "pitch": 0.731057,
+          "rotation": 0,
+          "target": "0-ba-13-ka-bialka-gorge",
+          "distanceM": 105.81
         }
       ],
       "infoHotspots": [
@@ -519,6 +629,13 @@
           "rotation": 0,
           "target": "10-mis-3-41-ka-reindeer",
           "distanceM": 6003.99
+        },
+        {
+          "yaw": 3.006552,
+          "pitch": 0.089659,
+          "rotation": 0,
+          "target": "0-ba-13-ka-bialka-gorge",
+          "distanceM": 5738.26
         }
       ],
       "infoHotspots": [
@@ -767,6 +884,13 @@
           "rotation": 0,
           "target": "10-mis-3-41-ka-reindeer",
           "distanceM": 1621.04
+        },
+        {
+          "yaw": -0.177138,
+          "pitch": 0.081896,
+          "rotation": 0,
+          "target": "0-ba-13-ka-bialka-gorge",
+          "distanceM": 1317.65
         }
       ],
       "infoHotspots": []
@@ -859,6 +983,13 @@
           "rotation": 0,
           "target": "1-mis-3-41-ka-kotelnica",
           "distanceM": 381.64
+        },
+        {
+          "yaw": -2.628737,
+          "pitch": 0.084013,
+          "rotation": 0,
+          "target": "0-ba-13-ka-bialka-gorge",
+          "distanceM": 5890.88
         }
       ],
       "infoHotspots": [
@@ -1175,6 +1306,13 @@
           "rotation": 0,
           "target": "10-mis-3-41-ka-reindeer",
           "distanceM": 1312.65
+        },
+        {
+          "yaw": -0.070676,
+          "pitch": 0.147159,
+          "rotation": 0,
+          "target": "0-ba-13-ka-bialka-gorge",
+          "distanceM": 988.43
         }
       ],
       "infoHotspots": [
@@ -1411,6 +1549,13 @@
           "rotation": 0,
           "target": "10-mis-3-41-ka-reindeer",
           "distanceM": 749.18
+        },
+        {
+          "yaw": -0.523003,
+          "pitch": 0.035038,
+          "rotation": 0,
+          "target": "0-ba-13-ka-bialka-gorge",
+          "distanceM": 695.24
         }
       ],
       "infoHotspots": [
@@ -1596,6 +1741,13 @@
           "rotation": 0,
           "target": "10-mis-3-41-ka-reindeer",
           "distanceM": 784.79
+        },
+        {
+          "yaw": -0.650101,
+          "pitch": 0.032138,
+          "rotation": 0,
+          "target": "0-ba-13-ka-bialka-gorge",
+          "distanceM": 659.62
         }
       ],
       "infoHotspots": [
@@ -1776,6 +1928,13 @@
           "rotation": 0,
           "target": "10-mis-3-41-ka-reindeer",
           "distanceM": 976.12
+        },
+        {
+          "yaw": 0.335324,
+          "pitch": 0.009267,
+          "rotation": 0,
+          "target": "0-ba-13-ka-bialka-gorge",
+          "distanceM": 687.49
         }
       ],
       "infoHotspots": [
@@ -1900,6 +2059,13 @@
           "rotation": 0,
           "target": "10-mis-3-41-ka-reindeer",
           "distanceM": 746.87
+        },
+        {
+          "yaw": 0.002113,
+          "pitch": 0.123960,
+          "rotation": 0,
+          "target": "0-ba-13-ka-bialka-gorge",
+          "distanceM": 628.63
         }
       ],
       "infoHotspots": [
@@ -2104,6 +2270,13 @@
           "rotation": 0,
           "target": "4-mis-3-41-ka-nowa-biaa",
           "distanceM": 746.87
+        },
+        {
+          "yaw": -0.721458,
+          "pitch": 0.107461,
+          "rotation": 0,
+          "target": "0-ba-13-ka-bialka-gorge",
+          "distanceM": 584.91
         }
       ],
       "infoHotspots": [
@@ -2231,7 +2404,7 @@
           "size": 4096
         }
       ],
-      "faceSize": 3500,
+      "faceSize": 4096,
       "initialViewParameters": {
         "yaw": 0,
         "pitch": 0,
@@ -2293,6 +2466,13 @@
           "rotation": 0,
           "target": "10-mis-3-41-ka-reindeer",
           "distanceM": 5583.18
+        },
+        {
+          "yaw": -0.370921,
+          "pitch": 0.039266,
+          "rotation": 0,
+          "target": "0-ba-13-ka-bialka-gorge",
+          "distanceM": 5633.12
         }
       ],
       "infoHotspots": [
@@ -2461,6 +2641,13 @@
           "rotation": 0,
           "target": "4-mis-3-41-ka-nowa-biaa",
           "distanceM": 4021.59
+        },
+        {
+          "yaw": -2.923292,
+          "pitch": 0.015274,
+          "rotation": 0,
+          "target": "0-ba-13-ka-bialka-gorge",
+          "distanceM": 3405.68
         }
       ],
       "infoHotspots": [
@@ -2642,6 +2829,13 @@
           "rotation": 0,
           "target": "10-mis-3-41-ka-reindeer",
           "distanceM": 807.36
+        },
+        {
+          "yaw": -0.461297,
+          "pitch": 0.035249,
+          "rotation": 0,
+          "target": "0-ba-13-ka-bialka-gorge",
+          "distanceM": 797.40
         }
       ],
       "infoHotspots": [
@@ -2714,7 +2908,7 @@
       ]
     }
   ],
-  "name": "Project Title",
+  "name": "OblazowaPaleo",
   "settings": {
     "mouseViewMode": "drag",
     "autorotateEnabled": true,
