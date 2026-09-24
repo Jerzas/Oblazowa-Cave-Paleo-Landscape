@@ -323,8 +323,8 @@
           "text": "Text"
         },
         {
-          "yaw": -0.990515,
-          "pitch": 0.027420,
+          "yaw": -1.266357,
+          "pitch": -0.254685,
           "title": "Kramnica Rock 883",
           "text": "Text"
         }
