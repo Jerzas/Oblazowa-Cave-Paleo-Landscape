@@ -86,7 +86,7 @@ function saveStartView(sceneId, parameters) {
     throw new Error("Initial view parameters were not found for this scene");
   }
 
-  const newline = source.includes("\r\n") ? "\r\n" : "\n";
+  const newline = "\n";
   const replacement = [
     '"initialViewParameters": {',
     `        "yaw": ${formatNumber(yaw)},`,
@@ -95,7 +95,8 @@ function saveStartView(sceneId, parameters) {
     "      }",
   ].join(newline);
   const updatedScene = sceneSource.replace(viewPattern, replacement);
-  const updatedSource = source.slice(0, sceneStart) + updatedScene + source.slice(sceneEnd);
+  const updatedSource = (source.slice(0, sceneStart) + updatedScene + source.slice(sceneEnd))
+    .replace(/\r\n/g, "\n");
   const appDataMatch = updatedSource.match(/var\s+APP_DATA\s*=\s*(\{[\s\S]*\});\s*$/);
 
   if (!appDataMatch) {

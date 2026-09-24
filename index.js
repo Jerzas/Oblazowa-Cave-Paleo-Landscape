@@ -77,6 +77,58 @@
   // Current active scene.
   var currentScene = null;
 
+  // Local-only editor for persisting the current scene view to data.js.
+  if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+    var saveStartViewButton = document.createElement('button');
+    saveStartViewButton.id = 'saveStartView';
+    saveStartViewButton.type = 'button';
+    saveStartViewButton.textContent = 'Save start view';
+    saveStartViewButton.title = 'Save the current direction and zoom for this scene';
+    document.body.appendChild(saveStartViewButton);
+
+    saveStartViewButton.addEventListener('click', function() {
+      if (!currentScene || saveStartViewButton.disabled) {
+        return;
+      }
+
+      stopAutorotate();
+      var parameters = currentScene.view.parameters();
+      saveStartViewButton.disabled = true;
+      saveStartViewButton.textContent = 'Saving...';
+
+      fetch('/__dev/save-start-view', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          sceneId: currentScene.data.id,
+          initialViewParameters: {
+            yaw: parameters.yaw,
+            pitch: parameters.pitch,
+            fov: parameters.fov
+          }
+        })
+      }).then(function(response) {
+        if (!response.ok) {
+          throw new Error('Could not save the start view');
+        }
+        return response.json();
+      }).then(function(result) {
+        currentScene.data.initialViewParameters = result.initialViewParameters;
+        saveStartViewButton.textContent = 'Saved';
+        window.setTimeout(function() {
+          saveStartViewButton.textContent = 'Save start view';
+          saveStartViewButton.disabled = false;
+        }, 1400);
+      }).catch(function(error) {
+        saveStartViewButton.textContent = error.message;
+        window.setTimeout(function() {
+          saveStartViewButton.textContent = 'Save start view';
+          saveStartViewButton.disabled = false;
+        }, 2500);
+      });
+    });
+  }
+
   // Coords panel.
   var coordsBox = document.createElement('div');
   coordsBox.style.position = 'absolute';
