@@ -283,27 +283,6 @@
           "distanceM": 406.66
         },
         {
-          "yaw": 0.438085,
-          "pitch": -0.028797,
-          "rotation": 0,
-          "target": "0-mis-3-41-ka-cave-hyenas",
-          "distanceM": 845.86
-        },
-        {
-          "yaw": 0.362762,
-          "pitch": -0.027138,
-          "rotation": 0,
-          "target": "1-mis-3-41-ka-wild-horeses",
-          "distanceM": 781.11
-        },
-        {
-          "yaw": 0.032008,
-          "pitch": -0.009175,
-          "rotation": 0,
-          "target": "2-mis-3-41-ka-skeleton",
-          "distanceM": 694.37
-        },
-        {
           "yaw": 2.224986,
           "pitch": -0.099793,
           "rotation": 0,
@@ -316,13 +295,6 @@
           "rotation": 0,
           "target": "10-mis-3-41-ka-reindeer",
           "distanceM": 905.77
-        },
-        {
-          "yaw": 0.419614,
-          "pitch": -0.029658,
-          "rotation": 0,
-          "target": "0-lgm-24-ka-woolly-mammoths",
-          "distanceM": 947.66
         }
       ],
       "infoHotspots": [
