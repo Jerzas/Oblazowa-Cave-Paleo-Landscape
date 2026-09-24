@@ -125,11 +125,11 @@
           "distanceM": 637.43
         },
         {
-          "yaw": -3.131050,
-          "pitch": 0.812467,
+          "yaw": -1.988056,
+          "pitch": 0.425881,
           "rotation": 0,
           "target": "0-ba-13-ka-bialka-gorge",
-          "distanceM": 222.22
+          "distanceM": 390.51
         }
       ],
       "infoHotspots": [
@@ -269,60 +269,60 @@
       },
       "linkHotspots": [
         {
-          "yaw": -0.465706,
-          "pitch": -0.812467,
+          "yaw": 0.677340,
+          "pitch": -0.425881,
           "rotation": 0,
           "target": "0-present-day",
-          "distanceM": 222.22
+          "distanceM": 390.51
         },
         {
-          "yaw": 1.617536,
-          "pitch": -0.731057,
+          "yaw": 1.398505,
+          "pitch": -0.174604,
           "rotation": 0,
           "target": "1-lgm-24-ka-n-of-biaka-gorge",
-          "distanceM": 105.81
+          "distanceM": 406.66
         },
         {
-          "yaw": 0.061910,
-          "pitch": -0.035038,
+          "yaw": 0.438085,
+          "pitch": -0.028797,
           "rotation": 0,
           "target": "0-mis-3-41-ka-cave-hyenas",
-          "distanceM": 695.24
+          "distanceM": 845.86
         },
         {
-          "yaw": -0.058731,
-          "pitch": -0.032138,
+          "yaw": 0.362762,
+          "pitch": -0.027138,
           "rotation": 0,
           "target": "1-mis-3-41-ka-wild-horeses",
-          "distanceM": 659.62
+          "distanceM": 781.11
         },
         {
-          "yaw": -0.441679,
-          "pitch": -0.009267,
+          "yaw": 0.032008,
+          "pitch": -0.009175,
           "rotation": 0,
           "target": "2-mis-3-41-ka-skeleton",
-          "distanceM": 687.49
+          "distanceM": 694.37
         },
         {
-          "yaw": 2.638311,
-          "pitch": -0.123960,
+          "yaw": 2.224986,
+          "pitch": -0.099793,
           "rotation": 0,
           "target": "4-mis-3-41-ka-nowa-biaa",
-          "distanceM": 628.63
+          "distanceM": 780.16
         },
         {
-          "yaw": 1.303647,
-          "pitch": -0.107461,
+          "yaw": 1.317477,
+          "pitch": -0.069316,
           "rotation": 0,
           "target": "10-mis-3-41-ka-reindeer",
-          "distanceM": 584.91
+          "distanceM": 905.77
         },
         {
-          "yaw": 0.088360,
-          "pitch": -0.035249,
+          "yaw": 0.419614,
+          "pitch": -0.029658,
           "rotation": 0,
           "target": "0-lgm-24-ka-woolly-mammoths",
-          "distanceM": 797.40
+          "distanceM": 947.66
         }
       ],
       "infoHotspots": []
@@ -434,11 +434,11 @@
           "distanceM": 507.26
         },
         {
-          "yaw": -1.009062,
-          "pitch": 0.731057,
+          "yaw": -1.228144,
+          "pitch": 0.174604,
           "rotation": 0,
           "target": "0-ba-13-ka-bialka-gorge",
-          "distanceM": 105.81
+          "distanceM": 406.66
         }
       ],
       "infoHotspots": [
@@ -631,11 +631,11 @@
           "distanceM": 6003.99
         },
         {
-          "yaw": 3.006552,
-          "pitch": 0.089659,
+          "yaw": 3.058205,
+          "pitch": 0.092050,
           "rotation": 0,
           "target": "0-ba-13-ka-bialka-gorge",
-          "distanceM": 5738.26
+          "distanceM": 5589.63
         }
       ],
       "infoHotspots": [
@@ -886,11 +886,11 @@
           "distanceM": 1621.04
         },
         {
-          "yaw": -0.177138,
-          "pitch": 0.081896,
+          "yaw": 0.068741,
+          "pitch": 0.088299,
           "rotation": 0,
           "target": "0-ba-13-ka-bialka-gorge",
-          "distanceM": 1317.65
+          "distanceM": 1222.33
         }
       ],
       "infoHotspots": []
@@ -985,11 +985,11 @@
           "distanceM": 381.64
         },
         {
-          "yaw": -2.628737,
-          "pitch": 0.084013,
+          "yaw": -2.574208,
+          "pitch": 0.083496,
           "rotation": 0,
           "target": "0-ba-13-ka-bialka-gorge",
-          "distanceM": 5890.88
+          "distanceM": 5927.27
         }
       ],
       "infoHotspots": [
@@ -1308,11 +1308,11 @@
           "distanceM": 1312.65
         },
         {
-          "yaw": -0.070676,
-          "pitch": 0.147159,
+          "yaw": 0.292579,
+          "pitch": 0.171964,
           "rotation": 0,
           "target": "0-ba-13-ka-bialka-gorge",
-          "distanceM": 988.43
+          "distanceM": 846.97
         }
       ],
       "infoHotspots": [
@@ -1551,11 +1551,11 @@
           "distanceM": 749.18
         },
         {
-          "yaw": -0.523003,
-          "pitch": 0.035038,
+          "yaw": -0.146879,
+          "pitch": 0.028797,
           "rotation": 0,
           "target": "0-ba-13-ka-bialka-gorge",
-          "distanceM": 695.24
+          "distanceM": 845.86
         }
       ],
       "infoHotspots": [
@@ -1743,11 +1743,11 @@
           "distanceM": 784.79
         },
         {
-          "yaw": -0.650101,
-          "pitch": 0.032138,
+          "yaw": -0.228660,
+          "pitch": 0.027138,
           "rotation": 0,
           "target": "0-ba-13-ka-bialka-gorge",
-          "distanceM": 659.62
+          "distanceM": 781.11
         }
       ],
       "infoHotspots": [
@@ -1930,11 +1930,11 @@
           "distanceM": 976.12
         },
         {
-          "yaw": 0.335324,
-          "pitch": 0.009267,
+          "yaw": 0.808959,
+          "pitch": 0.009175,
           "rotation": 0,
           "target": "0-ba-13-ka-bialka-gorge",
-          "distanceM": 687.49
+          "distanceM": 694.37
         }
       ],
       "infoHotspots": [
@@ -2061,11 +2061,11 @@
           "distanceM": 746.87
         },
         {
-          "yaw": 0.002113,
-          "pitch": 0.123960,
+          "yaw": -0.411263,
+          "pitch": 0.099793,
           "rotation": 0,
           "target": "0-ba-13-ka-bialka-gorge",
-          "distanceM": 628.63
+          "distanceM": 780.16
         }
       ],
       "infoHotspots": [
@@ -2272,11 +2272,11 @@
           "distanceM": 746.87
         },
         {
-          "yaw": -0.721458,
-          "pitch": 0.107461,
+          "yaw": -0.707679,
+          "pitch": 0.069316,
           "rotation": 0,
           "target": "0-ba-13-ka-bialka-gorge",
-          "distanceM": 584.91
+          "distanceM": 905.77
         }
       ],
       "infoHotspots": [
@@ -2468,11 +2468,11 @@
           "distanceM": 5583.18
         },
         {
-          "yaw": -0.370921,
-          "pitch": 0.039266,
+          "yaw": -0.313890,
+          "pitch": 0.039054,
           "rotation": 0,
           "target": "0-ba-13-ka-bialka-gorge",
-          "distanceM": 5633.12
+          "distanceM": 5663.69
         }
       ],
       "infoHotspots": [
@@ -2643,11 +2643,11 @@
           "distanceM": 4021.59
         },
         {
-          "yaw": -2.923292,
-          "pitch": 0.015274,
+          "yaw": -2.827871,
+          "pitch": 0.015378,
           "rotation": 0,
           "target": "0-ba-13-ka-bialka-gorge",
-          "distanceM": 3405.68
+          "distanceM": 3382.74
         }
       ],
       "infoHotspots": [
@@ -2831,11 +2831,11 @@
           "distanceM": 807.36
         },
         {
-          "yaw": -0.461297,
-          "pitch": 0.035249,
+          "yaw": -0.130094,
+          "pitch": 0.029658,
           "rotation": 0,
           "target": "0-ba-13-ka-bialka-gorge",
-          "distanceM": 797.40
+          "distanceM": 947.66
         }
       ],
       "infoHotspots": [

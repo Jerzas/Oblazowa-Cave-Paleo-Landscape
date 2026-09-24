@@ -256,7 +256,8 @@
   // Set handler for scene switch.
   scenes.forEach(function(scene) {
     var el = document.querySelector('#sceneList .scene[data-id="' + scene.data.id + '"]');
-    el.addEventListener('click', function() {
+    el.addEventListener('click', function(event) {
+      event.preventDefault();
       switchScene(scene);
       if (document.body.classList.contains('mobile')) {
         hideSceneList();
@@ -532,6 +533,10 @@
   }
 
   function switchScene(scene) {
+    if (!scene) {
+      return;
+    }
+
     currentScene = scene;
     stopAutorotate();
     scene.view.setParameters(scene.data.initialViewParameters);
@@ -539,6 +544,29 @@
     startAutorotate();
     updateSceneName(scene);
     updateSceneList(scene);
+    updateSceneUrl(scene.data.id);
+  }
+
+  function getSceneIdFromUrl() {
+    if (!window.URLSearchParams) {
+      return null;
+    }
+
+    return new URLSearchParams(window.location.search).get('scene');
+  }
+
+  function updateSceneUrl(sceneId) {
+    if (!window.history || !window.history.replaceState || !window.URL) {
+      return;
+    }
+
+    try {
+      var url = new URL(window.location.href);
+      url.searchParams.set('scene', sceneId);
+      window.history.replaceState(null, '', url.toString());
+    } catch (err) {
+      // The panorama still works when a local browser blocks file URL changes.
+    }
   }
 
   window.switchToSceneById = function(id) {
@@ -871,7 +899,7 @@
     return null;
   }
 
-  // Display the initial scene.
-  switchScene(scenes[0]);
+  // Display the scene requested by a shared URL, or fall back to the first one.
+  switchScene(findSceneById(getSceneIdFromUrl()) || scenes[0]);
 
 })();
