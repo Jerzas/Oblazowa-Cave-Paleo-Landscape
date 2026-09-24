@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Oblazowa Cave - links to 360 scenes</name>
+    <description>Scene points with direct links to panoramas hosted on GitHub Pages.</description>
+
+    <Placemark>
+      <name>Present-day</name>
+      <description><![CDATA[<p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-present-day" target="_blank"><b>Otworz panorame 360</b></a></p><p>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-present-day</p>]]></description>
+      <ExtendedData><Data name="scene_url"><value>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-present-day</value></Data></ExtendedData>
+      <Point><altitudeMode>absolute</altitudeMode><coordinates>20.12786,49.43079,787.38</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>B-A, 13 ka - Bialka Gorge</name>
+      <description><![CDATA[<p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-ba-13-ka-bialka-gorge" target="_blank"><b>Otworz panorame 360</b></a></p><p>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-ba-13-ka-bialka-gorge</p>]]></description>
+      <ExtendedData><Data name="scene_url"><value>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-ba-13-ka-bialka-gorge</value></Data></ExtendedData>
+      <Point><altitudeMode>absolute</altitudeMode><coordinates>20.132774,49.430668,626.00</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>LGM, 24 ka - N from Bialka Gorge</name>
+      <description><![CDATA[<p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=1-lgm-24-ka-n-of-biaka-gorge" target="_blank"><b>Otworz panorame 360</b></a></p><p>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=1-lgm-24-ka-n-of-biaka-gorge</p>]]></description>
+      <ExtendedData><Data name="scene_url"><value>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=1-lgm-24-ka-n-of-biaka-gorge</value></Data></ExtendedData>
+      <Point><altitudeMode>absolute</altitudeMode><coordinates>20.12812,49.43262,696.24</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>LGM, 24 ka - Woolly mammoths</name>
+      <description><![CDATA[<p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-lgm-24-ka-woolly-mammoths" target="_blank"><b>Otworz panorame 360</b></a></p><p>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-lgm-24-ka-woolly-mammoths</p>]]></description>
+      <ExtendedData><Data name="scene_url"><value>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-lgm-24-ka-woolly-mammoths</value></Data></ExtendedData>
+      <Point><altitudeMode>absolute</altitudeMode><coordinates>20.12073,49.42732,653.58</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>LGM, 24 ka - S from Bialka Gorge</name>
+      <description><![CDATA[<p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-lgm-24-ka-s-of-biaka-gorge" target="_blank"><b>Otworz panorame 360</b></a></p><p>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-lgm-24-ka-s-of-biaka-gorge</p>]]></description>
+      <ExtendedData><Data name="scene_url"><value>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-lgm-24-ka-s-of-biaka-gorge</value></Data></ExtendedData>
+      <Point><altitudeMode>absolute</altitudeMode><coordinates>20.12701,49.42038,733.69</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>LGM, 24 ka - Litwinka</name>
+      <description><![CDATA[<p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=1-lgm-24-ka-litwinka" target="_blank"><b>Otworz panorame 360</b></a></p><p>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=1-lgm-24-ka-litwinka</p>]]></description>
+      <ExtendedData><Data name="scene_url"><value>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=1-lgm-24-ka-litwinka</value></Data></ExtendedData>
+      <Point><altitudeMode>absolute</altitudeMode><coordinates>20.12577,49.38082,1138.36</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>LGM, 24 ka - Sunset</name>
+      <description><![CDATA[<p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-lgm-24-ka-sunset" target="_blank"><b>Otworz panorame 360</b></a></p><p>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-lgm-24-ka-sunset</p>]]></description>
+      <ExtendedData><Data name="scene_url"><value>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-lgm-24-ka-sunset</value></Data></ExtendedData>
+      <Point><altitudeMode>absolute</altitudeMode><coordinates>20.08088,49.38966,1126.84</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>MIS 3, 41 ka - S from Bialka Gorge</name>
+      <description><![CDATA[<p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=2-mis-3-41-ka-s-of-biaka-gorge" target="_blank"><b>Otworz panorame 360</b></a></p><p>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=2-mis-3-41-ka-s-of-biaka-gorge</p>]]></description>
+      <ExtendedData><Data name="scene_url"><value>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=2-mis-3-41-ka-s-of-biaka-gorge</value></Data></ExtendedData>
+      <Point><altitudeMode>absolute</altitudeMode><coordinates>20.12757,49.42397,772.36</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>MIS 3, 41 ka - Cave hyenas</name>
+      <description><![CDATA[<p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-mis-3-41-ka-cave-hyenas" target="_blank"><b>Otworz panorame 360</b></a></p><p>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-mis-3-41-ka-cave-hyenas</p>]]></description>
+      <ExtendedData><Data name="scene_url"><value>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-mis-3-41-ka-cave-hyenas</value></Data></ExtendedData>
+      <Point><altitudeMode>absolute</altitudeMode><coordinates>20.12194,49.42781,651.23</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>MIS 3, 41 ka - Cave lions</name>
+      <description><![CDATA[<p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-mis-3-41-ka-cave-lions" target="_blank"><b>Otworz panorame 360</b></a></p><p>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-mis-3-41-ka-cave-lions</p>]]></description>
+      <ExtendedData><Data name="scene_url"><value>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=0-mis-3-41-ka-cave-lions</value></Data></ExtendedData>
+      <Point><altitudeMode>absolute</altitudeMode><coordinates>20.10995,49.40412,673.95</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>MIS 3, 41 ka - Wild horses</name>
+      <description><![CDATA[<p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=1-mis-3-41-ka-wild-horeses" target="_blank"><b>Otworz panorame 360</b></a></p><p>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=1-mis-3-41-ka-wild-horeses</p>]]></description>
+      <ExtendedData><Data name="scene_url"><value>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=1-mis-3-41-ka-wild-horeses</value></Data></ExtendedData>
+      <Point><altitudeMode>absolute</altitudeMode><coordinates>20.12310,49.42755,643.52</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>MIS 3, 41 ka - Kotelnica</name>
+      <description><![CDATA[<p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=1-mis-3-41-ka-kotelnica" target="_blank"><b>Otworz panorame 360</b></a></p><p>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=1-mis-3-41-ka-kotelnica</p>]]></description>
+      <ExtendedData><Data name="scene_url"><value>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=1-mis-3-41-ka-kotelnica</value></Data></ExtendedData>
+      <Point><altitudeMode>absolute</altitudeMode><coordinates>20.08409,49.39083,847.68</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>MIS 3, 41 ka - Skeleton</name>
+      <description><![CDATA[<p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=2-mis-3-41-ka-skeleton" target="_blank"><b>Otworz panorame 360</b></a></p><p>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=2-mis-3-41-ka-skeleton</p>]]></description>
+      <ExtendedData><Data name="scene_url"><value>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=2-mis-3-41-ka-skeleton</value></Data></ExtendedData>
+      <Point><altitudeMode>absolute</altitudeMode><coordinates>20.12602,49.42623,632.28</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>MIS 3, 41 ka - Nowa Biala</name>
+      <description><![CDATA[<p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=4-mis-3-41-ka-nowa-biaa" target="_blank"><b>Otworz panorame 360</b></a></p><p>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=4-mis-3-41-ka-nowa-biaa</p>]]></description>
+      <ExtendedData><Data name="scene_url"><value>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=4-mis-3-41-ka-nowa-biaa</value></Data></ExtendedData>
+      <Point><altitudeMode>absolute</altitudeMode><coordinates>20.13097,49.43755,704.20</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>MIS 3, 41 ka - Reindeer</name>
+      <description><![CDATA[<p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=10-mis-3-41-ka-reindeer" target="_blank"><b>Otworz panorame 360</b></a></p><p>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=10-mis-3-41-ka-reindeer</p>]]></description>
+      <ExtendedData><Data name="scene_url"><value>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=10-mis-3-41-ka-reindeer</value></Data></ExtendedData>
+      <Point><altitudeMode>absolute</altitudeMode><coordinates>20.12178,49.43453,690.59</coordinates></Point>
+    </Placemark>
+  </Document>
+</kml>
