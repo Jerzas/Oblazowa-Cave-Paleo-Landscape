@@ -317,8 +317,8 @@
           "text": "Text"
         },
         {
-          "yaw": 0.196080,
-          "pitch": -0.051515,
+          "yaw": 0.197130,
+          "pitch": -0.021932,
           "title": "Magdalenian hunters",
           "text": "Text"
         },
