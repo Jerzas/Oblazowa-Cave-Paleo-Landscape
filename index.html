@@ -76,7 +76,7 @@
         <li class="text">MIS 3, 41 ka - Kotelnica</li>
       </a>
 
-      <a href="javascript:void(0)" id="mapToggle" class="scene map-toggle-btn">
+      <a href="?map=1" id="mapToggle" class="scene map-toggle-btn">
         <li class="text">&#128506; Map</li>
       </a>
     
@@ -262,6 +262,7 @@ body.hotspots-hidden .info-hotspot .info-hotspot-title-wrapper {
   function openMapPanel() {
     mapPanel.classList.add('enabled');
     mapPanel.setAttribute('aria-hidden', 'false');
+    updateMapUrl(true);
     initMap();
     setTimeout(function() { if (leafletMap) leafletMap.invalidateSize(); }, 380);
   }
@@ -269,14 +270,47 @@ body.hotspots-hidden .info-hotspot .info-hotspot-title-wrapper {
   function closeMapPanel() {
     mapPanel.classList.remove('enabled');
     mapPanel.setAttribute('aria-hidden', 'true');
+    updateMapUrl(false);
   }
 
-  mapToggle.addEventListener('click', openMapPanel);
-  mapClose.addEventListener('click', closeMapPanel);
+  function updateMapUrl(isOpen) {
+    if (!window.history || !window.history.replaceState || !window.URL) return;
+
+    try {
+      var url = new URL(window.location.href);
+      if (isOpen) {
+        url.searchParams.set('map', '1');
+      } else {
+        url.searchParams.delete('map');
+      }
+      window.history.replaceState(null, '', url.toString());
+    } catch (err) {}
+  }
+
+  function mapRequestedInUrl() {
+    var query = window.location.search || '';
+    if (window.URLSearchParams) {
+      return new window.URLSearchParams(query).get('map') === '1';
+    }
+    return /(?:^|[?&])map=1(?:&|$)/.test(query);
+  }
+
+  mapToggle.addEventListener('click', function(event) {
+    event.preventDefault();
+    openMapPanel();
+  });
+  mapClose.addEventListener('click', function(event) {
+    event.preventDefault();
+    closeMapPanel();
+  });
   mapPanel.addEventListener('click', function(e) { if (e.target === mapPanel) closeMapPanel(); });
   window.addEventListener('keydown', function(e) {
     if (e.key === 'Escape' && mapPanel.classList.contains('enabled')) closeMapPanel();
   });
+
+  if (mapRequestedInUrl()) {
+    openMapPanel();
+  }
 })();
 </script>
 
