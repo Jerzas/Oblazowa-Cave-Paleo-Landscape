@@ -548,11 +548,14 @@
   }
 
   function getSceneIdFromUrl() {
-    if (!window.URLSearchParams) {
-      return null;
+    var query = window.location.search || '';
+
+    if (window.URLSearchParams) {
+      return new window.URLSearchParams(query).get('scene');
     }
 
-    return new URLSearchParams(window.location.search).get('scene');
+    var match = /(?:^|[?&])scene=([^&]+)/.exec(query);
+    return match ? decodeURIComponent(match[1].replace(/\+/g, ' ')) : null;
   }
 
   function updateSceneUrl(sceneId) {
