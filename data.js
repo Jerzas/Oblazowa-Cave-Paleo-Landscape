@@ -315,6 +315,18 @@
           "pitch": -0.194039,
           "title": "Obłazowa Rock",
           "text": "Text"
+        },
+        {
+          "yaw": 0.196080,
+          "pitch": -0.051515,
+          "title": "Magdalenian hunters",
+          "text": "Text"
+        },
+        {
+          "yaw": -0.990515,
+          "pitch": 0.027420,
+          "title": "Kramnica Rock 883",
+          "text": "Text"
         }
       ]
     },
