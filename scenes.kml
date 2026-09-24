@@ -6,11 +6,11 @@
     <Style id="present-day">
       <IconStyle>
         <color>ff2ca02c</color>
-        <scale>1.1</scale>
+        <scale>0.45</scale>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+          <href>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/img/link.png</href>
         </Icon>
-      </IconStyle>
+      <hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/></IconStyle>
       <BalloonStyle>
         <text><![CDATA[<h3>$[name]</h3>$[description]]]></text>
       </BalloonStyle>
@@ -19,11 +19,11 @@
     <Style id="ba-13-ka">
       <IconStyle>
         <color>ff0fc4f1</color>
-        <scale>1.1</scale>
+        <scale>0.45</scale>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+          <href>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/img/link.png</href>
         </Icon>
-      </IconStyle>
+      <hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/></IconStyle>
       <BalloonStyle>
         <text><![CDATA[<h3>$[name]</h3>$[description]]]></text>
       </BalloonStyle>
@@ -32,11 +32,11 @@
     <Style id="lgm-24-ka">
       <IconStyle>
         <color>ffbd6794</color>
-        <scale>1.1</scale>
+        <scale>0.45</scale>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+          <href>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/img/link.png</href>
         </Icon>
-      </IconStyle>
+      <hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/></IconStyle>
       <BalloonStyle>
         <text><![CDATA[<h3>$[name]</h3>$[description]]]></text>
       </BalloonStyle>
@@ -45,11 +45,11 @@
     <Style id="mis-3-41-ka">
       <IconStyle>
         <color>ff025fd9</color>
-        <scale>1.1</scale>
+        <scale>0.45</scale>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+          <href>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/img/link.png</href>
         </Icon>
-      </IconStyle>
+      <hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/></IconStyle>
       <BalloonStyle>
         <text><![CDATA[<h3>$[name]</h3>$[description]]]></text>
       </BalloonStyle>
@@ -155,7 +155,7 @@
 
     <Placemark>
       <name>MIS 3, 41 ka - Reindeer</name>
-      <description><![CDATA[<p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=10-mis-3-41-ka-reindeer" target="_blank"><img src="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/tiles/10-mis-3-41-ka-reindeer/1/f/0/0.jpg" alt="MIS 3, 41 ka - Reindeer" width="320" height="180" style="width:320px;height:180px;object-fit:cover;object-position:center;border:0;display:block;" /></a></p><p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=10-mis-3-41-ka-reindeer" target="_blank"><b>Open 360 panorama</b></a></p>]]></description>
+      <description><![CDATA[<p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=10-mis-3-41-ka-reindeer" target="_blank"><img src="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/tiles/10-mis-3-41-ka-reindeer/1/l/0/0.jpg" alt="MIS 3, 41 ka - Reindeer" width="320" height="180" style="width:320px;height:180px;object-fit:cover;object-position:center;border:0;display:block;" /></a></p><p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=10-mis-3-41-ka-reindeer" target="_blank"><b>Open 360 panorama</b></a></p>]]></description>
       <styleUrl>#mis-3-41-ka</styleUrl>
       <Point><altitudeMode>absolute</altitudeMode><coordinates>20.12178,49.43453,690.59</coordinates></Point>
     </Placemark>

@@ -7,18 +7,18 @@
     <Style id="present-day-normal">
       <IconStyle>
         <color>bf2ca02c</color>
-        <scale>1.7</scale>
-        <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
-      </IconStyle>
+        <scale>0.45</scale>
+        <Icon><href>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/img/link.png</href></Icon>
+      <hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/></IconStyle>
       <LineStyle><color>bf2ca02c</color><width>2</width></LineStyle>
       <LabelStyle><scale>0</scale></LabelStyle>
     </Style>
     <Style id="present-day-highlight">
       <IconStyle>
         <color>bf2ca02c</color>
-        <scale>2.0</scale>
-        <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
-      </IconStyle>
+        <scale>0.58</scale>
+        <Icon><href>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/img/link.png</href></Icon>
+      <hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/></IconStyle>
       <LineStyle><color>bf2ca02c</color><width>2</width></LineStyle>
       <LabelStyle><scale>1</scale></LabelStyle>
     </Style>
@@ -30,18 +30,18 @@
     <Style id="ba-13-ka-normal">
       <IconStyle>
         <color>bf0fc4f1</color>
-        <scale>1.7</scale>
-        <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
-      </IconStyle>
+        <scale>0.45</scale>
+        <Icon><href>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/img/link.png</href></Icon>
+      <hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/></IconStyle>
       <LineStyle><color>bf0fc4f1</color><width>2</width></LineStyle>
       <LabelStyle><scale>0</scale></LabelStyle>
     </Style>
     <Style id="ba-13-ka-highlight">
       <IconStyle>
         <color>bf0fc4f1</color>
-        <scale>2.0</scale>
-        <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
-      </IconStyle>
+        <scale>0.58</scale>
+        <Icon><href>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/img/link.png</href></Icon>
+      <hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/></IconStyle>
       <LineStyle><color>bf0fc4f1</color><width>2</width></LineStyle>
       <LabelStyle><scale>1</scale></LabelStyle>
     </Style>
@@ -53,18 +53,18 @@
     <Style id="lgm-24-ka-normal">
       <IconStyle>
         <color>bfbd6794</color>
-        <scale>1.7</scale>
-        <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
-      </IconStyle>
+        <scale>0.45</scale>
+        <Icon><href>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/img/link.png</href></Icon>
+      <hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/></IconStyle>
       <LineStyle><color>bfbd6794</color><width>2</width></LineStyle>
       <LabelStyle><scale>0</scale></LabelStyle>
     </Style>
     <Style id="lgm-24-ka-highlight">
       <IconStyle>
         <color>bfbd6794</color>
-        <scale>2.0</scale>
-        <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
-      </IconStyle>
+        <scale>0.58</scale>
+        <Icon><href>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/img/link.png</href></Icon>
+      <hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/></IconStyle>
       <LineStyle><color>bfbd6794</color><width>2</width></LineStyle>
       <LabelStyle><scale>1</scale></LabelStyle>
     </Style>
@@ -76,18 +76,18 @@
     <Style id="mis-3-41-ka-normal">
       <IconStyle>
         <color>bf025fd9</color>
-        <scale>1.7</scale>
-        <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
-      </IconStyle>
+        <scale>0.45</scale>
+        <Icon><href>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/img/link.png</href></Icon>
+      <hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/></IconStyle>
       <LineStyle><color>bf025fd9</color><width>2</width></LineStyle>
       <LabelStyle><scale>0</scale></LabelStyle>
     </Style>
     <Style id="mis-3-41-ka-highlight">
       <IconStyle>
         <color>bf025fd9</color>
-        <scale>2.0</scale>
-        <Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
-      </IconStyle>
+        <scale>0.58</scale>
+        <Icon><href>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/img/link.png</href></Icon>
+      <hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/></IconStyle>
       <LineStyle><color>bf025fd9</color><width>2</width></LineStyle>
       <LabelStyle><scale>1</scale></LabelStyle>
     </Style>
@@ -210,7 +210,7 @@
 
     <Placemark>
       <name>MIS 3, 41 ka - Reindeer</name>
-      <description><![CDATA[<p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=10-mis-3-41-ka-reindeer" target="_blank"><img src="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/tiles/10-mis-3-41-ka-reindeer/1/f/0/0.jpg" alt="MIS 3, 41 ka - Reindeer" width="320" height="180" style="width:320px;height:180px;object-fit:cover;object-position:center;border:0;display:block;" /></a></p><p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=10-mis-3-41-ka-reindeer" target="_blank"><b>Open 360 panorama</b></a></p>]]></description>
+      <description><![CDATA[<p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=10-mis-3-41-ka-reindeer" target="_blank"><img src="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/tiles/10-mis-3-41-ka-reindeer/1/l/0/0.jpg" alt="MIS 3, 41 ka - Reindeer" width="320" height="180" style="width:320px;height:180px;object-fit:cover;object-position:center;border:0;display:block;" /></a></p><p><a href="https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=10-mis-3-41-ka-reindeer" target="_blank"><b>Open 360 panorama</b></a></p>]]></description>
       <styleUrl>#mis-3-41-ka</styleUrl>
       <ExtendedData><Data name="scene_url"><value>https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape/?scene=10-mis-3-41-ka-reindeer</value></Data></ExtendedData>
       <Point><extrude>1</extrude><altitudeMode>absolute</altitudeMode><coordinates>20.12178,49.43453,690.59</coordinates></Point>

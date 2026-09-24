@@ -98,6 +98,32 @@ foreach ($file in $KmlFiles) {
     return [regex]::Replace($placemark, '(?s)<description>.*?</description>', $description, 1)
   })
 
+  $markerIconUrl = "$BaseUrl/img/link.png"
+  $updated = $updated.
+    Replace('http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png', $markerIconUrl).
+    Replace('https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png', $markerIconUrl)
+
+  $updated = [regex]::Replace($updated, '(?s)<IconStyle>.*?</IconStyle>', {
+    param($iconStyleMatch)
+
+    $iconStyle = $iconStyleMatch.Value
+    if (-not $iconStyle.Contains($markerIconUrl)) {
+      return $iconStyle
+    }
+
+    $iconStyle = $iconStyle.
+      Replace('<scale>1.1</scale>', '<scale>0.45</scale>').
+      Replace('<scale>1.7</scale>', '<scale>0.45</scale>').
+      Replace('<scale>2.0</scale>', '<scale>0.58</scale>')
+
+    if (-not $iconStyle.Contains('<hotSpot ')) {
+      $hotSpot = '<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>'
+      $iconStyle = $iconStyle.Replace('</IconStyle>', "$hotSpot</IconStyle>")
+    }
+
+    return $iconStyle
+  })
+
   $targetPath = (Resolve-Path -LiteralPath $file).Path
   $utf8NoBom = New-Object System.Text.UTF8Encoding $false
   [System.IO.File]::WriteAllText($targetPath, $updated, $utf8NoBom)
