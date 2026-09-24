@@ -325,7 +325,26 @@
           "distanceM": 947.66
         }
       ],
-      "infoHotspots": []
+      "infoHotspots": [
+        {
+          "yaw": -0.414868,
+          "pitch": -0.067869,
+          "title": "Świnica 2301",
+          "text": "Text"
+        },
+        {
+          "yaw": 2.497621,
+          "pitch": -0.050331,
+          "title": "Kiczora 1282",
+          "text": "Text"
+        },
+        {
+          "yaw": 0.183044,
+          "pitch": -0.194039,
+          "title": "Obłazowa Rock",
+          "text": "Text"
+        }
+      ]
     },
     {
       "id": "1-lgm-24-ka-n-of-biaka-gorge",
