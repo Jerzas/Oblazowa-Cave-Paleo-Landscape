@@ -6,7 +6,7 @@
 <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
 <style> @-ms-viewport { width: device-width; } </style>
 <link rel="stylesheet" href="vendor/reset.min.css">
-<link rel="stylesheet" href="style.css?v=20260925-2">
+<link rel="stylesheet" href="style.css?v=20260925-4">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
 </head>
 <body class="multiple-scenes ">
@@ -83,6 +83,8 @@
   </ul>
 </div>
 
+<div id="topBarBackground" aria-hidden="true"></div>
+
 <div id="titleBar">
   <h1 class="sceneName"></h1>
 </div>
@@ -124,7 +126,6 @@
 <div id="aboutPanel" aria-hidden="true">
   <div id="aboutPanelInner">
     <div id="aboutPanelHeader">
-      <h2>Project info</h2>
       <a href="javascript:void(0)" id="aboutClose" aria-label="Close project info">×</a>
     </div>
     <div id="aboutPanelContent">
@@ -169,6 +170,7 @@
   height: 40px;
   background-color: transparent;
   cursor: pointer;
+  z-index: 1002;
 }
 
 .no-touch #hotspots-toggle:hover {
@@ -195,6 +197,11 @@ body.fullscreen-enabled.mobile #hotspots-toggle {
   right: 5px;
   width: 30px;
   height: 30px;
+}
+
+.mobile #hotspots-toggle .icon {
+  top: 10px;
+  right: 10px;
 }
 
 #hotspots-toggle .icon.off {
