@@ -355,6 +355,15 @@ body.fullscreen-enabled.mobile #aboutToggle {
   color: #fff;
 }
 
+#aboutPanelContent h1 {
+  max-width: 760px;
+  margin: 0 0 18px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #fff;
+}
+
 #aboutPanelContent p {
   margin: 0 0 12px;
 }
@@ -362,6 +371,68 @@ body.fullscreen-enabled.mobile #aboutToggle {
 #aboutPanelContent a {
   color: #b8d7ff;
   text-decoration: underline;
+}
+
+#aboutPanelContent ul {
+  margin: 0 0 14px 22px;
+  list-style: disc;
+}
+
+#aboutPanelContent li {
+  margin-bottom: 8px;
+}
+
+#aboutPanelContent strong {
+  font-weight: 600;
+  color: #fff;
+}
+
+.project-info-section {
+  border-top: 1px solid rgba(255,255,255,0.16);
+}
+
+.project-info-section:last-child {
+  border-bottom: 1px solid rgba(255,255,255,0.16);
+}
+
+.project-info-section summary {
+  position: relative;
+  padding: 14px 38px 14px 0;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #fff;
+  cursor: pointer;
+  list-style: none;
+}
+
+.project-info-section summary::-webkit-details-marker {
+  display: none;
+}
+
+.project-info-section summary::after {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: 20px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 300;
+  transform: translateY(-50%);
+}
+
+.project-info-section[open] summary::after {
+  content: "\2212";
+}
+
+.no-touch .project-info-section summary:hover {
+  background-color: rgba(103,115,131,0.3);
+}
+
+.project-info-section-body {
+  max-width: 820px;
+  padding: 2px 38px 8px 0;
 }
 
 #sceneList {

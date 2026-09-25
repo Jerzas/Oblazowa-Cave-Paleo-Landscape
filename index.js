@@ -709,6 +709,7 @@
     var htmlParts = [];
     var paragraphLines = [];
     var inList = false;
+    var inSection = false;
 
     function closeParagraph() {
       if (!paragraphLines.length) {
@@ -726,6 +727,14 @@
       inList = false;
     }
 
+    function closeSection() {
+      if (!inSection) {
+        return;
+      }
+      htmlParts.push('</div></details>');
+      inSection = false;
+    }
+
     lines.forEach(function(line) {
       var trimmed = line.trim();
 
@@ -740,6 +749,18 @@
         closeParagraph();
         closeList();
         var level = headingMatch[1].length;
+        if (level === 2) {
+          closeSection();
+          var sectionTitle = headingMatch[2];
+          var openAttribute = sectionTitle === 'Overview' ? ' open' : '';
+          htmlParts.push(
+            '<details class="project-info-section"' + openAttribute + '>' +
+            '<summary>' + formatInlineMarkdown(sectionTitle) + '</summary>' +
+            '<div class="project-info-section-body">'
+          );
+          inSection = true;
+          return;
+        }
         htmlParts.push('<h' + level + '>' + formatInlineMarkdown(headingMatch[2]) + '</h' + level + '>');
         return;
       }
@@ -761,15 +782,16 @@
 
     closeParagraph();
     closeList();
+    closeSection();
     return htmlParts.join('');
   }
 
-  function loadAboutFromReadme() {
+  function loadProjectInfo() {
     if (!aboutPanelContentElement || !window.fetch) {
       return;
     }
 
-    aboutPanelContentElement.innerHTML = '<p>Loading README...</p>';
+    aboutPanelContentElement.innerHTML = '<p>Loading project info...</p>';
 
     fetch('README.md?ts=' + Date.now(), { cache: 'no-store' })
       .then(function(response) {
@@ -779,13 +801,11 @@
         return response.text();
       })
       .then(function(readmeText) {
-        var contentHtml = renderSimpleMarkdown(readmeText);
-        contentHtml += '<p><a href="README.md" target="_blank" rel="noopener">Open README.md</a></p>';
-        aboutPanelContentElement.innerHTML = contentHtml;
+        aboutPanelContentElement.innerHTML = renderSimpleMarkdown(readmeText);
       })
       .catch(function() {
         aboutPanelContentElement.innerHTML =
-          '<p>Could not load README automatically.</p>' +
+          '<p>Could not load project information automatically.</p>' +
           '<p><a href="README.md" target="_blank" rel="noopener">Open README.md</a></p>';
       });
   }
@@ -794,7 +814,7 @@
     if (!aboutPanelElement) {
       return;
     }
-    loadAboutFromReadme();
+    loadProjectInfo();
     stopAutorotate();
     aboutPanelElement.classList.add('enabled');
     aboutPanelElement.setAttribute('aria-hidden', 'false');
