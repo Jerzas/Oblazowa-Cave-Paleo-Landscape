@@ -34,6 +34,14 @@
   var aboutCloseElement = document.querySelector('#aboutClose');
   var aboutPanelContentElement = document.querySelector('#aboutPanelContent');
 
+  function setControlLabel(element, label) {
+    if (!element) {
+      return;
+    }
+    element.setAttribute('title', label);
+    element.setAttribute('aria-label', label);
+  }
+
   // Detect desktop or mobile mode.
   if (window.matchMedia) {
     var setMode = function() {
@@ -254,6 +262,7 @@
   if (data.settings.autorotateEnabled) {
     autorotateToggleElement.classList.add('enabled');
   }
+  updateAutorotateLabel();
 
   // Set handler for autorotate toggle.
   autorotateToggleElement.addEventListener('click', toggleAutorotate);
@@ -270,7 +279,9 @@
       } else {
         fullscreenToggleElement.classList.remove('enabled');
       }
+      updateFullscreenLabel();
     });
+    updateFullscreenLabel();
   } else {
     document.body.classList.add('fullscreen-disabled');
   }
@@ -651,16 +662,28 @@
   function showSceneList() {
     sceneListElement.classList.add('enabled');
     sceneListToggleElement.classList.add('enabled');
+    setControlLabel(sceneListToggleElement, 'Hide scene list');
   }
 
   function hideSceneList() {
     sceneListElement.classList.remove('enabled');
     sceneListToggleElement.classList.remove('enabled');
+    setControlLabel(sceneListToggleElement, 'Show scene list');
   }
 
   function toggleSceneList() {
-    sceneListElement.classList.toggle('enabled');
-    sceneListToggleElement.classList.toggle('enabled');
+    if (sceneListElement.classList.contains('enabled')) {
+      hideSceneList();
+    } else {
+      showSceneList();
+    }
+  }
+
+  function updateFullscreenLabel() {
+    setControlLabel(
+      fullscreenToggleElement,
+      screenfull.isFullscreen ? 'Exit full screen' : 'Full screen'
+    );
   }
 
   function escapeHtml(text) {
@@ -807,6 +830,16 @@
       autorotateToggleElement.classList.add('enabled');
       startAutorotate();
     }
+    updateAutorotateLabel();
+  }
+
+  function updateAutorotateLabel() {
+    setControlLabel(
+      autorotateToggleElement,
+      autorotateToggleElement.classList.contains('enabled')
+        ? 'Stop autorotation'
+        : 'Start autorotation'
+    );
   }
 
   function createLinkHotspotElement(hotspot) {

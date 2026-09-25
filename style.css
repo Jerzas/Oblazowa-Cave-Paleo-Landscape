@@ -99,7 +99,7 @@ body.multiple-scenes.mobile #titleBar {
   width: 40px;
   height: 40px;
   padding: 5px;
-  background-color: rgba(103,115,131,0.8);
+  background-color: rgba(58,68,84,0.8);
 }
 
 .mobile #fullscreenToggle {
@@ -148,7 +148,7 @@ body.fullscreen-enabled #fullscreenToggle {
   width: 40px;
   height: 40px;
   padding: 5px;
-  background-color: rgba(103,115,131,0.8);
+  background-color: rgba(58,68,84,0.8);
 }
 
 .mobile #autorotateToggle {
@@ -200,7 +200,7 @@ body.fullscreen-enabled.mobile #autorotateToggle {
   width: 40px;
   height: 40px;
   padding: 5px;
-  background-color: rgba(103,115,131,0.8);
+  background-color: rgba(58,68,84,0.8);
 }
 
 .mobile #sceneListToggle {
@@ -251,7 +251,7 @@ body.fullscreen-enabled.mobile #autorotateToggle {
   right: 80px;
   width: 40px;
   height: 40px;
-  background-color: rgba(103,115,131,0.8);
+  background-color: transparent;
   z-index: 2000;
 }
 
@@ -275,6 +275,13 @@ body.fullscreen-enabled.mobile #aboutToggle {
   right: 5px;
   width: 30px;
   height: 30px;
+}
+
+.no-touch #fullscreenToggle:hover,
+.no-touch #autorotateToggle:hover,
+.no-touch #sceneListToggle:hover,
+.no-touch #aboutToggle:hover {
+  background-color: rgba(103,115,131,0.8);
 }
 
 .mobile #aboutToggle .icon {
@@ -365,8 +372,7 @@ body.fullscreen-enabled.mobile #aboutToggle {
   width: max-content;
   max-width: 420px;
   max-height: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
+  overflow: hidden;
   margin-left: 0;
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
@@ -418,11 +424,11 @@ body.fullscreen-enabled.mobile #aboutToggle {
 #sceneList .scene {
   display: block;
   width: auto;
-  height: 30px;
+  height: clamp(24px, calc((100vh - 42px) / 16), 30px);
 }
 
 .mobile #sceneList .scene {
-  height: 40px;
+  height: clamp(28px, calc((100vh - 52px) / 16), 40px);
 }
 
 #sceneList .scene .text {
@@ -430,14 +436,14 @@ body.fullscreen-enabled.mobile #aboutToggle {
   display: block;
   height: 100%;
   padding: 0 15px;
-  line-height: 30px;
+  line-height: clamp(24px, calc((100vh - 42px) / 16), 30px);
   overflow: visible;
   text-overflow: clip;
   white-space: nowrap;
 }
 
 .mobile #sceneList .scene .text {
-  line-height: 40px;
+  line-height: clamp(28px, calc((100vh - 52px) / 16), 40px);
 }
 
 .no-touch #sceneList .scene:hover {
@@ -481,31 +487,59 @@ body.fullscreen-enabled.mobile #aboutToggle {
 }
 
 #mapPanelHeader {
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 10px 18px;
+  height: 40px;
+  padding: 0;
+  background-color: rgba(58,68,84,0.8);
   flex-shrink: 0;
 }
 
 #mapPanelHeader h2 {
-  font-size: 20px;
-  font-weight: 700;
+  position: absolute;
+  inset: 0;
+  padding: 5px 45px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
   margin: 0;
   color: #fff;
 }
 
 #mapClose {
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  line-height: 34px;
+  position: relative;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  line-height: 40px;
   text-align: center;
   font-size: 26px;
   font-weight: 300;
-  background: rgba(103,115,131,0.8);
+  background-color: transparent;
   cursor: pointer;
   flex-shrink: 0;
+}
+
+.no-touch #mapClose:hover {
+  background-color: rgba(103,115,131,0.8);
+}
+
+.mobile #mapPanelHeader {
+  height: 50px;
+}
+
+.mobile #mapPanelHeader h2 {
+  padding: 5px 55px;
+  line-height: 40px;
+}
+
+.mobile #mapClose {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
 }
 
 #mapPanelMap {
