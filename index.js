@@ -85,8 +85,12 @@
   // Current active scene.
   var currentScene = null;
 
-  // Local-only editor for persisting the current scene view to data.js.
-  if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+  function isDeveloperHost() {
+    return window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+  }
+
+  // Local-only editor tools for positioning scenes and hotspots.
+  if (isDeveloperHost()) {
     var saveStartViewButton = document.createElement('button');
     saveStartViewButton.id = 'saveStartView';
     saveStartViewButton.type = 'button';
@@ -135,74 +139,73 @@
         }, 2500);
       });
     });
-  }
 
-  // Coords panel.
-  var coordsBox = document.createElement('div');
-  coordsBox.style.position = 'absolute';
-  coordsBox.style.left = '10px';
-  coordsBox.style.bottom = '10px';
-  coordsBox.style.zIndex = '99999';
-  coordsBox.style.padding = '6px 10px';
-  coordsBox.style.background = 'rgba(0,0,0,0.35)';
-  coordsBox.style.color = 'rgba(255,255,255,0.7)';
-  coordsBox.style.fontFamily = 'monospace';
-  coordsBox.style.fontSize = '11px';
-  coordsBox.style.borderRadius = '4px';
-  coordsBox.style.pointerEvents = 'none';
-  coordsBox.style.whiteSpace = 'nowrap';
-  coordsBox.style.display = 'none';
-  coordsBox.textContent = 'yaw: --- | pitch: ---';
-  document.body.appendChild(coordsBox);
+    var coordsBox = document.createElement('div');
+    coordsBox.style.position = 'absolute';
+    coordsBox.style.left = '10px';
+    coordsBox.style.bottom = '10px';
+    coordsBox.style.zIndex = '99999';
+    coordsBox.style.padding = '6px 10px';
+    coordsBox.style.background = 'rgba(0,0,0,0.35)';
+    coordsBox.style.color = 'rgba(255,255,255,0.7)';
+    coordsBox.style.fontFamily = 'monospace';
+    coordsBox.style.fontSize = '11px';
+    coordsBox.style.borderRadius = '4px';
+    coordsBox.style.pointerEvents = 'none';
+    coordsBox.style.whiteSpace = 'nowrap';
+    coordsBox.style.display = 'none';
+    coordsBox.textContent = 'yaw: --- | pitch: ---';
+    document.body.appendChild(coordsBox);
 
-  function getCoordsFromMouseEvent(e) {
-    if (!currentScene || !currentScene.view) {
-      return null;
-    }
-
-    var rect = panoElement.getBoundingClientRect();
-    var x = e.clientX - rect.left;
-    var y = e.clientY - rect.top;
-
-    try {
-      return currentScene.view.screenToCoordinates({ x: x, y: y }, { width: rect.width, height: rect.height });
-    } catch (err) {
-      try {
-        return currentScene.view.screenToCoordinates({ x: x, y: y }, rect);
-      } catch (err2) {
+    function getCoordsFromMouseEvent(e) {
+      if (!currentScene || !currentScene.view) {
         return null;
       }
+
+      var rect = panoElement.getBoundingClientRect();
+      var x = e.clientX - rect.left;
+      var y = e.clientY - rect.top;
+
+      try {
+        return currentScene.view.screenToCoordinates({ x: x, y: y }, { width: rect.width, height: rect.height });
+      } catch (err) {
+        try {
+          return currentScene.view.screenToCoordinates({ x: x, y: y }, rect);
+        } catch (err2) {
+          return null;
+        }
+      }
     }
+
+    panoElement.addEventListener('mousemove', function(e) {
+      var coords = getCoordsFromMouseEvent(e);
+      if (!coords) {
+        coordsBox.textContent = 'yaw: --- | pitch: ---';
+        return;
+      }
+
+      coordsBox.textContent =
+        'yaw: ' + coords.yaw.toFixed(6) +
+        ' | pitch: ' + coords.pitch.toFixed(6);
+    });
+
+    panoElement.addEventListener('click', function(e) {
+      var coords = getCoordsFromMouseEvent(e);
+      if (!coords) {
+        return;
+      }
+
+      coordsBox.textContent =
+        'yaw: ' + coords.yaw.toFixed(6) +
+        ' | pitch: ' + coords.pitch.toFixed(6);
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(
+          'yaw: ' + coords.yaw.toFixed(6) + ', pitch: ' + coords.pitch.toFixed(6)
+        ).catch(function() {});
+      }
+    });
   }
-
-  panoElement.addEventListener('mousemove', function(e) {
-    var coords = getCoordsFromMouseEvent(e);
-    if (!coords) {
-      coordsBox.textContent = 'yaw: --- | pitch: ---';
-      return;
-    }
-
-    coordsBox.textContent =
-      'yaw: ' + coords.yaw.toFixed(6) +
-      ' | pitch: ' + coords.pitch.toFixed(6);
-  });
-
-  panoElement.addEventListener('click', function(e) {
-    var coords = getCoordsFromMouseEvent(e);
-    if (!coords) {
-      return;
-    }
-
-    coordsBox.textContent =
-      'yaw: ' + coords.yaw.toFixed(6) +
-      ' | pitch: ' + coords.pitch.toFixed(6);
-
-    if (navigator.clipboard && navigator.clipboard.writeText) {
-      navigator.clipboard.writeText(
-        'yaw: ' + coords.yaw.toFixed(6) + ', pitch: ' + coords.pitch.toFixed(6)
-      ).catch(function() {});
-    }
-  });
 
   // Create scenes.
   var scenes = data.scenes.map(function(data) {

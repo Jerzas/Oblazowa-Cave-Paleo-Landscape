@@ -1,5 +1,5 @@
 param(
-  [string[]]$KmlFiles = @('scenes.kml', 'scenes-github-links.kml'),
+  [string[]]$KmlFiles = @('scenes-github-links.kml'),
   [string]$BaseUrl = 'https://jerzas.github.io/Oblazowa-Cave-Paleo-Landscape',
   [string]$KmzSource = 'scenes-github-links.kml',
   [string]$KmzOutput = 'scenes-github-links.kmz',
