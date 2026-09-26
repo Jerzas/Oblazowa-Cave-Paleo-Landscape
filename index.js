@@ -86,11 +86,17 @@
   var currentScene = null;
 
   function isDeveloperHost() {
-    return window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+    return (
+      window.location.hostname === 'localhost' ||
+      window.location.hostname === '127.0.0.1' ||
+      window.location.hostname === '::1' ||
+      window.location.hostname === '[::1]'
+    );
   }
 
-  // Local-only editor tools for positioning scenes and hotspots.
-  if (isDeveloperHost()) {
+  function initDeveloperTools() {
+    document.body.classList.add('developer-tools-enabled');
+
     var saveStartViewButton = document.createElement('button');
     saveStartViewButton.id = 'saveStartView';
     saveStartViewButton.type = 'button';
@@ -141,19 +147,7 @@
     });
 
     var coordsBox = document.createElement('div');
-    coordsBox.style.position = 'absolute';
-    coordsBox.style.left = '10px';
-    coordsBox.style.bottom = '10px';
-    coordsBox.style.zIndex = '99999';
-    coordsBox.style.padding = '6px 10px';
-    coordsBox.style.background = 'rgba(0,0,0,0.35)';
-    coordsBox.style.color = 'rgba(255,255,255,0.7)';
-    coordsBox.style.fontFamily = 'monospace';
-    coordsBox.style.fontSize = '11px';
-    coordsBox.style.borderRadius = '4px';
-    coordsBox.style.pointerEvents = 'none';
-    coordsBox.style.whiteSpace = 'nowrap';
-    coordsBox.style.display = 'none';
+    coordsBox.id = 'developerCoords';
     coordsBox.textContent = 'yaw: --- | pitch: ---';
     document.body.appendChild(coordsBox);
 
@@ -205,6 +199,11 @@
         ).catch(function() {});
       }
     });
+  }
+
+  // Local-only editor tools for positioning scenes and hotspots.
+  if (isDeveloperHost()) {
+    initDeveloperTools();
   }
 
   // Create scenes.
